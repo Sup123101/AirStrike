@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	417627684	PlayMusic			\Default Work Unit\Music\PlayMusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	318858778	ModernLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\ModernLoop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Modes\Modern\ModernLoop\ModernLoop		9203620
+	415930949	ModernInitial	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\ModernInitial_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Modes\Modern\ModernInitial\ModernInitial		10123972
+	544570425	WW2LoopSect	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\WW2LoopSect_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Modes\Classic\WW2LoopSect\WW2LoopSect		11007504
+	568381713	Menu	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\Menu_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Modes\Menu\Menu\Menu		15221996
+	641770186	FutureInitial	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\FutureInitial_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Modes\Future\FutureInitial\FutureInitial		5003488
+	865486589	WW2Initial	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\WW2Initial_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Modes\Classic\ClassicInitial\WW2Initial		7197264
+	968137097	FutureLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\FutureLoop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Modes\Future\FutureLoop\FutureLoop		6158108
+

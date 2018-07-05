@@ -8,10 +8,19 @@ namespace AirStrikeKit
 
 		public GUISkin skin;
 		public Texture2D Logo;
+		public GameObject musicManager;
+		private MusicManager musicScript;
 
 		void Start ()
 		{
-	
+			musicManager = GameObject.Find ("WwiseGlobal");
+			musicScript = musicManager.GetComponent<MusicManager> ();
+			musicScript.switchMenu ();
+			musicScript.playMusic ();
+			//AkSoundEngine.SetState ("PlayerLife", "Menu");
+			//AkSoundEngine.SetSwitch ("Music", "Menu", uniListener);
+			//AkSoundEngine.PostEvent ("PlayMusic", uniListener);
+
 		}
 
 		public void OnGUI ()
@@ -22,12 +31,19 @@ namespace AirStrikeKit
 			GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
 		
 			if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 40), "Classic")) {
+				//print ("chosen classic mode");
+				//AkSoundEngine.SetSwitch ("Music", "Classic", uniListener);
+				musicScript.switchClassic ();
 				Application.LoadLevel ("Classic");
 			}
 			if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 40), "Modern")) {
+				//AkSoundEngine.SetSwitch ("Music", "Modern", uniListener);
+				musicScript.switchModern ();
 				Application.LoadLevel ("Modern");
 			}
 			if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 150, 300, 40), "StarFighter")) {
+				//AkSoundEngine.SetSwitch ("Music", "Starfighter", uniListener);
+				musicScript.switchstarFighter ();
 				Application.LoadLevel ("StarFighter");
 			}
 			/*if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 150, 300, 40), "Invasion")) {

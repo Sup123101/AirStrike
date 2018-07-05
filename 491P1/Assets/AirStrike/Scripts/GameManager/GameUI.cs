@@ -11,7 +11,8 @@ namespace AirStrikeKit
 		public Texture2D Logo;
 		public int Mode;
 		private WeaponController weapon;
-
+		public GameObject musicManager;
+		private MusicManager musicScript;
 
 		void Awake(){
 			AirStrikeGame.gameUI = this;
@@ -109,6 +110,10 @@ namespace AirStrikeKit
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 40), "Main menu")) {
 					Time.timeScale = 1;
 					Mode = 0;
+
+					musicManager = GameObject.Find ("WwiseGlobal");
+					musicScript = musicManager.GetComponent<MusicManager> ();
+					musicScript.switchMenu ();
 					Application.LoadLevel ("Mainmenu");
 				}
 				break;

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>/Users/sup123101/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Documents/Github/AirStrike/491P1/491P1_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/sup123101/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Documents/Github/AirStrike/491P1/491P1_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/sup123101/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Documents/Github/AirStrike/491P1/491P1_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/sup123101/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/y:/Documents/Github/AirStrike/491P1/491P1_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
+				<Event Id="417627684" Name="PlayMusic" ObjectPath="\Events\Default Work Unit\Music\PlayMusic"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="318858778" Language="SFX">
+					<ShortName>ModernLoop.wav</ShortName>
+					<Path>SFX/ModernLoop_F17FB28C.wem</Path>
+				</File>
+				<File Id="415930949" Language="SFX">
+					<ShortName>ModernInitial.wav</ShortName>
+					<Path>SFX/ModernInitial_F17FB28C.wem</Path>
+				</File>
+				<File Id="544570425" Language="SFX">
+					<ShortName>WW2LoopSect.wav</ShortName>
+					<Path>SFX/WW2LoopSect_F17FB28C.wem</Path>
+				</File>
+				<File Id="568381713" Language="SFX">
+					<ShortName>Menu.wav</ShortName>
+					<Path>SFX/Menu_F17FB28C.wem</Path>
+				</File>
+				<File Id="641770186" Language="SFX">
+					<ShortName>FutureInitial.wav</ShortName>
+					<Path>SFX/FutureInitial_F17FB28C.wem</Path>
+				</File>
+				<File Id="865486589" Language="SFX">
+					<ShortName>WW2Initial.wav</ShortName>
+					<Path>SFX/WW2Initial_F17FB28C.wem</Path>
+				</File>
+				<File Id="968137097" Language="SFX">
+					<ShortName>FutureLoop.wav</ShortName>
+					<Path>SFX/FutureLoop_F17FB28C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
