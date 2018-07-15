@@ -21,7 +21,10 @@
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1127073398" Name="PauseMusic" ObjectPath="\Events\Default Work Unit\Music\PauseMusic" MaxAttenuation="0.000000"/>
 				<Event Id="417627684" Name="PlayMusic" ObjectPath="\Events\Default Work Unit\Music\PlayMusic"/>
+				<Event Id="2170724709" Name="ResumeMusic" ObjectPath="\Events\Default Work Unit\Music\ResumeMusic" MaxAttenuation="0.000000"/>
+				<Event Id="1917263390" Name="stopMusic" ObjectPath="\Events\Default Work Unit\Music\stopMusic" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="318858778" Language="SFX">

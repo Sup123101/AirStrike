@@ -13,7 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PAUSEMUSIC = 1127073398U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
+        static const AkUniqueID RESUMEMUSIC = 2170724709U;
+        static const AkUniqueID STOPMUSIC = 1917263390U;
     } // namespace EVENTS
 
     namespace SWITCHES

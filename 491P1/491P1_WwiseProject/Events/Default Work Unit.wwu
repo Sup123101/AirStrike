@@ -19,6 +19,48 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="PauseMusic" ID="{8C705337-0B8A-4450-8DC7-1A6BA153629B}">
+							<ChildrenList>
+								<Action Name="" ID="{824847D2-88EE-4CEB-A3A4-D45E1C18084B}" ShortID="278021749">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Modes" ID="{5D9C2734-47B6-405D-B319-F45C68DDD206}" WorkUnitID="{509E8FB7-6E03-4A8A-8D08-DA5E31D7884B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ResumeMusic" ID="{0E257BFF-7497-4485-8316-6845000892B4}">
+							<ChildrenList>
+								<Action Name="" ID="{BEB453D3-492C-4ECF-BA3F-2FA33ED5531E}" ShortID="843977705">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Modes" ID="{5D9C2734-47B6-405D-B319-F45C68DDD206}" WorkUnitID="{509E8FB7-6E03-4A8A-8D08-DA5E31D7884B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopMusic" ID="{FAD78784-1501-4981-BED9-EC48340B0BC7}">
+							<ChildrenList>
+								<Action Name="" ID="{A9CE8D55-8A53-4DE5-86F2-9CF47759EA04}" ShortID="649277706">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Modes" ID="{5D9C2734-47B6-405D-B319-F45C68DDD206}" WorkUnitID="{509E8FB7-6E03-4A8A-8D08-DA5E31D7884B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

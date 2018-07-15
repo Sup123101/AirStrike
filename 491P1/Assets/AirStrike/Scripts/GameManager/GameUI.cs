@@ -13,6 +13,7 @@ namespace AirStrikeKit
 		private WeaponController weapon;
 		public GameObject musicManager;
 		private MusicManager musicScript;
+		public bool musicpaused = false;
 
 		void Awake(){
 			AirStrikeGame.gameUI = this;
@@ -21,6 +22,13 @@ namespace AirStrikeKit
 		void Start ()
 		{
 			weapon = AirStrikeGame.playerController.GetComponent<WeaponController> ();
+			musicManager = GameObject.Find ("WwiseGlobal");
+			musicScript = musicManager.GetComponent<MusicManager> ();
+		}
+		void onDestroy()
+		{
+			musicpaused = false;
+			musicScript.resumeMusic ();
 		}
 
 		public void OnGUI ()
@@ -75,21 +83,35 @@ namespace AirStrikeKit
 			case 1:
 				if (AirStrikeGame.playerController)
 					AirStrikeGame.playerController.Active = false;
-			
+				
 				MouseLock.MouseLocked = false;
 			
 				GUI.skin.label.alignment = TextAnchor.MiddleCenter;
 				GUI.Label (new Rect (0, Screen.height / 2 + 10, Screen.width, 30), "Game Over");
+				if (musicpaused == false) {
+					musicScript.pauseMusic ();
+					musicpaused = true;
+				}
 		
 				GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
 		
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 40), "Restart")) {
+					
+					musicScript.playModeMusic ();
+
 					Application.LoadLevel (Application.loadedLevelName);
 			
 				}
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 40), "Main menu")) {
+					
+					musicScript.resumeMusic ();
+
+					musicScript.switchMenu ();
+					musicScript.currentMode = 0;
 					Application.LoadLevel ("Mainmenu");
+
 				}
+
 				break;
 		
 			case 2:
@@ -100,20 +122,28 @@ namespace AirStrikeKit
 				Time.timeScale = 0;
 				GUI.skin.label.alignment = TextAnchor.MiddleCenter;
 				GUI.Label (new Rect (0, Screen.height / 2 + 10, Screen.width, 30), "Pause");
+				if (musicpaused == false) {
+					musicScript.pauseMusic ();
+					musicpaused = true;
+				}
+
 		
 				GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
 		
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 40), "Resume")) {
 					Mode = 0;
 					Time.timeScale = 1;
+					musicScript.resumeMusic ();
+					musicpaused = false;
 				}
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 40), "Main menu")) {
 					Time.timeScale = 1;
 					Mode = 0;
 
-					musicManager = GameObject.Find ("WwiseGlobal");
-					musicScript = musicManager.GetComponent<MusicManager> ();
+					musicScript.resumeMusic ();
+					musicpaused = false;
 					musicScript.switchMenu ();
+					musicScript.currentMode = 0;
 					Application.LoadLevel ("Mainmenu");
 				}
 				break;

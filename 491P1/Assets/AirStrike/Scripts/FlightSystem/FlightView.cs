@@ -37,12 +37,17 @@ namespace AirStrikeKit
 					Cameras [i].GetComponent<Camera>().enabled = false;
 				if (Cameras [i] && Cameras [i].GetComponent<AudioListener> ())
 					Cameras [i].GetComponent<AudioListener> ().enabled = false;
+				if (Cameras [i] && Cameras [i].GetComponent<AkAudioListener> ())
+					Cameras [i].GetComponent<AkAudioListener> ().enabled = false;
 			}
 			if (Cameras [indexCamera]) {
 				if (Cameras [indexCamera] && Cameras [indexCamera].GetComponent<Camera>())
 					Cameras [indexCamera].GetComponent<Camera>().enabled = true;
 				if (Cameras [indexCamera] && Cameras [indexCamera].GetComponent<AudioListener> ())
 					Cameras [indexCamera].GetComponent<AudioListener> ().enabled = true;
+				if (Cameras [indexCamera] && Cameras [indexCamera].GetComponent<AkAudioListener> ())
+					Cameras [indexCamera].GetComponent<AkAudioListener> ().enabled = true;
+				
 			}
 		}
 
@@ -101,6 +106,9 @@ namespace AirStrikeKit
 				this.GetComponent<Camera>().enabled = true;
 				if (this.gameObject.GetComponent<AudioListener> ())
 					this.gameObject.GetComponent<AudioListener> ().enabled = true;
+				if (this.gameObject.GetComponent<AkAudioListener> ())
+					this.gameObject.GetComponent<AkAudioListener> ().enabled = true;
+				    
 			}
 		}
 	}

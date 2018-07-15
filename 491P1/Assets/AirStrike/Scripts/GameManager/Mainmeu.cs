@@ -34,16 +34,19 @@ namespace AirStrikeKit
 				//print ("chosen classic mode");
 				//AkSoundEngine.SetSwitch ("Music", "Classic", uniListener);
 				musicScript.switchClassic ();
+				musicScript.currentMode = 1;
 				Application.LoadLevel ("Classic");
 			}
 			if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 40), "Modern")) {
 				//AkSoundEngine.SetSwitch ("Music", "Modern", uniListener);
 				musicScript.switchModern ();
+				musicScript.currentMode = 2;
 				Application.LoadLevel ("Modern");
 			}
 			if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 150, 300, 40), "StarFighter")) {
 				//AkSoundEngine.SetSwitch ("Music", "Starfighter", uniListener);
 				musicScript.switchstarFighter ();
+				musicScript.currentMode = 3;
 				Application.LoadLevel ("StarFighter");
 			}
 			/*if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 150, 300, 40), "Invasion")) {
