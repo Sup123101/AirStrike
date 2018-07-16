@@ -422,6 +422,9 @@ namespace HWRWeaponSystem
 							if (gameObject.name == "cannon") {
 								AkSoundEngine.PostEvent ("heavyCannon", gameObject);
 							}
+							if (gameObject.name == "LaserGun") {
+								AkSoundEngine.PostEvent ("heavyCannon", gameObject);
+							}
 							
 						}
 					}

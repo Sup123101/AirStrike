@@ -209,6 +209,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="laserSingle" ID="{ABDB6916-FC7F-4286-A929-1298C118F040}">
+							<ChildrenList>
+								<Action Name="" ID="{BB22B99B-BE42-47C1-9323-D6659F8A61FE}" ShortID="103404227">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="laserSingle" ID="{06D78F59-49E0-47D5-8060-4C3C483A71A5}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AIEngines" ID="{7F0C1010-802C-47FA-A2DC-51020EED7689}" ShortID="640416497">
@@ -264,6 +278,90 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="modernEngineLoop" ID="{93D5FCDC-A1E3-4952-A387-928C29D29066}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="startStarEnemyEngine" ID="{04B3B120-0A89-4C50-B558-E5294A52ED0B}">
+							<ChildrenList>
+								<Action Name="" ID="{72D5C338-AFE4-46CD-A907-5BF717BE6CED}" ShortID="323085822">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemyStarFighterLoop" ID="{EB12C621-839F-4C68-B73B-E7BF98C08946}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="startStarAllyEngine" ID="{248126B4-B8F8-4F66-9557-650A81B3B34D}">
+							<ChildrenList>
+								<Action Name="" ID="{511E888E-DE60-4FF1-B82D-55D2733DB031}" ShortID="853489896">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="friendlyStarFighterLoop" ID="{EDF92B09-F2E6-46D8-8F04-1F208EE5BCA3}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopStarEnemyEngine" ID="{CFC8A733-2914-49F1-B600-2ACDBB654546}">
+							<ChildrenList>
+								<Action Name="" ID="{2CD886E0-0115-4F8B-B3DE-816D48637A78}" ShortID="448626089">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemyStarFighterLoop" ID="{EB12C621-839F-4C68-B73B-E7BF98C08946}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopStarAllyEngine" ID="{9F04D5A2-827A-4357-ADB6-9337954DF5D2}">
+							<ChildrenList>
+								<Action Name="" ID="{8FC5CA6C-E809-40B1-A6AE-BAC6A8E96BAD}" ShortID="618894260">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="friendlyStarFighterLoop" ID="{EDF92B09-F2E6-46D8-8F04-1F208EE5BCA3}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="startStarLowHPEngine" ID="{5B35BE84-773F-4FF7-BACB-1933C853215B}">
+							<ChildrenList>
+								<Action Name="" ID="{0B8D0D54-1B21-4D3C-998C-74B433E7E0B7}" ShortID="655890237">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemyStarFighterlowHP" ID="{3B9FBE01-8501-4CA5-8A16-66E87E73C478}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopStarLowHPEngine" ID="{EE0D2717-D241-4FB2-8D12-42621173CB51}">
+							<ChildrenList>
+								<Action Name="" ID="{CFD5DFC6-8994-4F61-88DF-F65FD511E12C}" ShortID="280000500">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="enemyStarFighterlowHP" ID="{3B9FBE01-8501-4CA5-8A16-66E87E73C478}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

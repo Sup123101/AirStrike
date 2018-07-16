@@ -4,15 +4,15 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Explosions" Hash="1732668355" Timestamp="1531718279"/>
-				<File Name="Init" Hash="3896416029" Timestamp="1531720329"/>
+				<File Name="Init" Hash="1461416478" Timestamp="1531774285"/>
 				<File Name="Music" Hash="1768680013" Timestamp="1531718524"/>
-				<File Name="Weapons" Hash="1128517102" Timestamp="1531716307"/>
-				<File Name="aiEngines" Hash="1278114058" Timestamp="1531721210"/>
+				<File Name="Weapons" Hash="454579995" Timestamp="1531776696"/>
+				<File Name="aiEngines" Hash="1599304917" Timestamp="1531776372"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="4239545624" Timestamp="1531721210"/>
+				<File Name="" Hash="3007423640" Timestamp="1531776696"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -20,15 +20,15 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Explosions" Hash="1732668355" Timestamp="1531718279"/>
-				<File Name="Init" Hash="146273879" Timestamp="1531720329"/>
+				<File Name="Init" Hash="1579380236" Timestamp="1531774285"/>
 				<File Name="Music" Hash="1768680013" Timestamp="1531718524"/>
-				<File Name="Weapons" Hash="1128517102" Timestamp="1531716307"/>
-				<File Name="aiEngines" Hash="1278114058" Timestamp="1531721211"/>
+				<File Name="Weapons" Hash="454579995" Timestamp="1531776696"/>
+				<File Name="aiEngines" Hash="1599304917" Timestamp="1531776373"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="347471050" Timestamp="1531721211"/>
+				<File Name="" Hash="4070421578" Timestamp="1531776696"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

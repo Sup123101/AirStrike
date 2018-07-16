@@ -27,6 +27,7 @@
 				<SoundBank Name="Weapons" ID="{542B9C9B-3CF4-4006-A266-E05B10D29F59}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Rocket" ID="{88D5969E-1F93-4198-A59A-5F8A8BA63DB6}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="laserSingle" ID="{ABDB6916-FC7F-4286-A929-1298C118F040}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Cannon" ID="{958B6742-B2A7-4324-B165-53783DDD9973}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="heavyCannon" ID="{D694DB51-9963-45BD-A7D6-DAE8A180C846}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="M4Single" ID="{3C2F2215-89DE-49F3-8437-D8E01B403AC2}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
@@ -39,10 +40,16 @@
 				</SoundBank>
 				<SoundBank Name="aiEngines" ID="{7EA9878C-39C1-49B8-A26D-7F403E6FD78B}">
 					<ObjectInclusionList>
+						<ObjectRef Name="stopStarAllyEngine" ID="{9F04D5A2-827A-4357-ADB6-9337954DF5D2}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="startWW2Engine" ID="{E943A441-ECAF-4734-AB37-8B41BB615204}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopWW2Engine" ID="{CAD9A0EC-CB67-48CB-AA77-16FAB5D90CBB}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="startModernEngine" ID="{3D47D1D1-608C-4966-8A0E-12C9C59B3FB6}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stopStarEnemyEngine" ID="{CFC8A733-2914-49F1-B600-2ACDBB654546}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="startStarEnemyEngine" ID="{04B3B120-0A89-4C50-B558-E5294A52ED0B}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopModernEngine" ID="{1C896CE1-194F-4DFC-973D-C67D9171BE25}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="startStarAllyEngine" ID="{248126B4-B8F8-4F66-9557-650A81B3B34D}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stopStarLowHPEngine" ID="{EE0D2717-D241-4FB2-8D12-42621173CB51}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="startStarLowHPEngine" ID="{5B35BE84-773F-4FF7-BACB-1933C853215B}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -19,7 +19,13 @@
 								<Property Name="Min" Type="Real64" Value="0.4"/>
 							</PropertyList>
 						</GameParameter>
-						<GameParameter Name="starFighterDoppler" ID="{260E2DE0-73C4-4111-AF1A-253B8523D756}"/>
+						<GameParameter Name="starFighterDoppler" ID="{260E2DE0-73C4-4111-AF1A-253B8523D756}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="2"/>
+								<Property Name="Min" Type="Real64" Value="0.4"/>
+							</PropertyList>
+						</GameParameter>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Missiles" ID="{D58F089F-2316-476F-B995-97C4CF0A485A}" ShortID="745595490">

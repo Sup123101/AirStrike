@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2814405	Rocket			\Default Work Unit\Weapons\Rocket	
+	103780518	laserSingle			\Default Work Unit\Weapons\laserSingle	
 	392504123	Missile			\Default Work Unit\Weapons\Missile	
 	1060757411	stopMissile			\Default Work Unit\Weapons\stopMissile	
 	1722492221	stopRocket			\Default Work Unit\Weapons\stopRocket	

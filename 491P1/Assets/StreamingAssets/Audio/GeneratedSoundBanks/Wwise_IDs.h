@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID CANNON = 2393348022U;
         static const AkUniqueID HEAVYCANNON = 4255146761U;
+        static const AkUniqueID LASERSINGLE = 103780518U;
         static const AkUniqueID M4SINGLE = 4161220218U;
         static const AkUniqueID METALEXPLOSION = 870974975U;
         static const AkUniqueID MISSILE = 392504123U;
@@ -25,12 +26,18 @@ namespace AK
         static const AkUniqueID ROCKET = 2814405U;
         static const AkUniqueID SANDEXPLOSION = 1702134784U;
         static const AkUniqueID STARTMODERNENGINE = 1909154112U;
+        static const AkUniqueID STARTSTARALLYENGINE = 3769342143U;
+        static const AkUniqueID STARTSTARENEMYENGINE = 4050874075U;
+        static const AkUniqueID STARTSTARLOWHPENGINE = 3909231409U;
         static const AkUniqueID STARTWW2ENGINE = 369208719U;
         static const AkUniqueID STOPEVERYTHING = 1940514798U;
         static const AkUniqueID STOPMISSILE = 1060757411U;
         static const AkUniqueID STOPMODERNENGINE = 1071708526U;
         static const AkUniqueID STOPMUSIC = 1917263390U;
         static const AkUniqueID STOPROCKET = 1722492221U;
+        static const AkUniqueID STOPSTARALLYENGINE = 4015933481U;
+        static const AkUniqueID STOPSTARENEMYENGINE = 272552693U;
+        static const AkUniqueID STOPSTARLOWHPENGINE = 920968951U;
         static const AkUniqueID STOPWW2ENGINE = 3970229609U;
     } // namespace EVENTS
 

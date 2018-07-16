@@ -17,11 +17,21 @@
 			<Path>aiEngines.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1909154112" Name="startModernEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startModernEngine" MaxAttenuation="600.000000"/>
+				<Event Id="3769342143" Name="startStarAllyEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startStarAllyEngine" MaxAttenuation="600.000000"/>
+				<Event Id="4050874075" Name="startStarEnemyEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startStarEnemyEngine" MaxAttenuation="600.000000"/>
+				<Event Id="3909231409" Name="startStarLowHPEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startStarLowHPEngine" MaxAttenuation="500.000000"/>
 				<Event Id="369208719" Name="startWW2Engine" ObjectPath="\Events\Default Work Unit\AIEngines\startWW2Engine" MaxAttenuation="350.000000"/>
 				<Event Id="1071708526" Name="stopModernEngine" ObjectPath="\Events\Default Work Unit\AIEngines\stopModernEngine" MaxAttenuation="0.000000"/>
+				<Event Id="4015933481" Name="stopStarAllyEngine" ObjectPath="\Events\Default Work Unit\AIEngines\stopStarAllyEngine" MaxAttenuation="0.000000"/>
+				<Event Id="272552693" Name="stopStarEnemyEngine" ObjectPath="\Events\Default Work Unit\AIEngines\stopStarEnemyEngine" MaxAttenuation="0.000000"/>
+				<Event Id="920968951" Name="stopStarLowHPEngine" ObjectPath="\Events\Default Work Unit\AIEngines\stopStarLowHPEngine" MaxAttenuation="0.000000"/>
 				<Event Id="3970229609" Name="stopWW2Engine" ObjectPath="\Events\Default Work Unit\AIEngines\stopWW2Engine" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="68286664" Language="SFX">
+					<ShortName>enemyStarFighterLoop.wav</ShortName>
+					<Path>SFX/enemyStarFighterLoop_F17FB28C.wem</Path>
+				</File>
 				<File Id="670451082" Language="SFX">
 					<ShortName>modernEngineLoop.wav</ShortName>
 					<Path>SFX/modernEngineLoop_F17FB28C.wem</Path>
@@ -29,6 +39,14 @@
 				<File Id="678784050" Language="SFX">
 					<ShortName>WW2EngineLoop.wav</ShortName>
 					<Path>SFX/WW2EngineLoop_F17FB28C.wem</Path>
+				</File>
+				<File Id="901463121" Language="SFX">
+					<ShortName>friendlyStarFighterLoop.wav</ShortName>
+					<Path>SFX/friendlyStarFighterLoop_F17FB28C.wem</Path>
+				</File>
+				<File Id="1021607394" Language="SFX">
+					<ShortName>enemyStarFighterlowHP.wav</ShortName>
+					<Path>SFX/enemyStarFighterlowHP_F17FB28C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -96,6 +114,7 @@
 			<IncludedEvents>
 				<Event Id="2393348022" Name="Cannon" ObjectPath="\Events\Default Work Unit\Weapons\Cannon" MaxAttenuation="250.000000"/>
 				<Event Id="4255146761" Name="heavyCannon" ObjectPath="\Events\Default Work Unit\Weapons\heavyCannon" MaxAttenuation="250.000000"/>
+				<Event Id="103780518" Name="laserSingle" ObjectPath="\Events\Default Work Unit\Weapons\laserSingle" MaxAttenuation="250.000000"/>
 				<Event Id="4161220218" Name="M4Single" ObjectPath="\Events\Default Work Unit\Weapons\M4Single" MaxAttenuation="250.000000"/>
 				<Event Id="392504123" Name="Missile" ObjectPath="\Events\Default Work Unit\Weapons\Missile" MaxAttenuation="350.000000"/>
 				<Event Id="2814405" Name="Rocket" ObjectPath="\Events\Default Work Unit\Weapons\Rocket" MaxAttenuation="350.000000"/>
