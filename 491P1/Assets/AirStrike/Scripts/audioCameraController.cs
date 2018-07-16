@@ -14,8 +14,5 @@ public class audioCameraController : MonoBehaviour {
 	public AkAudioListener rearAL;
 
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

@@ -81,7 +81,7 @@
 						</Event>
 						<Event Name="metalExplosion" ID="{50689751-8993-4A0A-B5A9-2F6890F84D34}">
 							<ChildrenList>
-								<Action Name="" ID="{F21D51F7-003F-44C8-9D50-D03525245271}" ShortID="211920504">
+								<Action Name="" ID="{7A0D7BC2-7BD1-4D40-9361-2B18BC5A64CE}" ShortID="640754567">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
@@ -109,6 +109,258 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Weapons" ID="{0462E671-E849-42C4-B719-9797791E4CC9}" ShortID="559745486">
+					<ChildrenList>
+						<Event Name="M4Single" ID="{3C2F2215-89DE-49F3-8437-D8E01B403AC2}">
+							<ChildrenList>
+								<Action Name="" ID="{1A075AE4-FEFC-463E-B747-2FD2BA5705EF}" ShortID="1020019829">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="M4Single" ID="{751D090A-7821-470B-AEAB-968EB13923B8}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Cannon" ID="{958B6742-B2A7-4324-B165-53783DDD9973}">
+							<ChildrenList>
+								<Action Name="" ID="{3192CBA7-BECF-4F38-AAB4-6F9AB9536670}" ShortID="948315229">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cannon" ID="{F7F806A6-3C07-4EFA-A830-BF51F30263E3}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="heavyCannon" ID="{D694DB51-9963-45BD-A7D6-DAE8A180C846}">
+							<ChildrenList>
+								<Action Name="" ID="{8B135BAC-6772-49B5-810C-A4A955881FCA}" ShortID="224617381">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="heavyCannon" ID="{2663907B-0DF2-4FC8-A752-414B40419131}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Rocket" ID="{88D5969E-1F93-4198-A59A-5F8A8BA63DB6}">
+							<ChildrenList>
+								<Action Name="" ID="{8EBDB9CC-85EC-46A0-A535-9CB4CBFC6E90}" ShortID="43891896">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rockets" ID="{8903928B-224E-4FF4-BF9C-9F7E61830F37}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopRocket" ID="{3467EEC2-0371-4AFF-A8B8-94F44A337C2D}">
+							<ChildrenList>
+								<Action Name="" ID="{8CBDB961-A4EF-422D-9529-0C1F05BA7136}" ShortID="390838273">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Rockets" ID="{8903928B-224E-4FF4-BF9C-9F7E61830F37}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Missile" ID="{AD61F9E4-FB3F-4D42-B7FF-CFA4DEF981EF}">
+							<ChildrenList>
+								<Action Name="" ID="{0293E270-B659-450F-BC96-293B7CCC9105}" ShortID="1064182571">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Missiles" ID="{AD46605B-C1B6-4B2E-A33F-3797F6CEE576}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopMissile" ID="{1808C689-AAF4-4CCD-8EA0-0722AAC6D9A7}">
+							<ChildrenList>
+								<Action Name="" ID="{64DFCB8C-409F-43AA-9DFC-1F3B0BC61F95}" ShortID="71903127">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Missiles" ID="{AD46605B-C1B6-4B2E-A33F-3797F6CEE576}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="AIEngines" ID="{7F0C1010-802C-47FA-A2DC-51020EED7689}" ShortID="640416497">
+					<ChildrenList>
+						<Event Name="startWW2Engine" ID="{E943A441-ECAF-4734-AB37-8B41BB615204}">
+							<ChildrenList>
+								<Action Name="" ID="{C9785F30-AEB6-4CB9-B86F-308CA3024D5F}" ShortID="1014942240">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WW2EngineLoop" ID="{CB1769FA-9463-408D-8371-1DB3774676E4}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopWW2Engine" ID="{CAD9A0EC-CB67-48CB-AA77-16FAB5D90CBB}">
+							<ChildrenList>
+								<Action Name="" ID="{55E7A68F-A899-451C-9479-5CF80A68F136}" ShortID="41620169">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WW2EngineLoop" ID="{CB1769FA-9463-408D-8371-1DB3774676E4}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="startModernEngine" ID="{3D47D1D1-608C-4966-8A0E-12C9C59B3FB6}">
+							<ChildrenList>
+								<Action Name="" ID="{60CEE944-796D-4096-A575-37F760163294}" ShortID="188541984">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="modernEngineLoop" ID="{93D5FCDC-A1E3-4952-A387-928C29D29066}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopModernEngine" ID="{1C896CE1-194F-4DFC-973D-C67D9171BE25}">
+							<ChildrenList>
+								<Action Name="" ID="{9EE820E1-0DF7-4830-BBF0-A9A07DA62028}" ShortID="1019682604">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="modernEngineLoop" ID="{93D5FCDC-A1E3-4952-A387-928C29D29066}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="StopEverything" ID="{D9AECC45-9E32-4AD7-A129-1B77F7D76B7E}">
+					<ChildrenList>
+						<Action Name="" ID="{C1A91A19-4B06-4C92-BBAB-312E1FEBC03B}" ShortID="550513579">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+						<Action Name="" ID="{4C0F9A34-A50E-403F-A859-5C8D0B50E22B}" ShortID="949333791">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="botEngine" ID="{2C078E8C-DE43-408C-9D1B-650394D9EB9D}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{187372F3-DECD-4D37-9B95-3322FDC47261}" ShortID="294479921">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explosions" ID="{2D4811E4-322B-4F03-A553-26B461CD38C8}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A238B228-0480-49B3-AE18-9A80B1A5CDFD}" ShortID="724672189">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Impacts" ID="{2FDF1C65-BAE3-4B98-A44B-6C0DBCDB0C39}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{360B27D5-CAC5-4AEA-AA5A-AA7831493877}" ShortID="962026479">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="playerEngine" ID="{184B22DA-5392-4200-B2AD-70DA2AB2F889}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BA602EB6-FCB4-48B5-B489-E1D20E020B99}" ShortID="167784713">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="radioChatter" ID="{2D510C7D-D413-4CBC-B9F1-01247E172DFD}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EAFD8B98-5455-4251-81CB-E4F0C50CE785}" ShortID="83882172">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="VA" ID="{28C71E82-9313-4000-9F8D-60545C3FA8A0}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4EB6E2B3-D846-4FC6-951F-C53F839983BA}" ShortID="713263644">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Weapons" ID="{B4BCB3FE-926D-4E7F-A8A8-ED1DECE42B39}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9495442E-4ACE-4E3F-911B-AEEE352BCFA4}" ShortID="555317727">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Flames" ID="{751042BC-8414-413A-9193-817CEDA9CF54}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

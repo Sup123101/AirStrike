@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	369208719	startWW2Engine			\Default Work Unit\AIEngines\startWW2Engine	
+	1071708526	stopModernEngine			\Default Work Unit\AIEngines\stopModernEngine	
+	1909154112	startModernEngine			\Default Work Unit\AIEngines\startModernEngine	
+	3970229609	stopWW2Engine			\Default Work Unit\AIEngines\stopWW2Engine	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1467825012	modernDoppler			\Default Work Unit\Engines\modernDoppler	
+	2010691057	classicDoppler			\Default Work Unit\Engines\classicDoppler	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	670451082	modernEngineLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\modernEngineLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\modernEngineLoop		573444
+	678784050	WW2EngineLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\WW2EngineLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\WW2EngineLoop		529344
+

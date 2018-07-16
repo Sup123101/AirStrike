@@ -495,7 +495,41 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="botEngine" ID="{2C078E8C-DE43-408C-9D1B-650394D9EB9D}" ShortID="217149956">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<RTPCList>
+								<RTPC Name="" ID="{E74CA848-6790-44F9-B1EB-36BF4AA39314}" ShortID="735282881">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="classicDoppler" ID="{B20F487D-957C-4126-AAC5-ABBACE46784E}" WorkUnitID="{17EE0D07-72FB-4DD9-8C29-9172CEEA69F8}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{EAD27541-4877-465D-B837-70C94A02F6D7}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="65537"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0.4</XPos>
+												<YPos>0</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>2</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="AIEngine" ID="{F02B5B8C-22C1-4ED9-8985-565565303C48}" WorkUnitID="{00F595EF-96A4-45E3-8023-4BE53442A395}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
 						</Reference>
@@ -573,6 +607,34 @@
 						<Sound Name="modernEngineLoop" ID="{93D5FCDC-A1E3-4952-A387-928C29D29066}" ShortID="243800975">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{3A236962-71D9-42FE-A62B-020DFDD36A67}" ShortID="905664155">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="modernDoppler" ID="{DBEF32DB-3273-444C-8E6C-C399DB271E5C}" WorkUnitID="{17EE0D07-72FB-4DD9-8C29-9172CEEA69F8}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{1D1075A9-3EA1-4411-8314-0C3E67033C49}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0.4</XPos>
+														<YPos>-213</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>636</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -595,6 +657,45 @@
 						<Sound Name="WW2EngineLoop" ID="{CB1769FA-9463-408D-8371-1DB3774676E4}" ShortID="148466978">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E5EA2C4F-19EA-4B40-862D-A98F26F021A3}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+									<RTPCList>
+										<RTPC Name="" ID="{2380EE72-5C31-403F-A543-F1474CE23856}" ShortID="854783629">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="classicDoppler" ID="{B20F487D-957C-4126-AAC5-ABBACE46784E}" WorkUnitID="{17EE0D07-72FB-4DD9-8C29-9172CEEA69F8}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{B75D1A7C-E531-44F0-8C0E-A002F159BB68}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0.4</XPos>
+														<YPos>-159</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>742</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -624,7 +725,8 @@
 									<Modifier Name="" ID="{3C07EA34-CE92-41CA-B6B1-30F053981265}">
 										<PropertyList>
 											<Property Name="Enabled" Type="bool" Value="True"/>
-											<Property Name="Min" Type="Real64" Value="-76"/>
+											<Property Name="Max" Type="Real64" Value="632"/>
+											<Property Name="Min" Type="Real64" Value="-126"/>
 										</PropertyList>
 									</Modifier>
 								</ModifierInfo>
@@ -646,11 +748,10 @@
 					<ChildrenList>
 						<RandomSequenceContainer Name="Normal" ID="{0E374EBC-D10B-48B5-9FD6-F84B441C00A2}" ShortID="70376897">
 							<PropertyList>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-17</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -733,8 +834,8 @@
 											<Modifier Name="" ID="{3ED40733-2F18-4765-A8B2-D66D90B9B6A6}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="101"/>
-													<Property Name="Min" Type="Real64" Value="-101"/>
+													<Property Name="Max" Type="Real64" Value="581"/>
+													<Property Name="Min" Type="Real64" Value="-354"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -1951,7 +2052,13 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Weapons" ID="{B4BCB3FE-926D-4E7F-A8A8-ED1DECE42B39}" ShortID="713819731">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Weapons" ID="{565A89C2-3DD7-4F8B-B9D8-CE796C788ADF}" WorkUnitID="{00F595EF-96A4-45E3-8023-4BE53442A395}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
 						</Reference>
@@ -2093,13 +2200,46 @@
 						</Sound>
 						<RandomSequenceContainer Name="Missiles" ID="{AD46605B-C1B6-4B2E-A33F-3797F6CEE576}" ShortID="904834880">
 							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{F4E43AC0-D3EF-47DD-B6C1-CDE56A157DD5}" ShortID="296510329">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="missileDoppler" ID="{C4E937F1-9106-4590-82CF-18A8884F2493}" WorkUnitID="{17EE0D07-72FB-4DD9-8C29-9172CEEA69F8}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{9EED8C78-6D18-47AF-9E7B-33F063EC68A6}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-938</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>1088</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Missile" ID="{C90432BA-9B19-486B-9DD6-DB611BD56FB6}" WorkUnitID="{00F595EF-96A4-45E3-8023-4BE53442A395}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
 								</Reference>
@@ -2157,13 +2297,46 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Rockets" ID="{8903928B-224E-4FF4-BF9C-9F7E61830F37}" ShortID="656455045">
 							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{DC800FD6-5036-4860-911E-C26FF89A7C34}" ShortID="684367095">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="rocketDoppler" ID="{85468FF5-D0EC-49F5-ABB0-439BE3374762}" WorkUnitID="{17EE0D07-72FB-4DD9-8C29-9172CEEA69F8}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{87A577AA-9568-4CD5-8597-C3AC293E008D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-1219</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>2</XPos>
+														<YPos>1379</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Missile" ID="{C90432BA-9B19-486B-9DD6-DB611BD56FB6}" WorkUnitID="{00F595EF-96A4-45E3-8023-4BE53442A395}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
 								</Reference>
@@ -2241,6 +2414,382 @@
 								<ActiveSource Name="LaserLoop" ID="{68CE22D0-D8F2-4E9F-8DBA-96D278AD8CED}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="M4Single" ID="{751D090A-7821-470B-AEAB-968EB13923B8}" ShortID="689358676">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{58A9C0ED-DA06-49AF-85F7-BA2DD814723F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="51"/>
+													<Property Name="Min" Type="Real64" Value="-76"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="M4_Bullet1" ID="{9328F251-D9EE-41E8-A8EA-9D6C95B14305}" ShortID="161317129">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M4_Bullet1" ID="{A908BE95-9FDF-4DE5-865C-82D047745C44}" ShortID="302067993">
+											<Language>SFX</Language>
+											<AudioFile>M4_Bullet1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="M4_Bullet1" ID="{A908BE95-9FDF-4DE5-865C-82D047745C44}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M4_Bullet2" ID="{C02CC22C-8FF5-491D-B249-08194118FE14}" ShortID="461025262">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M4_Bullet2" ID="{A216FBD8-375A-412B-9D46-6DB38D180082}" ShortID="625334731">
+											<Language>SFX</Language>
+											<AudioFile>M4_Bullet2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="M4_Bullet2" ID="{A216FBD8-375A-412B-9D46-6DB38D180082}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M4_Bullet3" ID="{878A6B54-D972-4BFE-AA42-639AC22E4C69}" ShortID="561744438">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M4_Bullet3" ID="{A41F5D73-A56B-4BBD-A593-2320FF065130}" ShortID="424754393">
+											<Language>SFX</Language>
+											<AudioFile>M4_Bullet3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="M4_Bullet3" ID="{A41F5D73-A56B-4BBD-A593-2320FF065130}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M4_Bullet4" ID="{0958FBC9-6BFF-48E4-97A6-967A58DFDDD0}" ShortID="704834989">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M4_Bullet4" ID="{954D3526-7695-40D2-93A0-4E84CF6C251E}" ShortID="411488687">
+											<Language>SFX</Language>
+											<AudioFile>M4_Bullet4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="M4_Bullet4" ID="{954D3526-7695-40D2-93A0-4E84CF6C251E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M4_Bullet5" ID="{500F61BF-0D0F-4D04-B525-69DADEB93721}" ShortID="38736316">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M4_Bullet5" ID="{07FE168F-CF31-46EC-9636-C8802A6A69B6}" ShortID="787309428">
+											<Language>SFX</Language>
+											<AudioFile>M4_Bullet5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="M4_Bullet5" ID="{07FE168F-CF31-46EC-9636-C8802A6A69B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M4_Bullet6" ID="{230B8E62-AE91-4B37-9A09-5120EA81DDF4}" ShortID="1035878599">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M4_Bullet6" ID="{F06CC513-D11D-43C6-BEBF-0367BBE9810B}" ShortID="474228737">
+											<Language>SFX</Language>
+											<AudioFile>M4_Bullet6.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="M4_Bullet6" ID="{F06CC513-D11D-43C6-BEBF-0367BBE9810B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M4_Bullet7" ID="{69B9321C-D274-4A2B-ADE8-BDE96D76D195}" ShortID="312073602">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M4_Bullet7" ID="{78D60C80-7A98-4F3E-8F54-33B9DEBF76DE}" ShortID="244729419">
+											<Language>SFX</Language>
+											<AudioFile>M4_Bullet7.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="M4_Bullet7" ID="{78D60C80-7A98-4F3E-8F54-33B9DEBF76DE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M4_Bullet8" ID="{75F1BCDF-4642-494F-A9D8-44B9B958A336}" ShortID="142051619">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M4_Bullet8" ID="{B37DD99E-B951-40D0-BDE3-6EB2FDF2F1E1}" ShortID="941649458">
+											<Language>SFX</Language>
+											<AudioFile>M4_Bullet8.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="M4_Bullet8" ID="{B37DD99E-B951-40D0-BDE3-6EB2FDF2F1E1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="M4_Bullet9" ID="{A94F1909-7EEE-41DE-BE9E-8FEDED6F726B}" ShortID="750215956">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="M4_Bullet9" ID="{90BE916C-9A9A-41FE-B626-7405CEA50F69}" ShortID="29139914">
+											<Language>SFX</Language>
+											<AudioFile>M4_Bullet9.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="M4_Bullet9" ID="{90BE916C-9A9A-41FE-B626-7405CEA50F69}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Cannon" ID="{F7F806A6-3C07-4EFA-A830-BF51F30263E3}" ShortID="991004404">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{FE5AD1F1-27D9-4AC6-93BD-A8880E3FE41F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="101"/>
+													<Property Name="Min" Type="Real64" Value="-126"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="flakCannon_01" ID="{48229677-A063-499E-91DE-D99ABF2A46FD}" ShortID="320151044">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="flakCannon_01" ID="{47A2226B-2291-4802-B3B9-88FA6C7F9F50}" ShortID="70083294">
+											<Language>SFX</Language>
+											<AudioFile>flakCannon_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="flakCannon_01" ID="{47A2226B-2291-4802-B3B9-88FA6C7F9F50}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="flakCannon_02" ID="{BED62D3F-0A58-4827-92EE-74406F1DC9F3}" ShortID="904950627">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="flakCannon_02" ID="{C58DC3C2-8FB8-47D6-BCED-00FD23D15744}" ShortID="947771596">
+											<Language>SFX</Language>
+											<AudioFile>flakCannon_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="flakCannon_02" ID="{C58DC3C2-8FB8-47D6-BCED-00FD23D15744}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="flakCannon_03" ID="{DA5867B0-CFD5-4FE3-944D-C400428BBE54}" ShortID="515833911">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="flakCannon_03" ID="{3AEE61F6-9D91-4C8E-ACCF-AE61135790C3}" ShortID="851165369">
+											<Language>SFX</Language>
+											<AudioFile>flakCannon_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="flakCannon_03" ID="{3AEE61F6-9D91-4C8E-ACCF-AE61135790C3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="heavyCannon" ID="{2663907B-0DF2-4FC8-A752-414B40419131}" ShortID="400435166">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D0EC6638-3338-4A27-BF63-00FCC5426D1A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="177"/>
+													<Property Name="Min" Type="Real64" Value="-202"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="flakCannonHeavy_01" ID="{9A396CAE-B00F-4D71-A6CE-3806939D41BB}" ShortID="637728126">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="flakCannonHeavy_01" ID="{A437A98D-74D2-417C-BF00-571B01D152FD}" ShortID="393292651">
+											<Language>SFX</Language>
+											<AudioFile>flakCannonHeavy_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="flakCannonHeavy_01" ID="{A437A98D-74D2-417C-BF00-571B01D152FD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="flakCannonHeavy_02" ID="{7BFB20C2-7849-4060-9045-A0A44F0A73C8}" ShortID="987444540">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="flakCannonHeavy_02" ID="{6492CD94-9F9F-4762-BBE9-1EA08BE2BB5B}" ShortID="663130682">
+											<Language>SFX</Language>
+											<AudioFile>flakCannonHeavy_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="flakCannonHeavy_02" ID="{6492CD94-9F9F-4762-BBE9-1EA08BE2BB5B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="flakCannonHeavy_03" ID="{26CE817E-AC2A-4B86-B850-9DDE9D1CC69A}" ShortID="926910077">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="flakCannonHeavy_03" ID="{C8CF122B-FD3C-498D-B826-B6F505E42E43}" ShortID="639064968">
+											<Language>SFX</Language>
+											<AudioFile>flakCannonHeavy_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="flakCannonHeavy_03" ID="{C8CF122B-FD3C-498D-B826-B6F505E42E43}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<Sound Name="Flames" ID="{751042BC-8414-413A-9193-817CEDA9CF54}" ShortID="640135541">

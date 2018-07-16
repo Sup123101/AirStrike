@@ -8,6 +8,8 @@
 						<ObjectRef Name="PauseMusic" ID="{8C705337-0B8A-4450-8DC7-1A6BA153629B}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ResumeMusic" ID="{0E257BFF-7497-4485-8316-6845000892B4}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopMusic" ID="{FAD78784-1501-4981-BED9-EC48340B0BC7}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="StopEverything" ID="{D9AECC45-9E32-4AD7-A129-1B77F7D76B7E}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stopRocket" ID="{3467EEC2-0371-4AFF-A8B8-94F44A337C2D}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlayMusic" ID="{AF986F05-6B34-4C60-A9A2-89EF7B48EFE7}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -18,6 +20,29 @@
 						<ObjectRef Name="sandExplosion" ID="{BACD1B01-7540-498C-8972-F3F5BB5313FE}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="metalExplosion" ID="{50689751-8993-4A0A-B5A9-2F6890F84D34}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="normalExplosion" ID="{26700B27-D674-4F97-A982-ED84B1EA977B}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Weapons" ID="{542B9C9B-3CF4-4006-A266-E05B10D29F59}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Rocket" ID="{88D5969E-1F93-4198-A59A-5F8A8BA63DB6}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Cannon" ID="{958B6742-B2A7-4324-B165-53783DDD9973}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="heavyCannon" ID="{D694DB51-9963-45BD-A7D6-DAE8A180C846}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="M4Single" ID="{3C2F2215-89DE-49F3-8437-D8E01B403AC2}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stopRocket" ID="{3467EEC2-0371-4AFF-A8B8-94F44A337C2D}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stopMissile" ID="{1808C689-AAF4-4CCD-8EA0-0722AAC6D9A7}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Missile" ID="{AD61F9E4-FB3F-4D42-B7FF-CFA4DEF981EF}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="aiEngines" ID="{7EA9878C-39C1-49B8-A26D-7F403E6FD78B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="startWW2Engine" ID="{E943A441-ECAF-4734-AB37-8B41BB615204}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stopWW2Engine" ID="{CAD9A0EC-CB67-48CB-AA77-16FAB5D90CBB}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="startModernEngine" ID="{3D47D1D1-608C-4966-8A0E-12C9C59B3FB6}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stopModernEngine" ID="{1C896CE1-194F-4DFC-973D-C67D9171BE25}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -1,7 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	417627684	PlayMusic			\Default Work Unit\Music\PlayMusic	
 	1127073398	PauseMusic			\Default Work Unit\Music\PauseMusic	
+	1722492221	stopRocket			\Default Work Unit\Weapons\stopRocket	
 	1917263390	stopMusic			\Default Work Unit\Music\stopMusic	
+	1940514798	StopEverything			\Default Work Unit\StopEverything	
 	2170724709	ResumeMusic			\Default Work Unit\Music\ResumeMusic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size

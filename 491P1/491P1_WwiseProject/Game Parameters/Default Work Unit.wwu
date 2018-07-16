@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{17EE0D07-72FB-4DD9-8C29-9172CEEA69F8}" SchemaVersion="85">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{17EE0D07-72FB-4DD9-8C29-9172CEEA69F8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{17EE0D07-72FB-4DD9-8C29-9172CEEA69F8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Engines" ID="{F29A7F2C-6233-4288-A424-9F26F0DFE40D}" ShortID="206613757">
+					<ChildrenList>
+						<GameParameter Name="classicDoppler" ID="{B20F487D-957C-4126-AAC5-ABBACE46784E}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="2"/>
+								<Property Name="Min" Type="Real64" Value="0.4"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="modernDoppler" ID="{DBEF32DB-3273-444C-8E6C-C399DB271E5C}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="2"/>
+								<Property Name="Min" Type="Real64" Value="0.4"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="starFighterDoppler" ID="{260E2DE0-73C4-4111-AF1A-253B8523D756}"/>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Missiles" ID="{D58F089F-2316-476F-B995-97C4CF0A485A}" ShortID="745595490">
+					<ChildrenList>
+						<GameParameter Name="missileDoppler" ID="{C4E937F1-9106-4590-82CF-18A8884F2493}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Rockets" ID="{302D62B3-9D95-4877-B862-6445B1FC6F64}" ShortID="511450079">
+					<ChildrenList>
+						<GameParameter Name="rocketDoppler" ID="{85468FF5-D0EC-49F5-ABB0-439BE3374762}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="1"/>
+								<Property Name="Max" Type="Real64" Value="2"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

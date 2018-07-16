@@ -24,12 +24,15 @@ public class MusicManager : MonoBehaviour {
 	//only used to restart music after player dies
 	public void playModeMusic()
 	{
+		//AkSoundEngine.PostEvent ("StopEverything", this.gameObject);
 		AkSoundEngine.PostEvent ("stopMusic", this.gameObject);
 		AkSoundEngine.PostEvent ("PlayMusic", this.gameObject);
 		if (currentMode == 0) {
+			
 			AkSoundEngine.SetSwitch ("Music", "Menu", this.gameObject);
 		}
 		if (currentMode == 1) {
+			
 			AkSoundEngine.SetSwitch ("Music", "Classic", this.gameObject);
 			/*
 			print ("this gets called");
@@ -40,27 +43,33 @@ public class MusicManager : MonoBehaviour {
 			*/
 		}
 		if (currentMode == 2) {
+			
 			AkSoundEngine.SetSwitch ("Music", "Modern", this.gameObject);
 		}
 		if (currentMode == 3) {
+			
 			AkSoundEngine.SetSwitch ("Music", "Starfighter", this.gameObject);
 		}
 
 	}
 	public void switchMenu()
 	{
+		//AkSoundEngine.PostEvent ("StopEverything", this.gameObject);
 		AkSoundEngine.SetSwitch ("Music", "Menu", this.gameObject);
 	}
 	public void switchClassic()
 	{
+		//AkSoundEngine.PostEvent ("StopEverything", this.gameObject);
 		AkSoundEngine.SetSwitch ("Music", "Classic", this.gameObject);
 	}
 	public void switchModern()
 	{
+		//AkSoundEngine.PostEvent ("StopEverything", this.gameObject);
 		AkSoundEngine.SetSwitch ("Music", "Modern", this.gameObject);
 	}
 	public void switchstarFighter()
 	{
+		//AkSoundEngine.PostEvent ("StopEverything", this.gameObject);
 		AkSoundEngine.SetSwitch ("Music", "Starfighter", this.gameObject);
 	}
 	public void pauseMusic()

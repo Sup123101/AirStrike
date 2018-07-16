@@ -410,8 +410,19 @@ namespace HWRWeaponSystem
 					if (SoundGun.Length > 0) {
 						if (audioSource != null && audioSource.isActiveAndEnabled) {
 							audioSource.PlayOneShot (SoundGun [Random.Range (0, SoundGun.Length)]);
-							//print ("firing the M4 GUn");
-							//print ("this object is " + gameObject.name);
+
+							print ("firing the M4 GUn");
+							print ("this object is " + gameObject.name);
+							if (gameObject.name == "weapon_minigun") {
+								AkSoundEngine.PostEvent ("M4Single", gameObject);
+							}
+							if (gameObject.name == "weapon_flakgun") {
+								AkSoundEngine.PostEvent ("Cannon", gameObject);
+							}
+							if (gameObject.name == "cannon") {
+								AkSoundEngine.PostEvent ("heavyCannon", gameObject);
+							}
+							
 						}
 					}
 			
