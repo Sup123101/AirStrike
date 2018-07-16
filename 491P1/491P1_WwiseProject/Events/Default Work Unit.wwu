@@ -63,6 +63,52 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Explosions" ID="{38303302-D898-4676-AD1D-CF4FEBFC1A5A}" ShortID="409997779">
+					<ChildrenList>
+						<Event Name="sandExplosion" ID="{BACD1B01-7540-498C-8972-F3F5BB5313FE}">
+							<ChildrenList>
+								<Action Name="" ID="{D939283A-0D2D-4A05-A946-5921A9B22C38}" ShortID="751148982">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sand" ID="{C4FBC65B-9F55-4476-956B-90A258FDDB93}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="metalExplosion" ID="{50689751-8993-4A0A-B5A9-2F6890F84D34}">
+							<ChildrenList>
+								<Action Name="" ID="{F21D51F7-003F-44C8-9D50-D03525245271}" ShortID="211920504">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Metal" ID="{CFF20FB0-0F96-4250-B860-3D27B05C1E6B}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="normalExplosion" ID="{26700B27-D674-4F97-A982-ED84B1EA977B}">
+							<ChildrenList>
+								<Action Name="" ID="{F77FF322-37A9-4A9C-804A-045536A811C9}" ShortID="987932801">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Normal" ID="{0E374EBC-D10B-48B5-9FD6-F84B441C00A2}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

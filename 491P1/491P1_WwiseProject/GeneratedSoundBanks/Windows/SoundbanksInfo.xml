@@ -11,6 +11,58 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="753483701" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Explosions</ObjectPath>
+			<ShortName>Explosions</ShortName>
+			<Path>Explosions.bnk</Path>
+			<IncludedEvents>
+				<Event Id="870974975" Name="metalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\metalExplosion" MaxAttenuation="2000.000000"/>
+				<Event Id="3349451189" Name="normalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\normalExplosion" MaxAttenuation="2000.000000"/>
+				<Event Id="1702134784" Name="sandExplosion" ObjectPath="\Events\Default Work Unit\Explosions\sandExplosion" MaxAttenuation="2000.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="101869958" Language="SFX">
+					<ShortName>sandExplosion_03.wav</ShortName>
+					<Path>SFX/sandExplosion_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="106490643" Language="SFX">
+					<ShortName>Explosion_03.wav</ShortName>
+					<Path>SFX/Explosion_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="241170414" Language="SFX">
+					<ShortName>Explosion_01.wav</ShortName>
+					<Path>SFX/Explosion_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="324887684" Language="SFX">
+					<ShortName>metalExplosion_02.wav</ShortName>
+					<Path>SFX/metalExplosion_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="390717481" Language="SFX">
+					<ShortName>metalExplosion_04.wav</ShortName>
+					<Path>SFX/metalExplosion_04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="510195601" Language="SFX">
+					<ShortName>sandExplosion_02.wav</ShortName>
+					<Path>SFX/sandExplosion_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="531275606" Language="SFX">
+					<ShortName>Explosion_02.wav</ShortName>
+					<Path>SFX/Explosion_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="532973246" Language="SFX">
+					<ShortName>metalExplosion_01.wav</ShortName>
+					<Path>SFX/metalExplosion_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="599634381" Language="SFX">
+					<ShortName>sandExplosion_01.wav</ShortName>
+					<Path>SFX/sandExplosion_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="766503413" Language="SFX">
+					<ShortName>metalExplosion_03.wav</ShortName>
+					<Path>SFX/metalExplosion_03_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>

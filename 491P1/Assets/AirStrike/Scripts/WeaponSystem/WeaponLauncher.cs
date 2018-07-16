@@ -410,7 +410,8 @@ namespace HWRWeaponSystem
 					if (SoundGun.Length > 0) {
 						if (audioSource != null && audioSource.isActiveAndEnabled) {
 							audioSource.PlayOneShot (SoundGun [Random.Range (0, SoundGun.Length)]);
-
+							//print ("firing the M4 GUn");
+							//print ("this object is " + gameObject.name);
 						}
 					}
 			

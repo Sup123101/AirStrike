@@ -25,6 +25,20 @@ namespace HWRWeaponSystem
 				if (hit.GetComponent<Rigidbody>()) {
 					hit.GetComponent<Rigidbody>().AddExplosionForce (Force, explosionPos, Radius, 3.0f);
 				}
+				print ("something exploded");
+				print ("what did it hit " + hit.gameObject.tag);
+				if (hit.gameObject.tag == "Scene") {
+					AkSoundEngine.PostEvent ("metalExplosion", hit.gameObject);
+				}
+				if (hit.gameObject.tag == "Enemy") {
+					AkSoundEngine.PostEvent ("sandExplosion", hit.gameObject);
+				}
+				if (hit.gameObject.tag == "Player") {
+					AkSoundEngine.PostEvent ("metalExplosion", hit.gameObject);
+				}
+				if (hit.gameObject.tag == "Untagged") {
+					AkSoundEngine.PostEvent ("metalExplosion", hit.gameObject);
+				}
 			}
 		}
 	}

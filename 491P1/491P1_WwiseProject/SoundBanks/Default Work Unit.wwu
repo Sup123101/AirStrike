@@ -7,7 +7,17 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="PauseMusic" ID="{8C705337-0B8A-4450-8DC7-1A6BA153629B}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ResumeMusic" ID="{0E257BFF-7497-4485-8316-6845000892B4}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stopMusic" ID="{FAD78784-1501-4981-BED9-EC48340B0BC7}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PlayMusic" ID="{AF986F05-6B34-4C60-A9A2-89EF7B48EFE7}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Explosions" ID="{F61B6194-4F4D-4D7A-A31D-11FD7E13DF4A}">
+					<ObjectInclusionList>
+						<ObjectRef Name="sandExplosion" ID="{BACD1B01-7540-498C-8972-F3F5BB5313FE}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="metalExplosion" ID="{50689751-8993-4A0A-B5A9-2F6890F84D34}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="normalExplosion" ID="{26700B27-D674-4F97-A982-ED84B1EA977B}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
