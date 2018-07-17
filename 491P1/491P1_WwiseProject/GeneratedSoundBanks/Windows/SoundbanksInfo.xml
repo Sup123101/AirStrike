@@ -196,8 +196,13 @@
 			<IncludedEvents>
 				<Event Id="36280251" Name="lockOn" ObjectPath="\Events\Default Work Unit\Alerts\lockOn"/>
 				<Event Id="3403829859" Name="stopLockOn" ObjectPath="\Events\Default Work Unit\Alerts\stopLockOn" MaxAttenuation="0.000000"/>
+				<Event Id="3339837753" Name="weaponChange" ObjectPath="\Events\Default Work Unit\Alerts\weaponChange"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="184239255" Language="SFX">
+					<ShortName>weaponSwitch.wav</ShortName>
+					<Path>SFX/weaponSwitch_EC35753D.wem</Path>
+				</File>
 				<File Id="306576491" Language="SFX">
 					<ShortName>lockOnStart.wav</ShortName>
 					<Path>SFX/lockOnStart_1C9C67B2.wem</Path>

@@ -36,6 +36,7 @@ namespace AirStrikeKit
         public GameObject musicManager;
         private MusicManager musicScript;
         public GameObject playerEngineAudio;
+        public bool isPlayer;
 
 		void Awake(){
 			AirStrikeGame.playerController = this;
@@ -170,25 +171,16 @@ namespace AirStrikeKit
 			flight.SpeedUp (Input.GetAxis ("Vertical"));
             if ((Input.GetAxis("Vertical")) > 0)
             {
-                print("speeding up");
+                
                 currentAccel = true;
 
             }
             if ((Input.GetAxis("Vertical")) <= 0)
             {
-                print("slowing down");
+                
                 currentAccel = false;
             }
-            /*
-            if (Input.GetKey("w"))
-            {
-                print("speeding up");
-
-            }
-            if (Input.GetKeyUp("w"))
-            {
-                print("slowing down");
-            } */
+           
 		     
 			if (Input.GetButton ("Fire1")) {
 				flight.WeaponControl.LaunchWeapon ();
@@ -199,12 +191,14 @@ namespace AirStrikeKit
 		
 			if (Input.GetButtonDown ("Fire2")) {
 				flight.WeaponControl.SwitchWeapon ();
+
 			}
 		
 			if (Input.GetKeyDown (KeyCode.C)) {
 				if (View)
 					View.SwitchCameras ();	
 			}	
+
 		}
 
 		void MobileController ()

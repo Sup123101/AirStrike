@@ -57,6 +57,7 @@ namespace AK
         static const AkUniqueID STOPSTARENEMYENGINE = 272552693U;
         static const AkUniqueID STOPSTARLOWHPENGINE = 920968951U;
         static const AkUniqueID STOPWW2ENGINE = 3970229609U;
+        static const AkUniqueID WEAPONCHANGE = 3339837753U;
     } // namespace EVENTS
 
     namespace STATES

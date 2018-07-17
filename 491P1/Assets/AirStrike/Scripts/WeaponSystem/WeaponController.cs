@@ -9,7 +9,7 @@ namespace HWRWeaponSystem
 		public WeaponLauncher[] WeaponLists;
 		public int CurrentWeapon = 0;
 		public bool ShowCrosshair = true;
-	
+        public bool isPlayer;
 		void Awake ()
 		{
 			// find all attached weapons.
@@ -65,6 +65,7 @@ namespace HWRWeaponSystem
 	
 		public void SwitchWeapon ()
 		{
+            
 			CurrentWeapon += 1;
 			if (CurrentWeapon >= WeaponLists.Length) {
 				CurrentWeapon = 0;	
@@ -73,7 +74,12 @@ namespace HWRWeaponSystem
 			for (int i=0; i<WeaponLists.Length; i++) {
 				if (CurrentWeapon == i) {
 					WeaponLists [i].OnActive = true;
-					//HideWeapon(WeaponLists[i].gameObject,true);
+                    if (isPlayer == true)
+                    {
+                        AkSoundEngine.PostEvent("weaponChange", gameObject);
+                    }
+                    //HideWeapon(WeaponLists[i].gameObject,true);
+                    print("occured");
 				} else {
 					//HideWeapon(WeaponLists[i].gameObject,false);
 					WeaponLists [i].OnActive = false;
