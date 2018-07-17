@@ -55,11 +55,21 @@
 			<ShortName>Explosions</ShortName>
 			<Path>Explosions.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1295429296" Name="flakExplosion" ObjectPath="\Events\Default Work Unit\Explosions\flakExplosion" MaxAttenuation="4000.000000"/>
+				<Event Id="63450460" Name="FXExplosion" ObjectPath="\Events\Default Work Unit\Explosions\FXExplosion" MaxAttenuation="4000.000000"/>
 				<Event Id="870974975" Name="metalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\metalExplosion" MaxAttenuation="4000.000000"/>
 				<Event Id="3349451189" Name="normalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\normalExplosion" MaxAttenuation="4000.000000"/>
 				<Event Id="1702134784" Name="sandExplosion" ObjectPath="\Events\Default Work Unit\Explosions\sandExplosion" MaxAttenuation="4000.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="805435" Language="SFX">
+					<ShortName>Explosion_02.wav</ShortName>
+					<Path>SFX/Explosion_02_FC552E21.wem</Path>
+				</File>
+				<File Id="34444945" Language="SFX">
+					<ShortName>Explosion_01.wav</ShortName>
+					<Path>SFX/Explosion_01_9E97DB7B.wem</Path>
+				</File>
 				<File Id="101869958" Language="SFX">
 					<ShortName>sandExplosion_03.wav</ShortName>
 					<Path>SFX/sandExplosion_03_1C9C67B2.wem</Path>
@@ -72,13 +82,21 @@
 					<ShortName>Explosion_01.wav</ShortName>
 					<Path>SFX/Explosion_01_1C9C67B2.wem</Path>
 				</File>
+				<File Id="241938170" Language="SFX">
+					<ShortName>Explosion_03.wav</ShortName>
+					<Path>SFX/Explosion_03_11F4B4BF.wem</Path>
+				</File>
 				<File Id="324887684" Language="SFX">
 					<ShortName>metalExplosion_02.wav</ShortName>
-					<Path>SFX/metalExplosion_02_1C9C67B2.wem</Path>
+					<Path>SFX/metalExplosion_02_BC82E331.wem</Path>
 				</File>
 				<File Id="390717481" Language="SFX">
 					<ShortName>metalExplosion_04.wav</ShortName>
-					<Path>SFX/metalExplosion_04_1C9C67B2.wem</Path>
+					<Path>SFX/metalExplosion_04_6EABD5A5.wem</Path>
+				</File>
+				<File Id="409699218" Language="SFX">
+					<ShortName>flakExplosion_01.wav</ShortName>
+					<Path>SFX/flakExplosion_01_68EA10C3.wem</Path>
 				</File>
 				<File Id="510195601" Language="SFX">
 					<ShortName>sandExplosion_02.wav</ShortName>
@@ -90,7 +108,7 @@
 				</File>
 				<File Id="532973246" Language="SFX">
 					<ShortName>metalExplosion_01.wav</ShortName>
-					<Path>SFX/metalExplosion_01_1C9C67B2.wem</Path>
+					<Path>SFX/metalExplosion_01_6C1C82F1.wem</Path>
 				</File>
 				<File Id="599634381" Language="SFX">
 					<ShortName>sandExplosion_01.wav</ShortName>
@@ -98,7 +116,160 @@
 				</File>
 				<File Id="766503413" Language="SFX">
 					<ShortName>metalExplosion_03.wav</ShortName>
-					<Path>SFX/metalExplosion_03_1C9C67B2.wem</Path>
+					<Path>SFX/metalExplosion_03_59EED792.wem</Path>
+				</File>
+				<File Id="891137738" Language="SFX">
+					<ShortName>flakExplosion_02.wav</ShortName>
+					<Path>SFX/flakExplosion_02_A10A2F86.wem</Path>
+				</File>
+				<File Id="1054171988" Language="SFX">
+					<ShortName>flakExplosion_03.wav</ShortName>
+					<Path>SFX/flakExplosion_03_E99D4C8F.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="852736692" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\playerEngine</ObjectPath>
+			<ShortName>playerEngine</ShortName>
+			<Path>playerEngine.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3750477901" Name="startClassicPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startClassicPEngine" MaxAttenuation="150.000000"/>
+				<Event Id="1462390100" Name="startModernPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startModernPEngine" MaxAttenuation="150.000000"/>
+				<Event Id="1146369487" Name="startStarPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startStarPEngine" MaxAttenuation="150.000000"/>
+				<Event Id="2473397641" Name="stopPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\stopPEngine" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="16283810" Language="SFX">
+					<ShortName>starhighSpeedLoop.wav</ShortName>
+					<Path>SFX/starhighSpeedLoop_F17FB28C.wem</Path>
+				</File>
+				<File Id="50158974" Language="SFX">
+					<ShortName>moderHighSpeedLoop.wav</ShortName>
+					<Path>SFX/moderHighSpeedLoop_F17FB28C.wem</Path>
+				</File>
+				<File Id="246546007" Language="SFX">
+					<ShortName>starnormalLoop.wav</ShortName>
+					<Path>SFX/starnormalLoop_F17FB28C.wem</Path>
+				</File>
+				<File Id="349238628" Language="SFX">
+					<ShortName>starSlowDown.wav</ShortName>
+					<Path>SFX/starSlowDown_66D346E0.wem</Path>
+				</File>
+				<File Id="442376208" Language="SFX">
+					<ShortName>classicslowDown.wav</ShortName>
+					<Path>SFX/classicslowDown_1C9C67B2.wem</Path>
+				</File>
+				<File Id="460638834" Language="SFX">
+					<ShortName>classichighSpeedLoop.wav</ShortName>
+					<Path>SFX/classichighSpeedLoop_F17FB28C.wem</Path>
+				</File>
+				<File Id="471881994" Language="SFX">
+					<ShortName>modernSlowDown.wav</ShortName>
+					<Path>SFX/modernSlowDown_1C9C67B2.wem</Path>
+				</File>
+				<File Id="647999113" Language="SFX">
+					<ShortName>starSpeedUp.wav</ShortName>
+					<Path>SFX/starSpeedUp_1C9C67B2.wem</Path>
+				</File>
+				<File Id="659391842" Language="SFX">
+					<ShortName>classicspeedUp.wav</ShortName>
+					<Path>SFX/classicspeedUp_1C9C67B2.wem</Path>
+				</File>
+				<File Id="950187301" Language="SFX">
+					<ShortName>classicnormalLoop.wav</ShortName>
+					<Path>SFX/classicnormalLoop_F17FB28C.wem</Path>
+				</File>
+				<File Id="1035854733" Language="SFX">
+					<ShortName>normalLoop.wav</ShortName>
+					<Path>SFX/normalLoop_F17FB28C.wem</Path>
+				</File>
+				<File Id="1048085161" Language="SFX">
+					<ShortName>modernSpeedUp.wav</ShortName>
+					<Path>SFX/modernSpeedUp_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="986855776" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Alerts</ObjectPath>
+			<ShortName>Alerts</ShortName>
+			<Path>Alerts.bnk</Path>
+			<IncludedEvents>
+				<Event Id="36280251" Name="lockOn" ObjectPath="\Events\Default Work Unit\Alerts\lockOn"/>
+				<Event Id="3403829859" Name="stopLockOn" ObjectPath="\Events\Default Work Unit\Alerts\stopLockOn" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="306576491" Language="SFX">
+					<ShortName>lockOnStart.wav</ShortName>
+					<Path>SFX/lockOnStart_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1057588654" Language="SFX">
+					<ShortName>lockOnLoop.wav</ShortName>
+					<Path>SFX/lockOnLoop_F17FB28C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1316910230" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Impacts</ObjectPath>
+			<ShortName>Impacts</ShortName>
+			<Path>Impacts.bnk</Path>
+			<IncludedEvents>
+				<Event Id="730234386" Name="metalBullet" ObjectPath="\Events\Default Work Unit\Impacts\metalBullet" MaxAttenuation="320.000000"/>
+				<Event Id="2387391939" Name="metalSear" ObjectPath="\Events\Default Work Unit\Impacts\metalSear" MaxAttenuation="320.000000"/>
+				<Event Id="1915059747" Name="sandBullet" ObjectPath="\Events\Default Work Unit\Impacts\sandBullet" MaxAttenuation="180.000000"/>
+				<Event Id="3381906398" Name="sandSear" ObjectPath="\Events\Default Work Unit\Impacts\sandSear" MaxAttenuation="320.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="10769277" Language="SFX">
+					<ShortName>metalSear_02.wav</ShortName>
+					<Path>SFX/metalSear_02_6534E732.wem</Path>
+				</File>
+				<File Id="253379395" Language="SFX">
+					<ShortName>sandSear_02.wav</ShortName>
+					<Path>SFX/sandSear_02_B90E1073.wem</Path>
+				</File>
+				<File Id="325443002" Language="SFX">
+					<ShortName>MetalHit3.wav</ShortName>
+					<Path>SFX/MetalHit3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="344277745" Language="SFX">
+					<ShortName>sandSear_01.wav</ShortName>
+					<Path>SFX/sandSear_01_6A0F7D6C.wem</Path>
+				</File>
+				<File Id="522475909" Language="SFX">
+					<ShortName>sandBullet_04.wav</ShortName>
+					<Path>SFX/sandBullet_04_1C9C67B2.wem</Path>
+				</File>
+				<File Id="592069702" Language="SFX">
+					<ShortName>sandBullet_03.wav</ShortName>
+					<Path>SFX/sandBullet_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="630939987" Language="SFX">
+					<ShortName>sandBullet_02.wav</ShortName>
+					<Path>SFX/sandBullet_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="688253071" Language="SFX">
+					<ShortName>MetalHit2.wav</ShortName>
+					<Path>SFX/MetalHit2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="824591215" Language="SFX">
+					<ShortName>MetalHit1.wav</ShortName>
+					<Path>SFX/MetalHit1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="866795515" Language="SFX">
+					<ShortName>metalSear_01.wav</ShortName>
+					<Path>SFX/metalSear_01_DDAD86F0.wem</Path>
+				</File>
+				<File Id="985668054" Language="SFX">
+					<ShortName>metalSear_03.wav</ShortName>
+					<Path>SFX/metalSear_03_E86CBB8E.wem</Path>
+				</File>
+				<File Id="988056856" Language="SFX">
+					<ShortName>sandSear_03.wav</ShortName>
+					<Path>SFX/sandSear_03_DB3F2314.wem</Path>
+				</File>
+				<File Id="1050266739" Language="SFX">
+					<ShortName>sandBullet_01.wav</ShortName>
+					<Path>SFX/sandBullet_01_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -113,66 +284,83 @@
 			<Path>Weapons.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2393348022" Name="Cannon" ObjectPath="\Events\Default Work Unit\Weapons\Cannon" MaxAttenuation="250.000000"/>
+				<Event Id="63450460" Name="FXExplosion" ObjectPath="\Events\Default Work Unit\Explosions\FXExplosion" MaxAttenuation="4000.000000"/>
 				<Event Id="4255146761" Name="heavyCannon" ObjectPath="\Events\Default Work Unit\Weapons\heavyCannon" MaxAttenuation="250.000000"/>
 				<Event Id="103780518" Name="laserSingle" ObjectPath="\Events\Default Work Unit\Weapons\laserSingle" MaxAttenuation="250.000000"/>
 				<Event Id="4161220218" Name="M4Single" ObjectPath="\Events\Default Work Unit\Weapons\M4Single" MaxAttenuation="250.000000"/>
 				<Event Id="392504123" Name="Missile" ObjectPath="\Events\Default Work Unit\Weapons\Missile" MaxAttenuation="350.000000"/>
 				<Event Id="2814405" Name="Rocket" ObjectPath="\Events\Default Work Unit\Weapons\Rocket" MaxAttenuation="350.000000"/>
+				<Event Id="3986950909" Name="startBulletLoop" ObjectPath="\Events\Default Work Unit\Weapons\startBulletLoop" MaxAttenuation="300.000000"/>
+				<Event Id="3343066998" Name="startLaserLoop" ObjectPath="\Events\Default Work Unit\Weapons\startLaserLoop"/>
+				<Event Id="8152471" Name="stopBulletLoop" ObjectPath="\Events\Default Work Unit\Weapons\stopBulletLoop" MaxAttenuation="0.000000"/>
+				<Event Id="1745708432" Name="stopLaserLoop" ObjectPath="\Events\Default Work Unit\Weapons\stopLaserLoop" MaxAttenuation="0.000000"/>
 				<Event Id="1060757411" Name="stopMissile" ObjectPath="\Events\Default Work Unit\Weapons\stopMissile" MaxAttenuation="0.000000"/>
 				<Event Id="1722492221" Name="stopRocket" ObjectPath="\Events\Default Work Unit\Weapons\stopRocket" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="29139914" Language="SFX">
-					<ShortName>M4_Bullet9.wav</ShortName>
-					<Path>SFX/M4_Bullet9_1C9C67B2.wem</Path>
+				<File Id="805435" Language="SFX">
+					<ShortName>Explosion_02.wav</ShortName>
+					<Path>SFX/Explosion_02_FC552E21.wem</Path>
+				</File>
+				<File Id="34444945" Language="SFX">
+					<ShortName>Explosion_01.wav</ShortName>
+					<Path>SFX/Explosion_01_9E97DB7B.wem</Path>
 				</File>
 				<File Id="70083294" Language="SFX">
 					<ShortName>flakCannon_01.wav</ShortName>
 					<Path>SFX/flakCannon_01_1C9C67B2.wem</Path>
 				</File>
-				<File Id="244729419" Language="SFX">
-					<ShortName>M4_Bullet7.wav</ShortName>
-					<Path>SFX/M4_Bullet7_1C9C67B2.wem</Path>
+				<File Id="106316613" Language="SFX">
+					<ShortName>M4Single_06.wav</ShortName>
+					<Path>SFX/M4Single_06_1C9C67B2.wem</Path>
+				</File>
+				<File Id="174423989" Language="SFX">
+					<ShortName>BulletLoop.wav</ShortName>
+					<Path>SFX/BulletLoop_F17FB28C.wem</Path>
+				</File>
+				<File Id="241938170" Language="SFX">
+					<ShortName>Explosion_03.wav</ShortName>
+					<Path>SFX/Explosion_03_11F4B4BF.wem</Path>
 				</File>
 				<File Id="269941041" Language="SFX">
 					<ShortName>missileStart.wav</ShortName>
-					<Path>SFX/missileStart_1C9C67B2.wem</Path>
+					<Path>SFX/missileStart_E956B8F5.wem</Path>
 				</File>
-				<File Id="302067993" Language="SFX">
-					<ShortName>M4_Bullet1.wav</ShortName>
-					<Path>SFX/M4_Bullet1_1C9C67B2.wem</Path>
+				<File Id="275199293" Language="SFX">
+					<ShortName>LaserSingle_03.wav</ShortName>
+					<Path>SFX/LaserSingle_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="358278039" Language="SFX">
+					<ShortName>M4Single_04.wav</ShortName>
+					<Path>SFX/M4Single_04_1C9C67B2.wem</Path>
 				</File>
 				<File Id="393292651" Language="SFX">
 					<ShortName>flakCannonHeavy_01.wav</ShortName>
 					<Path>SFX/flakCannonHeavy_01_1C9C67B2.wem</Path>
 				</File>
-				<File Id="411488687" Language="SFX">
-					<ShortName>M4_Bullet4.wav</ShortName>
-					<Path>SFX/M4_Bullet4_1C9C67B2.wem</Path>
-				</File>
-				<File Id="424754393" Language="SFX">
-					<ShortName>M4_Bullet3.wav</ShortName>
-					<Path>SFX/M4_Bullet3_1C9C67B2.wem</Path>
-				</File>
-				<File Id="474228737" Language="SFX">
-					<ShortName>M4_Bullet6.wav</ShortName>
-					<Path>SFX/M4_Bullet6_1C9C67B2.wem</Path>
+				<File Id="494470110" Language="SFX">
+					<ShortName>LaserLoopHeld.wav</ShortName>
+					<Path>SFX/LaserLoopHeld_F17FB28C.wem</Path>
 				</File>
 				<File Id="495233639" Language="SFX">
 					<ShortName>rocketStart.wav</ShortName>
-					<Path>SFX/rocketStart_1C9C67B2.wem</Path>
-				</File>
-				<File Id="625334731" Language="SFX">
-					<ShortName>M4_Bullet2.wav</ShortName>
-					<Path>SFX/M4_Bullet2_1C9C67B2.wem</Path>
+					<Path>SFX/rocketStart_93A83C96.wem</Path>
 				</File>
 				<File Id="639064968" Language="SFX">
 					<ShortName>flakCannonHeavy_03.wav</ShortName>
 					<Path>SFX/flakCannonHeavy_03_1C9C67B2.wem</Path>
 				</File>
+				<File Id="641865153" Language="SFX">
+					<ShortName>M4Single_05.wav</ShortName>
+					<Path>SFX/M4Single_05_1C9C67B2.wem</Path>
+				</File>
 				<File Id="663130682" Language="SFX">
 					<ShortName>flakCannonHeavy_02.wav</ShortName>
 					<Path>SFX/flakCannonHeavy_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="679313303" Language="SFX">
+					<ShortName>LaserSingle_01.wav</ShortName>
+					<Path>SFX/LaserSingle_01_1C9C67B2.wem</Path>
 				</File>
 				<File Id="683822974" Language="SFX">
 					<ShortName>rocketLoop.wav</ShortName>
@@ -182,21 +370,44 @@
 					<ShortName>missileLoop.wav</ShortName>
 					<Path>SFX/missileLoop_F17FB28C.wem</Path>
 				</File>
-				<File Id="787309428" Language="SFX">
-					<ShortName>M4_Bullet5.wav</ShortName>
-					<Path>SFX/M4_Bullet5_1C9C67B2.wem</Path>
+				<File Id="833945238" Language="SFX">
+					<ShortName>M4Single_01.wav</ShortName>
+					<Path>SFX/M4Single_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="847533646" Language="SFX">
+					<ShortName>LaserSingle_02.wav</ShortName>
+					<Path>SFX/LaserSingle_02_1C9C67B2.wem</Path>
 				</File>
 				<File Id="851165369" Language="SFX">
 					<ShortName>flakCannon_03.wav</ShortName>
 					<Path>SFX/flakCannon_03_1C9C67B2.wem</Path>
 				</File>
-				<File Id="941649458" Language="SFX">
-					<ShortName>M4_Bullet8.wav</ShortName>
-					<Path>SFX/M4_Bullet8_1C9C67B2.wem</Path>
-				</File>
 				<File Id="947771596" Language="SFX">
 					<ShortName>flakCannon_02.wav</ShortName>
 					<Path>SFX/flakCannon_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1013281830" Language="SFX">
+					<ShortName>M4Single_03.wav</ShortName>
+					<Path>SFX/M4Single_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1072179058" Language="SFX">
+					<ShortName>M4Single_02.wav</ShortName>
+					<Path>SFX/M4Single_02_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1802970371" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\FX</ObjectPath>
+			<ShortName>FX</ShortName>
+			<Path>FX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="480525699" Name="startFlames" ObjectPath="\Events\Default Work Unit\FX\startFlames"/>
+				<Event Id="4117621049" Name="stopFlames" ObjectPath="\Events\Default Work Unit\FX\stopFlames" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="781251886" Language="SFX">
+					<ShortName>Flames.wav</ShortName>
+					<Path>SFX/Flames_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

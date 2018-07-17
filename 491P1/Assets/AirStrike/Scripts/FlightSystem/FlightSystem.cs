@@ -232,12 +232,17 @@ namespace AirStrikeKit
 		// Speed up
 		public void SpeedUp (float delta)
 		{
-			if (delta < 0)
-				delta = 0;
+            if (delta < 0)
+            {
+                delta = 0;
 
-			if (delta > 0)
-				MoveSpeed = Mathf.Lerp (MoveSpeed, SpeedMax, Time.deltaTime * AccelerationSpeed);
+            }
 
+            if (delta > 0)
+            {
+                MoveSpeed = Mathf.Lerp(MoveSpeed, SpeedMax, Time.deltaTime * AccelerationSpeed);
+
+            }
 			speedDelta = delta;
 		}
 

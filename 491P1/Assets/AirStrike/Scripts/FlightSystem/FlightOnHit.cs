@@ -40,7 +40,7 @@ namespace AirStrikeKit
 				if (SoundOnHit.Length > 0)
 					AudioSource.PlayClipAtPoint (SoundOnHit [Random.Range (0, SoundOnHit.Length)], this.transform.position);
 				this.transform.root.SendMessage ("ApplyDamage", Damage, SendMessageOptions.DontRequireReceiver);
-
+               // print("we got hit by " + collision.gameObject);
 			}	
 		}
 

@@ -18,6 +18,7 @@ namespace HWRWeaponSystem
 
 			if (Sounds.Length > 0) {
 				AudioSource.PlayClipAtPoint (Sounds [Random.Range (0, Sounds.Length)], transform.position);
+                AkSoundEngine.PostEvent("FXExplosion", gameObject);
 			}
 			if (Prefab) {
 				for (int i = 0; i < Num; i++) {

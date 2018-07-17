@@ -14,6 +14,7 @@ namespace HWRWeaponSystem
 		public float TimeActive = 0;
 		private float timetemp = 0;
 		private ObjectPool objPool;
+		private int soundtoPlay = 0;
 	
 		private void Awake ()
 		{
@@ -55,11 +56,22 @@ namespace HWRWeaponSystem
 			if (Effect) {
 				if (WeaponSystem.Pool != null) {
 					WeaponSystem.Pool.Instantiate (Effect, transform.position, transform.rotation, 3);
+					/*if (soundtoPlay == 2) {
+						AkSoundEngine.PostEvent ("sandBullet", Effect);
+						print ("hit the sand");
+					}*/
 				} else {
 					GameObject obj = (GameObject)Instantiate (Effect, transform.position, transform.rotation);
+					/*if (soundtoPlay == 2) {
+						AkSoundEngine.PostEvent ("sandBullet", obj);
+						print ("hit the sand");
+					}*/
+
 					Destroy (obj, 3);
+
 				}
-			
+
+
 			}
 
 			if (Explosive)
@@ -116,7 +128,59 @@ namespace HWRWeaponSystem
 			if (objPool && !objPool.Active && WeaponSystem.Pool!=null) {
 				return;
 			}
-		
+			//seems to be where regular impacts are
+			//if this is a bullet and bullet_normal(Clone) and whatever you hit.
+			if (gameObject.name == "bullet_normal(Clone)") {
+				
+				if (collision.gameObject.tag == "Player") {
+					soundtoPlay = 1;
+                   // print("bullet hit player");
+					AkSoundEngine.PostEvent ("metalBullet", collision.gameObject);
+				}
+				if (collision.gameObject.tag == "Enemy") {
+					soundtoPlay = 1;
+                   // print("bullet hit enemy");
+					AkSoundEngine.PostEvent ("metalBullet", collision.gameObject);
+				}
+				if (collision.gameObject.tag == "Scene") {
+					soundtoPlay = 2;
+                    //print("bullet hit sand");
+					AkSoundEngine.PostEvent ("sandBullet", collision.gameObject);
+				}
+               
+
+
+			}
+			if (gameObject.name == "bullet_flak(Clone)") {
+
+				if (collision.gameObject.tag == "Player") {
+					//soundtoPlay = 1;
+					//print ("hit Players");
+					AkSoundEngine.PostEvent ("FXExplosion", collision.gameObject);
+				}
+				if (collision.gameObject.tag == "Enemy") {
+					//soundtoPlay = 1;
+					//print ("hit Enemy");
+					AkSoundEngine.PostEvent ("FXExplosion", collision.gameObject);
+				}
+				if (collision.gameObject.tag == "Scene") {
+					//soundtoPlay = 2;
+					//print ("flakked the sand");
+					AkSoundEngine.PostEvent ("FXExplosion", collision.gameObject);
+				}
+                if (collision.gameObject.tag == "Untagged") {
+                    //soundtoPlay = 2;
+                    //print ("flakked the unknown");
+                    AkSoundEngine.PostEvent ("FXExplosion", collision.gameObject);
+                }
+
+
+
+			}
+
+			//print ("something got hit that would be " + collision.gameObject.name);
+			//print ("something got hit tagged " + collision.gameObject.tag);
+			//print (" current objects is " + gameObject.name);
 			if (HitedActive) {
 				if (DoDamageCheck (collision.gameObject) && collision.gameObject.tag != this.gameObject.tag) {
 					if (!Explosive)

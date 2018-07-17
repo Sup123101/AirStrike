@@ -4,20 +4,25 @@ using UnityEngine;
 
 public class rocketAudio : MonoBehaviour {
 
+
 	// Use this for initialization
 	void Start () {
 		
 	}
-	void Awake()
+
+	private void OnDisable()
+	{
+        AkSoundEngine.PostEvent("stopRocket", gameObject);
+	}
+	void OnEnable()
 	{
 		AkSoundEngine.PostEvent ("Rocket", gameObject);
+       
 
 	}
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    
 	void OnDestroy(){
 		AkSoundEngine.PostEvent ("stopRocket", gameObject);
+      
 	}
 }

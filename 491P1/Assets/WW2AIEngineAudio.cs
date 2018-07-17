@@ -25,7 +25,7 @@ public class WW2AIEngineAudio : MonoBehaviour {
 		Vector3 listenerLastPosition = Vector3.zero;
 		void Awake(){
 		    AkSoundEngine.PostEvent ("startWW2Engine", this.gameObject);
-		print ("enemy engine started");
+		//print ("enemy engine started");
 			musicManager = GameObject.Find ("WwiseGlobal");
 			musicScript = musicManager.GetComponent<MusicManager> ();
 			if (musicScript.currentMode == 0) {
@@ -45,8 +45,12 @@ public class WW2AIEngineAudio : MonoBehaviour {
 	void OnDestroy(){
 		AkSoundEngine.PostEvent ("stopWW2Engine", gameObject);
 	}
-		// Update is called once per frame
-		void FixedUpdate () {
+	private void OnDisable()
+	{
+        AkSoundEngine.PostEvent("stopWW2Engine", gameObject);
+	}
+	// Update is called once per frame
+	void FixedUpdate () {
 
 			// get the player object handy for the rest of the script!
 			var player = Listener;

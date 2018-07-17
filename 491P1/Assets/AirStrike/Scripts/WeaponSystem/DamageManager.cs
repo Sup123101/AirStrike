@@ -50,12 +50,12 @@ namespace HWRWeaponSystem
 			if (gameObject.name =="WW2AIFriend(Clone)" )
 			{
 				AkSoundEngine.PostEvent ("metalExplosion", gameObject);
-				print ("friendly died");
+
 			}
 			if (gameObject.name =="WW2ADead(Clone)" )
 			{
 				AkSoundEngine.PostEvent ("metalExplosion", gameObject);
-				print ("enemy Died");
+
 			}
 			if (gameObject.name =="FighterAI(Clone)" )
 			{
@@ -70,32 +70,32 @@ namespace HWRWeaponSystem
 			if (gameObject.name =="X_Fighter(Clone)" )
 			{
 				AkSoundEngine.PostEvent ("normalExplosion", gameObject);
-				print ("enemy partially Died");
+
 			}
 			if (gameObject.name =="Xfighter_Dead(Clone)" )
 			{
 				AkSoundEngine.PostEvent ("metalExplosion", gameObject);
-				print ("enemy");
+
 			}
 			if (gameObject.name =="V_Fighter_AI(Clone)" )
 			{
 				AkSoundEngine.PostEvent ("metalExplosion", gameObject);
-				print ("friendly Died");
+
 			}
 			if (gameObject.name =="V_Fighter" )
 			{
 				AkSoundEngine.PostEvent ("metalExplosion", gameObject);
-				print ("Player Died");
+
 			}
 			if (gameObject.name =="Fighter" )
 			{
 				AkSoundEngine.PostEvent ("metalExplosion", gameObject);
-				print ("Player Died");
+
 			}
 			if (gameObject.name =="WW2" )
 			{
 				AkSoundEngine.PostEvent ("metalExplosion", gameObject);
-				print ("Player Died");
+
 			}
 			if (Effect) {
 				GameObject deadobj = null;

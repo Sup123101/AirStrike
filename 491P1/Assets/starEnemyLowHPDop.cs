@@ -34,6 +34,10 @@ public class starEnemyLowHPDop : MonoBehaviour {
 	void OnDestroy(){
 		AkSoundEngine.PostEvent ("stopStarLowHPEngine", gameObject);
 	}
+	private void OnDisable()
+	{
+        AkSoundEngine.PostEvent("stopStarLowHPEngine", gameObject);
+	}
 	// Update is called once per frame
 	void FixedUpdate () {
 

@@ -45,6 +45,10 @@ public class starAllyDoppler : MonoBehaviour {
 	void OnDestroy(){
 		AkSoundEngine.PostEvent ("stopStarAllyEngine", gameObject);
 	}
+	private void OnDisable()
+	{
+        AkSoundEngine.PostEvent("stopStarAllyEngine", gameObject);
+	}
 	// Update is called once per frame
 	void FixedUpdate () {
 

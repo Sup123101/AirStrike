@@ -62,6 +62,7 @@ namespace AirStrikeKit
 
 		public void DrawNavEnemy ()
 		{
+            
 			// find all target in TargetTag[]
 			for (int t = 0; t < TargetTag.Length; t++) {
 				if (GameObject.FindGameObjectsWithTag (TargetTag [t]).Length > 0) {
@@ -75,7 +76,7 @@ namespace AirStrikeKit
 								if (DistanceSee > dis) {
 									// Draw the indicator
 									DrawTargetLockon (objs [i].transform, t);
-							
+
 								}
 							}
 						}
@@ -93,14 +94,16 @@ namespace AirStrikeKit
 					if (Crosshair)
 						GUI.DrawTexture (new Rect ((Screen.width / 2 - Crosshair.width / 2) + CrosshairOffset.x, (Screen.height / 2 - Crosshair.height / 2) + CrosshairOffset.y, Crosshair.width, Crosshair.height), Crosshair);	
 					DrawNavEnemy ();
+
 					break;
 				case NavMode.Cockpit:
 					if (Crosshair_in)
 						GUI.DrawTexture (new Rect ((Screen.width / 2 - Crosshair_in.width / 2) + CrosshairOffset_in.x, (Screen.height / 2 - Crosshair_in.height / 2) + CrosshairOffset_in.y, Crosshair_in.width, Crosshair_in.height), Crosshair_in);	
 					DrawNavEnemy ();
+                       
 					break;
 				case NavMode.None:
-				
+                        
 					break;
 				}
 
@@ -111,7 +114,7 @@ namespace AirStrikeKit
 		public void DrawTargetLockon (Transform aimtarget, int type)
 		{
 		
-		
+           
 			if (CurrentCamera != null) {
 				Vector3 dir = (aimtarget.position - CurrentCamera.transform.position).normalized;
 				float direction = Vector3.Dot (dir, CurrentCamera.transform.forward);
@@ -120,7 +123,7 @@ namespace AirStrikeKit
 					//float distance = Vector3.Distance (transform.position, aimtarget.transform.position);
 				
 					GUI.DrawTexture (new Rect (screenPos.x - NavTexture [type].width / 2, Screen.height - screenPos.y - NavTexture [type].height / 2, NavTexture [type].width, NavTexture [type].height), NavTexture [type]);
-            	
+
 				}
 			}
 		}

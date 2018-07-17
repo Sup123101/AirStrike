@@ -54,6 +54,11 @@ namespace HWRWeaponSystem
 		public float ReloadingProcess;
 		public GameObject CrosshairObject;
 		private GameObject crosshair;
+        private bool lockStatus = false;
+        private bool previousLockStatus = false;
+        public GameObject musicManager;
+        private MusicManager musicScript;
+        public bool thisisPlayer;
 
 		private void Start ()
 		{
@@ -70,6 +75,8 @@ namespace HWRWeaponSystem
 				crosshair = (GameObject)GameObject.Instantiate (CrosshairObject.gameObject, this.transform.position, CrosshairObject.transform.rotation);	
 		
 			}
+            musicManager = GameObject.Find("WwiseGlobal");
+            musicScript = musicManager.GetComponent<MusicManager>();
 		}
 
 		[HideInInspector]
@@ -113,10 +120,21 @@ namespace HWRWeaponSystem
 			if (OnActive) {
 				rayAiming ();
 			}
-		}
 
+		}
+		private void OnDestroy()
+		{
+            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+		}
+		private void OnDisable()
+		{
+            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+		}
 		private void Update ()
 		{
+
+           
+
 			if (CurrentCamera == null) {
 			
 				CurrentCamera = Camera.main;
@@ -129,6 +147,52 @@ namespace HWRWeaponSystem
 					CurrentCamera = Camera.current;
 				}
 			}
+            if (musicScript.currentMode == 3)
+            {
+
+                if (previousLockStatus == false)
+                {
+                    if (lockStatus == true)
+                    {
+                        AkSoundEngine.PostEvent("lockOn", CurrentCamera.gameObject);
+                        previousLockStatus = true;
+                    }
+
+                }
+                if (previousLockStatus == true)
+                {
+                    if (lockStatus == false)
+                    {
+                        AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+                        previousLockStatus = false;
+                    }
+
+                }
+            }
+            if (musicScript.currentMode == 2)
+            {
+                if (thisisPlayer == true)
+                {
+                    if (previousLockStatus == false)
+                    {
+                        if (lockStatus == true)
+                        {
+                            AkSoundEngine.PostEvent("lockOn", CurrentCamera.gameObject);
+                            previousLockStatus = true;
+                        }
+
+                    }
+                    if (previousLockStatus == true)
+                    {
+                        if (lockStatus == false)
+                        {
+                            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+                            previousLockStatus = false;
+                        }
+
+                    }
+                }
+            }
 
 			if (OnActive) {
 		
@@ -213,7 +277,7 @@ namespace HWRWeaponSystem
 			}
 		}
 
-		public Camera CurrentCamera;
+		public Camera CurrentCamera; //reference camera being used right now
 
 		private void DrawTargetLockon (Transform aimtarget, bool locked)
 		{
@@ -235,13 +299,15 @@ namespace HWRWeaponSystem
 					Vector3 screenPos = CurrentCamera.WorldToScreenPoint (aimtarget.transform.position);
 					float distance = Vector3.Distance (transform.position, aimtarget.transform.position);
 					if (locked) {
-						if (TargetLockedTexture)
+                        if (TargetLockedTexture)
+                            
 							GUI.DrawTexture (new Rect (screenPos.x - TargetLockedTexture.width / 2, Screen.height - screenPos.y - TargetLockedTexture.height / 2, TargetLockedTexture.width, TargetLockedTexture.height), TargetLockedTexture);
 						GUI.Label (new Rect (screenPos.x + 40, Screen.height - screenPos.y, 200, 30), aimtarget.name + " " + Mathf.Floor (distance) + "m.");
 					} else {
 						if (TargetLockOnTexture)
 							GUI.DrawTexture (new Rect (screenPos.x - TargetLockOnTexture.width / 2, Screen.height - screenPos.y - TargetLockOnTexture.height / 2, TargetLockOnTexture.width, TargetLockOnTexture.height), TargetLockOnTexture);
-					}
+                        
+                    }
 				
             	
 				}
@@ -278,11 +344,14 @@ namespace HWRWeaponSystem
            
 					if (target) {
 						DrawTargetLockon (target.transform, true);
+                       print("locked on target");
+                        lockStatus = true;
 					}
             
 					for (int t = 0; t < TargetTag.Length; t++) {
 						if (GameObject.FindGameObjectsWithTag (TargetTag [t]).Length > 0) {
 							GameObject[] objs = GameObject.FindGameObjectsWithTag (TargetTag [t]);
+                           
 							for (int i = 0; i < objs.Length; i++) {
 								if (objs [i]) {
 									Vector3 dir = (objs [i].transform.position - transform.position).normalized;
@@ -291,6 +360,7 @@ namespace HWRWeaponSystem
 										float dis = Vector3.Distance (objs [i].transform.position, transform.position);
 										if (DistanceLock > dis) {
 											DrawTargetLockon (objs [i].transform, false);
+                                            print("locked on target3");
 										}
 									}
 								}
@@ -308,6 +378,8 @@ namespace HWRWeaponSystem
 		{
 			timetolockcount = Time.time;
 			target = null;
+            print("no longer locked");
+            lockStatus = false;
 		}
 
 		private int currentOuter = 0;
@@ -395,6 +467,7 @@ namespace HWRWeaponSystem
 							shelloutpos = ShellOuter [currentOuter];
 						}
 						GameObject shell;
+
 						if (WeaponSystem.Pool != null) {
 							shell = WeaponSystem.Pool.Instantiate (Shell, shelloutpos.position, Random.rotation, ShellLifeTime);
 						} else {
@@ -411,8 +484,8 @@ namespace HWRWeaponSystem
 						if (audioSource != null && audioSource.isActiveAndEnabled) {
 							audioSource.PlayOneShot (SoundGun [Random.Range (0, SoundGun.Length)]);
 
-							print ("firing the M4 GUn");
-							print ("this object is " + gameObject.name);
+							//print ("firing the M4 GUn");
+							//print ("firing " + gameObject.name);
 							if (gameObject.name == "weapon_minigun") {
 								AkSoundEngine.PostEvent ("M4Single", gameObject);
 							}
@@ -423,7 +496,7 @@ namespace HWRWeaponSystem
 								AkSoundEngine.PostEvent ("heavyCannon", gameObject);
 							}
 							if (gameObject.name == "LaserGun") {
-								AkSoundEngine.PostEvent ("heavyCannon", gameObject);
+								AkSoundEngine.PostEvent ("laserSingle", gameObject);
 							}
 							
 						}

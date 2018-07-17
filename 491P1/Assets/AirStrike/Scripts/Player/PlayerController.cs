@@ -31,10 +31,29 @@ namespace AirStrikeKit
 		// Mobile*** slice
 		public GUISkin skin;
 		public bool ShowHowto;
-
+        public bool currentAccel = false;
+        public bool previousAccel = false;
+        public GameObject musicManager;
+        private MusicManager musicScript;
+        public GameObject playerEngineAudio;
 
 		void Awake(){
 			AirStrikeGame.playerController = this;
+            musicManager = GameObject.Find("WwiseGlobal");
+            musicScript = musicManager.GetComponent<MusicManager>();
+            playerEngineAudio = GameObject.Find("playerEngineAudio");
+            if (musicScript.currentMode == 1)
+            {
+                AkSoundEngine.PostEvent("startClassicPEngine", playerEngineAudio);
+            }
+            if (musicScript.currentMode == 2)
+            {
+                AkSoundEngine.PostEvent("startModernPEngine", playerEngineAudio);
+            }
+            if (musicScript.currentMode == 3)
+            {
+                AkSoundEngine.PostEvent("startStarPEngine", playerEngineAudio);
+            }
 		}
 
 		void Start ()
@@ -47,8 +66,16 @@ namespace AirStrikeKit
 			switchTouch = new TouchScreenVal (new Rect (0, Screen.height - 100, Screen.width / 2, 100));
 			sliceTouch = new TouchScreenVal (new Rect (0, 0, Screen.width / 2, 50));
 
-		}
 
+		}
+		private void OnDisable()
+		{
+            AkSoundEngine.PostEvent("stopPEngine", playerEngineAudio);
+		}
+		private void OnDestroy()
+		{
+            AkSoundEngine.PostEvent("stopPEngine", playerEngineAudio);
+		}
 		void Update ()
 		{
 			if (!flight || !Active)
@@ -60,7 +87,69 @@ namespace AirStrikeKit
 			// On Mobile device
 			MobileController ();
 			#endif
-		
+            if (musicScript.currentMode == 1) //classic engine
+            {
+                if (previousAccel == false)
+                {
+                    if (currentAccel == true)
+                    {
+                        AkSoundEngine.SetState("Classic", "accel");
+                        previousAccel = true;
+                    }
+
+                }
+                if (previousAccel == true)
+                {
+                    if (currentAccel == false)
+                    {
+                        AkSoundEngine.SetState("Classic", "deccel");
+                        previousAccel = false;
+                    }
+
+                }
+            }
+            if (musicScript.currentMode == 2) //modern engine
+            {
+                if (previousAccel == false)
+                {
+                    if (currentAccel == true)
+                    {
+                        AkSoundEngine.SetState("Modern", "accel");
+                        previousAccel = true;
+                    }
+
+                }
+                if (previousAccel == true)
+                {
+                    if (currentAccel == false)
+                    {
+                        AkSoundEngine.SetState("Modern", "deccel");
+                        previousAccel = false;
+                    }
+
+                }
+            }
+            if (musicScript.currentMode == 3) //star engine
+            {
+                if (previousAccel == false)
+                {
+                    if (currentAccel == true)
+                    {
+                        AkSoundEngine.SetState("starFighter", "accel");
+                        previousAccel = true;
+                    }
+
+                }
+                if (previousAccel == true)
+                {
+                    if (currentAccel == false)
+                    {
+                        AkSoundEngine.SetState("starFighter", "deccel");
+                        previousAccel = false;
+                    }
+
+                }
+            }
 		}
 
 		void DesktopController ()
@@ -79,11 +168,34 @@ namespace AirStrikeKit
 
 			flight.TurnControl (Input.GetAxis ("Horizontal"));
 			flight.SpeedUp (Input.GetAxis ("Vertical"));
-		
-		
+            if ((Input.GetAxis("Vertical")) > 0)
+            {
+                print("speeding up");
+                currentAccel = true;
+
+            }
+            if ((Input.GetAxis("Vertical")) <= 0)
+            {
+                print("slowing down");
+                currentAccel = false;
+            }
+            /*
+            if (Input.GetKey("w"))
+            {
+                print("speeding up");
+
+            }
+            if (Input.GetKeyUp("w"))
+            {
+                print("slowing down");
+            } */
+		     
 			if (Input.GetButton ("Fire1")) {
 				flight.WeaponControl.LaunchWeapon ();
 			}
+           
+           
+
 		
 			if (Input.GetButtonDown ("Fire2")) {
 				flight.WeaponControl.SwitchWeapon ();

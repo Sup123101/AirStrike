@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	36280251	lockOn			\Default Work Unit\Alerts\lockOn	
+	3403829859	stopLockOn			\Default Work Unit\Alerts\stopLockOn	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	306576491	lockOnStart	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\lockOnStart_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\Alert\lockOnStart		135944
+	1057588654	lockOnLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\lockOnLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\Alert\lockOnLoop		176544
+

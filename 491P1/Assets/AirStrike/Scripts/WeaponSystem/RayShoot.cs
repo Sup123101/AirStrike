@@ -29,8 +29,10 @@ namespace HWRWeaponSystem
 			if (objPool)
 				objPool.SetDestroy (LifeTime);
 		
-			if (actived)
+			if (actived) {
 				ShootRay ();
+
+			}
 		}
 	
 		void ShootRay ()
@@ -48,6 +50,7 @@ namespace HWRWeaponSystem
 			GameObject explosion = null;
 			if (Physics.Raycast (this.transform.position, this.transform.forward, out hit, Range)) {
 				AimPoint = hit.point;
+				
 				if (Explosion != null) {
 					if (WeaponSystem.Pool != null) {
 						explosion = WeaponSystem.Pool.Instantiate (Explosion, AimPoint, this.transform.rotation);

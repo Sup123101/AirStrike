@@ -30,6 +30,7 @@ namespace AirStrikeKit
 			for (int i = 0; i < DecayObject.Length; i++) {
 				if (damage.HP < DamageLowerThan [i]) {
 					DecayObject [i].SetActive (true);
+
 				}
 			}
 

@@ -45,6 +45,10 @@ public class ModernJetAudio : MonoBehaviour {
 	void OnDestroy(){
 		AkSoundEngine.PostEvent ("stopModernEngine", gameObject);
 	}
+	private void OnDisable()
+	{
+        AkSoundEngine.PostEvent("stopModernEngine", gameObject);
+	}
 	// Update is called once per frame
 	void FixedUpdate () {
 

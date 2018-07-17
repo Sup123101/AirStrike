@@ -29,6 +29,8 @@ namespace AirStrikeKit
 		public void SwitchCameras ()
 		{
 			indexCamera += 1;
+            //print("index camera is : " + indexCamera);
+            //if index camera is 2 low pass everything
 			if (indexCamera >= Cameras.Length) {
 				indexCamera = 0;
 			}
@@ -106,8 +108,7 @@ namespace AirStrikeKit
 				this.GetComponent<Camera>().enabled = true;
 				if (this.gameObject.GetComponent<AudioListener> ())
 					this.gameObject.GetComponent<AudioListener> ().enabled = true;
-				if (this.gameObject.GetComponent<AkAudioListener> ())
-					this.gameObject.GetComponent<AkAudioListener> ().enabled = true;
+				
 				    
 			}
 		}
