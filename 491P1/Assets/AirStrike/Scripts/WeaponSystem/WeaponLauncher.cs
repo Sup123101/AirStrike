@@ -121,6 +121,7 @@ namespace HWRWeaponSystem
 				rayAiming ();
 			}
 
+           
 		}
 		private void OnDestroy()
 		{
@@ -132,8 +133,7 @@ namespace HWRWeaponSystem
 		}
 		private void Update ()
 		{
-
-           
+            
 
 			if (CurrentCamera == null) {
 			
@@ -173,6 +173,7 @@ namespace HWRWeaponSystem
             {
                 if (thisisPlayer == true)
                 {
+                    
                     if (previousLockStatus == false)
                     {
                         if (lockStatus == true)
@@ -193,7 +194,7 @@ namespace HWRWeaponSystem
                     }
                 }
             }
-
+           
 			if (OnActive) {
 		
 			

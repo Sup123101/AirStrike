@@ -29,11 +29,16 @@ namespace AK
         static const AkUniqueID MODERNCHATTER = 1350997147U;
         static const AkUniqueID MODERNVA = 1476987571U;
         static const AkUniqueID NORMALEXPLOSION = 3349451189U;
+        static const AkUniqueID PAUSEALL = 4091047182U;
         static const AkUniqueID PAUSECHATTER = 1611798188U;
         static const AkUniqueID PAUSEMUSIC = 1127073398U;
+        static const AkUniqueID PAUSEVA = 4258275658U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
+        static const AkUniqueID PLAYSIRENALARM = 2930916137U;
+        static const AkUniqueID RESUMEALL = 3240900869U;
         static const AkUniqueID RESUMECHATTER = 2614938359U;
         static const AkUniqueID RESUMEMUSIC = 2170724709U;
+        static const AkUniqueID RESUMEVA = 2063776535U;
         static const AkUniqueID ROCKET = 2814405U;
         static const AkUniqueID SANDBULLET = 1915059747U;
         static const AkUniqueID SANDEXPLOSION = 1702134784U;
@@ -62,6 +67,7 @@ namespace AK
         static const AkUniqueID STOPMUSIC = 1917263390U;
         static const AkUniqueID STOPPENGINE = 2473397641U;
         static const AkUniqueID STOPROCKET = 1722492221U;
+        static const AkUniqueID STOPSIRENALARM = 3710927879U;
         static const AkUniqueID STOPSTARALLYENGINE = 4015933481U;
         static const AkUniqueID STOPSTARENEMYENGINE = 272552693U;
         static const AkUniqueID STOPSTARLOWHPENGINE = 920968951U;
@@ -104,6 +110,17 @@ namespace AK
                 static const AkUniqueID DECCEL = 3089792801U;
             } // namespace STATE
         } // namespace STARFIGHTER
+
+        namespace VIEW
+        {
+            static const AkUniqueID GROUP = 3235954734U;
+
+            namespace STATE
+            {
+                static const AkUniqueID COCKPIT = 1444839120U;
+                static const AkUniqueID OUTSIDE = 438105790U;
+            } // namespace STATE
+        } // namespace VIEW
 
     } // namespace STATES
 

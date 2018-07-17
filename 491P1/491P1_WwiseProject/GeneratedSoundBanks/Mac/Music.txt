@@ -5,6 +5,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	1917263390	stopMusic			\Default Work Unit\Music\stopMusic	
 	1940514798	StopEverything			\Default Work Unit\StopEverything	
 	2170724709	ResumeMusic			\Default Work Unit\Music\ResumeMusic	
+	3240900869	resumeAll			\Default Work Unit\resumeAll	
+	4091047182	pauseAll			\Default Work Unit\pauseAll	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	318858778	ModernLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\ModernLoop_F17FB28C.wem		\Interactive Music Hierarchy\Default Work Unit\Modes\Modern\ModernLoop\ModernLoop		9203620

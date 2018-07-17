@@ -278,7 +278,9 @@
 			<Path>Alerts.bnk</Path>
 			<IncludedEvents>
 				<Event Id="36280251" Name="lockOn" ObjectPath="\Events\Default Work Unit\Alerts\lockOn"/>
+				<Event Id="2930916137" Name="playSirenAlarm" ObjectPath="\Events\Default Work Unit\Alerts\playSirenAlarm" MaxAttenuation="1500.000000"/>
 				<Event Id="3403829859" Name="stopLockOn" ObjectPath="\Events\Default Work Unit\Alerts\stopLockOn" MaxAttenuation="0.000000"/>
+				<Event Id="3710927879" Name="stopSirenAlarm" ObjectPath="\Events\Default Work Unit\Alerts\stopSirenAlarm" MaxAttenuation="0.000000"/>
 				<Event Id="3339837753" Name="weaponChange" ObjectPath="\Events\Default Work Unit\Alerts\weaponChange"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -289,6 +291,10 @@
 				<File Id="306576491" Language="SFX">
 					<ShortName>lockOnStart.wav</ShortName>
 					<Path>SFX/lockOnStart_1C9C67B2.wem</Path>
+				</File>
+				<File Id="616401202" Language="SFX">
+					<ShortName>raidSiren.wav</ShortName>
+					<Path>SFX/raidSiren_F17FB28C.wem</Path>
 				</File>
 				<File Id="1057588654" Language="SFX">
 					<ShortName>lockOnLoop.wav</ShortName>
@@ -491,6 +497,8 @@
 			<IncludedEvents>
 				<Event Id="3939636660" Name="classicVA" ObjectPath="\Events\Default Work Unit\VA\classicVA"/>
 				<Event Id="1476987571" Name="modernVA" ObjectPath="\Events\Default Work Unit\VA\modernVA"/>
+				<Event Id="4258275658" Name="pauseVA" ObjectPath="\Events\Default Work Unit\VA\pauseVA" MaxAttenuation="0.000000"/>
+				<Event Id="2063776535" Name="resumeVA" ObjectPath="\Events\Default Work Unit\VA\resumeVA" MaxAttenuation="0.000000"/>
 				<Event Id="989181134" Name="starVA" ObjectPath="\Events\Default Work Unit\VA\starVA"/>
 				<Event Id="798440610" Name="stopVA" ObjectPath="\Events\Default Work Unit\VA\stopVA" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
@@ -541,8 +549,10 @@
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4091047182" Name="pauseAll" ObjectPath="\Events\Default Work Unit\pauseAll" MaxAttenuation="0.000000"/>
 				<Event Id="1127073398" Name="PauseMusic" ObjectPath="\Events\Default Work Unit\Music\PauseMusic" MaxAttenuation="0.000000"/>
 				<Event Id="417627684" Name="PlayMusic" ObjectPath="\Events\Default Work Unit\Music\PlayMusic"/>
+				<Event Id="3240900869" Name="resumeAll" ObjectPath="\Events\Default Work Unit\resumeAll" MaxAttenuation="0.000000"/>
 				<Event Id="2170724709" Name="ResumeMusic" ObjectPath="\Events\Default Work Unit\Music\ResumeMusic" MaxAttenuation="0.000000"/>
 				<Event Id="1940514798" Name="StopEverything" ObjectPath="\Events\Default Work Unit\StopEverything" MaxAttenuation="0.000000"/>
 				<Event Id="1917263390" Name="stopMusic" ObjectPath="\Events\Default Work Unit\Music\stopMusic" MaxAttenuation="0.000000"/>

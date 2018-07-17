@@ -79,7 +79,7 @@ namespace HWRWeaponSystem
                         AkSoundEngine.PostEvent("weaponChange", gameObject);
                     }
                     //HideWeapon(WeaponLists[i].gameObject,true);
-                    print("occured");
+                    //print("occured");
 				} else {
 					//HideWeapon(WeaponLists[i].gameObject,false);
 					WeaponLists [i].OnActive = false;

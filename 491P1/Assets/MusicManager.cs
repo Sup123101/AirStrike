@@ -6,9 +6,13 @@ public class MusicManager : MonoBehaviour {
 
 	public bool musicPlaying = false;
 	public int currentMode = 0; // 0 = Menu, 1 = Classic, 2 = Modern, 3 = starFgither
+    private bool chatterOngoing = false;
+    private bool chatterEnabled = false;
+    private bool initialsoundended = false;
 	// Use this for initialization
 	void Start () {
 		currentMode = 0;
+        chatterEnabled = false;
 	}
 	
 
@@ -31,12 +35,17 @@ public class MusicManager : MonoBehaviour {
 			
 			AkSoundEngine.SetSwitch ("Music", "Menu", this.gameObject);
             AkSoundEngine.PostEvent("stopVA", this.gameObject);
+            AkSoundEngine.PostEvent("stopChatter", this.gameObject);
+            chatterEnabled = false;
 		}
 		if (currentMode == 1) {
 			
 			AkSoundEngine.SetSwitch ("Music", "Classic", this.gameObject);
             AkSoundEngine.PostEvent("stopVA", this.gameObject);
-            AkSoundEngine.PostEvent("stopVA", this.gameObject);
+            AkSoundEngine.PostEvent("classicVA", this.gameObject);
+            AkSoundEngine.PostEvent("stopChatter", this.gameObject);
+            chatterEnabled = false;
+            StartCoroutine("waitTimeInitial");
 			/*
 			print ("this gets called");
 			print ("current mode is " + currentMode);
@@ -50,12 +59,18 @@ public class MusicManager : MonoBehaviour {
 			AkSoundEngine.SetSwitch ("Music", "Modern", this.gameObject);
             AkSoundEngine.PostEvent("stopVA", this.gameObject);
             AkSoundEngine.PostEvent("modernVA", this.gameObject);
+            AkSoundEngine.PostEvent("stopChatter", this.gameObject);
+            chatterEnabled = false;
+            StartCoroutine("waitTimeInitial");
 		}
 		if (currentMode == 3) {
 			
 			AkSoundEngine.SetSwitch ("Music", "Starfighter", this.gameObject);
             AkSoundEngine.PostEvent("stopVA", this.gameObject);
             AkSoundEngine.PostEvent("starVA", this.gameObject);
+            AkSoundEngine.PostEvent("stopChatter", this.gameObject);
+            chatterEnabled = false;
+            StartCoroutine("waitTimeInitial");
 		}
 
 	}
@@ -64,6 +79,8 @@ public class MusicManager : MonoBehaviour {
 		//AkSoundEngine.PostEvent ("StopEverything", this.gameObject);
 		AkSoundEngine.SetSwitch ("Music", "Menu", this.gameObject);
         AkSoundEngine.PostEvent("stopVA", this.gameObject);
+        AkSoundEngine.PostEvent("stopChatter", this.gameObject);
+        chatterEnabled = false;
 	}
 	public void switchClassic()
 	{
@@ -71,6 +88,8 @@ public class MusicManager : MonoBehaviour {
 		AkSoundEngine.SetSwitch ("Music", "Classic", this.gameObject);
         AkSoundEngine.PostEvent("stopVA", this.gameObject);
         AkSoundEngine.PostEvent("classicVA", this.gameObject);
+        AkSoundEngine.PostEvent("stopChatter", this.gameObject);
+        StartCoroutine("waitTimeInitial");
 
 	}
 	public void switchModern()
@@ -79,6 +98,8 @@ public class MusicManager : MonoBehaviour {
 		AkSoundEngine.SetSwitch ("Music", "Modern", this.gameObject);
         AkSoundEngine.PostEvent("stopVA", this.gameObject);
         AkSoundEngine.PostEvent("modernVA", this.gameObject);
+        AkSoundEngine.PostEvent("stopChatter", this.gameObject);
+        StartCoroutine("waitTimeInitial");
 	}
 	public void switchstarFighter()
 	{
@@ -86,16 +107,85 @@ public class MusicManager : MonoBehaviour {
 		AkSoundEngine.SetSwitch ("Music", "Starfighter", this.gameObject);
         AkSoundEngine.PostEvent("stopVA", this.gameObject);
         AkSoundEngine.PostEvent("starVA", this.gameObject);
+        AkSoundEngine.PostEvent("stopChatter", this.gameObject);
+        StartCoroutine("waitTimeInitial");
+
 	}
 	public void pauseMusic()
 	{
 		AkSoundEngine.PostEvent ("PauseMusic", this.gameObject);
         AkSoundEngine.PostEvent("pauseVA", this.gameObject);
+        AkSoundEngine.PostEvent("stopChatter", this.gameObject);
+        AkSoundEngine.PostEvent("pauseAll", this.gameObject);
+        chatterEnabled = false;
+
 	}
 	public void resumeMusic()
 	{
 		AkSoundEngine.PostEvent ("ResumeMusic", this.gameObject);
         AkSoundEngine.PostEvent("resumeVA", this.gameObject);
+        AkSoundEngine.PostEvent("resumeAll", this.gameObject);
+        chatterEnabled = true;
 	}
+    public void startChatter()
+    {
+        if (initialsoundended == true)
+        {
+            if (chatterOngoing == false)
+            {
+                if (currentMode == 1)
+                {
+                    AkSoundEngine.PostEvent("classicChatter", this.gameObject);
+                    chatterOngoing = true;
+                    StartCoroutine(waitTime(Random.Range(12.0f, 18.0f)));
+                }
+                if (currentMode == 2)
+                {
+                    AkSoundEngine.PostEvent("modernChatter", this.gameObject);
+                    chatterOngoing = true;
+                    StartCoroutine(waitTime(Random.Range(12.0f, 18.0f)));
+                }
+                if (currentMode == 3)
+                {
+                    AkSoundEngine.PostEvent("starChatter", this.gameObject);
+                    chatterOngoing = true;
+                    StartCoroutine(waitTime(Random.Range(12.0f, 18.0f)));
+                }
+            }
+        }
+        else
+        {
+            
+        }
+
+    }
+  
+
+	public void Update()
+	{
+        if (chatterEnabled == true)
+        {
+            startChatter();
+        }
+
+	}
+
+	IEnumerator waitTime(float times)
+    {
+        
+        yield return new WaitForSeconds(times);
+        chatterOngoing = false;
+
+
+    }
+    IEnumerator waitTimeInitial()
+    {
+        
+        yield return new WaitForSeconds(12.5f);
+        initialsoundended = true;
+        chatterEnabled = true;
+
+
+    }
 
 }

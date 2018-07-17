@@ -24,6 +24,13 @@
 						<State Name="deccel" ID="{CEE722BB-7070-432B-9E31-C0C7AE55D41C}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="View" ID="{69E9E414-0F03-4106-AC3D-A85214AC2818}">
+					<ChildrenList>
+						<State Name="None" ID="{7FC68309-D33C-41C2-A381-539669EEBAC5}"/>
+						<State Name="Cockpit" ID="{BCD9C9D6-7233-43D4-BB78-A7A619C57B58}"/>
+						<State Name="Outside" ID="{66BA08DF-5941-4C96-8458-9C1BC4C6006A}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

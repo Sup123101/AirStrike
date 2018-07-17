@@ -679,6 +679,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="playSirenAlarm" ID="{0A4A71F5-BDEB-41CB-9D67-6AA399930940}">
+							<ChildrenList>
+								<Action Name="" ID="{A7FCFF98-DF11-4D23-B885-4726FD7E120C}" ShortID="959840755">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="raidSiren" ID="{939C7779-9507-4DD2-8B11-F1A91695C815}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopSirenAlarm" ID="{40579724-462D-47F0-9385-72D4A2C9FFF5}">
+							<ChildrenList>
+								<Action Name="" ID="{3745BB03-426F-4B9D-992E-A91483451B2A}" ShortID="714532504">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="raidSiren" ID="{939C7779-9507-4DD2-8B11-F1A91695C815}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="playerEngine" ID="{2ADD3B8E-CC0E-4B3D-B240-7E93192FBC88}" ShortID="942527110">
@@ -829,6 +857,114 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="radioChatter" ID="{A2BBA3B5-E030-4E72-8102-B4B9B8CEB58D}" ShortID="425141194">
+					<ChildrenList>
+						<Event Name="modernChatter" ID="{1460D7B2-7875-40AA-AFDF-78BFAB8BAB54}">
+							<ChildrenList>
+								<Action Name="" ID="{33ACE5D7-EB40-4854-8080-705ABD4E3F06}" ShortID="218043338">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Modern" ID="{D6BA717F-BB82-43B9-A714-8DE50EDE8591}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="classicChatter" ID="{880C079F-D7E1-4A55-8E3F-894F301D3379}">
+							<ChildrenList>
+								<Action Name="" ID="{6C021571-0DB7-49EB-887F-B3C3D18F2DE9}" ShortID="639905097">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Classic" ID="{927FFDE6-850E-4D34-AC6B-1A04B9C0854E}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="starChatter" ID="{A6843E33-7189-4065-BDB2-AE0FC7B2DD2B}">
+							<ChildrenList>
+								<Action Name="" ID="{AABFA1CA-76AE-4276-AA69-2F5DE52FE26F}" ShortID="637517441">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="starFighter" ID="{957842E1-A075-41C7-A002-1F101755C94E}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="pauseChatter" ID="{84E716A0-5C79-4674-A23F-4366A6E2071A}">
+							<ChildrenList>
+								<Action Name="" ID="{75FDD555-94F9-4DEA-B0C1-7811EE9A6271}" ShortID="30551021">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="radioChatter" ID="{2D510C7D-D413-4CBC-B9F1-01247E172DFD}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="resumeChatter" ID="{9410D059-6B2A-40F7-ABC0-D5DB0C0A14C3}">
+							<ChildrenList>
+								<Action Name="" ID="{DC9066F5-DEA0-4390-B7E2-040793CE2C0E}" ShortID="334327624">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="radioChatter" ID="{2D510C7D-D413-4CBC-B9F1-01247E172DFD}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopChatter" ID="{79B6CFCC-BA30-4282-9928-E63C82565CB9}">
+							<ChildrenList>
+								<Action Name="" ID="{36275B3C-5525-49EC-8E9E-E8F88591F739}" ShortID="727647350">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="radioChatter" ID="{2D510C7D-D413-4CBC-B9F1-01247E172DFD}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="pauseAll" ID="{BE25EC93-F032-417A-9FB4-192ABF718E7C}">
+					<ChildrenList>
+						<Action Name="" ID="{542D0577-FDDD-4505-AB86-4F8CA508458E}" ShortID="90491171">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="8"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="resumeAll" ID="{A0991ABD-B808-4C4A-8AD3-BAE0F37C1FDA}">
+					<ChildrenList>
+						<Action Name="" ID="{7D7E5A94-848E-4986-8829-651106EA5D71}" ShortID="70791234">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="10"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

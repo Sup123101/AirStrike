@@ -46,7 +46,7 @@ namespace HWRWeaponSystem
 
 		public void Dead ()
 		{
-			print ("Game object died : " + gameObject.name);
+			//print ("Game object died : " + gameObject.name);
 			if (gameObject.name =="WW2AIFriend(Clone)" )
 			{
 				AkSoundEngine.PostEvent ("metalExplosion", gameObject);

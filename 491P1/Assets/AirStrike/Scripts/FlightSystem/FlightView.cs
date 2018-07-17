@@ -29,8 +29,14 @@ namespace AirStrikeKit
 		public void SwitchCameras ()
 		{
 			indexCamera += 1;
-            //print("index camera is : " + indexCamera);
-            //if index camera is 2 low pass everything
+            print("index camera is : " + indexCamera);
+            if (indexCamera == 1)
+            {
+                AkSoundEngine.SetState("View", "Cockpit");
+            }
+            if(indexCamera != 1){
+                AkSoundEngine.SetState("View", "Outside");
+            }
 			if (indexCamera >= Cameras.Length) {
 				indexCamera = 0;
 			}
