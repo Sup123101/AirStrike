@@ -4,7 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="playerEngine" ID="{184B22DA-5392-4200-B2AD-70DA2AB2F889}" ShortID="762940179">
+					<PropertyList>
+						<Property Name="PositioningType" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="playerEngine" ID="{3E8A0A35-4D5C-42B5-98AD-66C6E8E4312B}" WorkUnitID="{00F595EF-96A4-45E3-8023-4BE53442A395}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
 						</Reference>
@@ -14,12 +20,21 @@
 					</ReferenceList>
 					<ChildrenList>
 						<SwitchContainer Name="Classic" ID="{FB799D7A-6EAD-42B1-9DBA-0CA11FB5DBA2}" ShortID="1031408111">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="accel" ID="{5B956933-26AA-40FE-80E3-4C288CAAAE4F}" WorkUnitID="{6C9585EF-1C25-4816-B127-2AE897528D6B}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Classic" ID="{FF2A8929-118C-4635-8C0B-7BE7A85E4A6B}" WorkUnitID="{6C9585EF-1C25-4816-B127-2AE897528D6B}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -156,20 +171,73 @@
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="highSpeed" ID="{45499486-2E6E-4512-94A9-34D25808AAB4}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="normalSpeed" ID="{D92C36DA-AF04-4606-A697-EC6774B36043}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="accel" ID="{5B956933-26AA-40FE-80E3-4C288CAAAE4F}"/>
+										<ItemList>
+											<ItemRef Name="highSpeed" ID="{45499486-2E6E-4512-94A9-34D25808AAB4}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="deccel" ID="{92F96D9E-3C46-48FB-B976-0A787DD4C5C7}"/>
+										<ItemList>
+											<ItemRef Name="normalSpeed" ID="{D92C36DA-AF04-4606-A697-EC6774B36043}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="None" ID="{586589C3-38F0-405A-9554-27B6DD427180}"/>
+										<ItemList>
+											<ItemRef Name="normalSpeed" ID="{D92C36DA-AF04-4606-A697-EC6774B36043}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="Modern" ID="{9A069B50-AD6E-4AD2-AB86-4C2D58BDBC46}" ShortID="49008666">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="deccel" ID="{8FBBD4B1-1BB2-4C88-BBA2-771FD8599EB7}" WorkUnitID="{6C9585EF-1C25-4816-B127-2AE897528D6B}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Modern" ID="{F4C0FFF4-67E9-4A3B-A56F-E07432E9878E}" WorkUnitID="{6C9585EF-1C25-4816-B127-2AE897528D6B}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -306,20 +374,73 @@
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="highSpeed" ID="{99ED8334-EE2F-46C1-9DA2-C28EA5B8439A}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="normalSpeed" ID="{C7BEBEC1-1E12-4F64-B6C0-C2FFF7FC26DD}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="None" ID="{05FC1F3C-1BF5-4C00-940D-D43E1CED01E9}"/>
+										<ItemList>
+											<ItemRef Name="normalSpeed" ID="{C7BEBEC1-1E12-4F64-B6C0-C2FFF7FC26DD}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="accel" ID="{12FE03A5-3A5D-4A93-9DCD-2B1B271D8F3A}"/>
+										<ItemList>
+											<ItemRef Name="highSpeed" ID="{99ED8334-EE2F-46C1-9DA2-C28EA5B8439A}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="deccel" ID="{8FBBD4B1-1BB2-4C88-BBA2-771FD8599EB7}"/>
+										<ItemList>
+											<ItemRef Name="normalSpeed" ID="{C7BEBEC1-1E12-4F64-B6C0-C2FFF7FC26DD}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 						<SwitchContainer Name="starFighter" ID="{4E1FFC02-FC4F-4F1A-8828-F5809D88221D}" ShortID="808255426">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="deccel" ID="{CEE722BB-7070-432B-9E31-C0C7AE55D41C}" WorkUnitID="{6C9585EF-1C25-4816-B127-2AE897528D6B}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="starFighter" ID="{FADDD792-6A30-450C-AF52-5546009A8676}" WorkUnitID="{6C9585EF-1C25-4816-B127-2AE897528D6B}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -460,11 +581,55 @@
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="normalSpeed" ID="{12804105-20CD-48E5-87EC-2096FF506429}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="highSpeed" ID="{6FED894B-0ECC-4C28-AF54-E2598CCE0080}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>0.15</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="None" ID="{91042330-6FAB-4608-82A0-EB03639F347F}"/>
+										<ItemList>
+											<ItemRef Name="normalSpeed" ID="{12804105-20CD-48E5-87EC-2096FF506429}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="accel" ID="{EE986A59-0373-4AE9-A942-66734B540437}"/>
+										<ItemList>
+											<ItemRef Name="highSpeed" ID="{6FED894B-0ECC-4C28-AF54-E2598CCE0080}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="deccel" ID="{CEE722BB-7070-432B-9E31-C0C7AE55D41C}"/>
+										<ItemList>
+											<ItemRef Name="normalSpeed" ID="{12804105-20CD-48E5-87EC-2096FF506429}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
 					</ChildrenList>
@@ -2328,7 +2493,7 @@
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-16</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2388,6 +2553,37 @@
 								<ItemRef Name="lockOnLoop" ID="{FE544FA6-38AF-4785-82F0-B315AE95AE88}"/>
 							</Playlist>
 						</RandomSequenceContainer>
+						<Sound Name="weaponSwitch" ID="{38C5756C-57D4-4FF3-B999-412662EBCF5C}" ShortID="991252655">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-13</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6AE45168-035F-4A8D-8EE3-7BB21D3AE98E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="weaponSwitch" ID="{5F149D2F-05C9-4549-BFE3-99DAFAF14B88}" ShortID="184239255">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.918438867614879"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.918438867614879"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>weaponSwitch.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="weaponSwitch" ID="{5F149D2F-05C9-4549-BFE3-99DAFAF14B88}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Weapons" ID="{B4BCB3FE-926D-4E7F-A8A8-ED1DECE42B39}" ShortID="713819731">

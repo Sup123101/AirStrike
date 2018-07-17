@@ -665,53 +665,33 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="playerEngine" ID="{2ADD3B8E-CC0E-4B3D-B240-7E93192FBC88}" ShortID="942527110">
-					<ChildrenList>
-						<Event Name="accelClassicEngine" ID="{8CE39727-CB85-4213-9313-AA7FD442A878}">
+						<Event Name="weaponChange" ID="{11A0017F-2D3F-4907-8A12-3F61AA7667D5}">
 							<ChildrenList>
-								<Action Name="" ID="{A14929CA-F61D-4D1F-9ADC-97123CDDD72C}" ShortID="345108711">
+								<Action Name="" ID="{BD29BE15-91D5-4421-A877-CDA066BA628B}" ShortID="574999148">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="highSpeed" ID="{45499486-2E6E-4512-94A9-34D25808AAB4}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{1BECDE5C-ACBD-4204-A4D4-F2AA6BDBC5D8}" ShortID="347156680">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="normalSpeed" ID="{D92C36DA-AF04-4606-A697-EC6774B36043}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+											<ObjectRef Name="weaponSwitch" ID="{38C5756C-57D4-4FF3-B999-412662EBCF5C}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="deccelClassicEngine" ID="{2E481C31-0E5D-4973-8249-34AAEBCB415D}">
+					</ChildrenList>
+				</Folder>
+				<Folder Name="playerEngine" ID="{2ADD3B8E-CC0E-4B3D-B240-7E93192FBC88}" ShortID="942527110">
+					<ChildrenList>
+						<Event Name="startClassicPEngine" ID="{8CE39727-CB85-4213-9313-AA7FD442A878}">
 							<ChildrenList>
-								<Action Name="" ID="{F4E584AE-091B-4323-83D1-314C04ACE018}" ShortID="692048386">
+								<Action Name="" ID="{A9BE74AA-A50D-4A59-8AEA-C7CD2DDC7746}" ShortID="72841390">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="normalSpeed" ID="{D92C36DA-AF04-4606-A697-EC6774B36043}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{D982068C-4AA9-4ED7-90EB-73208FD96118}" ShortID="837950322">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="highSpeed" ID="{45499486-2E6E-4512-94A9-34D25808AAB4}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+											<ObjectRef Name="Classic" ID="{FB799D7A-6EAD-42B1-9DBA-0CA11FB5DBA2}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -719,159 +699,129 @@
 						</Event>
 						<Event Name="stopPEngine" ID="{3E0B447A-06D2-4AD5-B04C-FA406EAB78FF}">
 							<ChildrenList>
-								<Action Name="" ID="{052D061F-5E2B-47E0-82EC-A119ECACD2FE}" ShortID="666150533">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="highSpeed" ID="{45499486-2E6E-4512-94A9-34D25808AAB4}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{BDE2EE81-BDAF-489C-BCA2-D4BFB24E7478}" ShortID="68878990">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="normalSpeed" ID="{D92C36DA-AF04-4606-A697-EC6774B36043}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{2CF64033-D4AC-4651-8C6B-804BA301A9C5}" ShortID="236886039">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="highSpeed" ID="{99ED8334-EE2F-46C1-9DA2-C28EA5B8439A}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{5881FDC1-6B3E-498D-AA43-A3833156AB99}" ShortID="1016880398">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="normalSpeed" ID="{C7BEBEC1-1E12-4F64-B6C0-C2FFF7FC26DD}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{26926A4F-1059-4D41-A08E-F01A6E0F3B62}" ShortID="329793174">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="highSpeed" ID="{6FED894B-0ECC-4C28-AF54-E2598CCE0080}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{A492287B-34AA-4A04-91D6-2CA6084DCE01}" ShortID="101008804">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="normalSpeed" ID="{12804105-20CD-48E5-87EC-2096FF506429}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="accelModernEngine" ID="{E993B828-6D3E-4B50-B309-351475CEA267}">
-							<ChildrenList>
-								<Action Name="" ID="{FDC505EF-0B99-4625-9F8C-F9360D464395}" ShortID="942344031">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="highSpeed" ID="{99ED8334-EE2F-46C1-9DA2-C28EA5B8439A}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{60620E94-39A1-47E9-B8AF-3AB11635A04E}" ShortID="165504329">
+								<Action Name="" ID="{C61A82C1-7AB6-4A22-BF9B-A90E15E7C73D}" ShortID="942059397">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="normalSpeed" ID="{C7BEBEC1-1E12-4F64-B6C0-C2FFF7FC26DD}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+											<ObjectRef Name="playerEngine" ID="{184B22DA-5392-4200-B2AD-70DA2AB2F889}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="deccelModernEngine" ID="{91782F26-79AB-4D8D-9884-DC2348CC3779}">
+						<Event Name="startModernPEngine" ID="{E993B828-6D3E-4B50-B309-351475CEA267}">
 							<ChildrenList>
-								<Action Name="" ID="{7C41B067-341A-4458-8781-7F65A74E75AB}" ShortID="289042401">
+								<Action Name="" ID="{F304264B-E688-4D56-8578-CABD973BC4F6}" ShortID="28934598">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="normalSpeed" ID="{C7BEBEC1-1E12-4F64-B6C0-C2FFF7FC26DD}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{61B41EB0-93C7-4D01-BAD8-2D8AA93CEFF3}" ShortID="651626170">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="highSpeed" ID="{99ED8334-EE2F-46C1-9DA2-C28EA5B8439A}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+											<ObjectRef Name="Modern" ID="{9A069B50-AD6E-4AD2-AB86-4C2D58BDBC46}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="accelStarEngine" ID="{44FAE0DF-F3FA-41FB-8755-CB943954B1AA}">
+						<Event Name="startStarPEngine" ID="{44FAE0DF-F3FA-41FB-8755-CB943954B1AA}">
 							<ChildrenList>
-								<Action Name="" ID="{FC4271BE-DEBC-4EF6-8D67-FEB17C8474D7}" ShortID="933899704">
+								<Action Name="" ID="{0C7377D9-977F-4C79-8E21-80DF411A1FB5}" ShortID="697388110">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="highSpeed" ID="{6FED894B-0ECC-4C28-AF54-E2598CCE0080}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{E985BA5C-0F77-481B-ADE7-F355CE08E512}" ShortID="714597305">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="normalSpeed" ID="{12804105-20CD-48E5-87EC-2096FF506429}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+											<ObjectRef Name="starFighter" ID="{4E1FFC02-FC4F-4F1A-8828-F5809D88221D}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="deccelStarEngine" ID="{0C635CAD-4FE8-4872-8992-4431ED2EE2A9}">
+					</ChildrenList>
+				</Folder>
+				<Folder Name="VA" ID="{489753E6-8250-4E73-B209-BD0DFF4CBEA3}" ShortID="735758368">
+					<ChildrenList>
+						<Event Name="classicVA" ID="{922FE8C2-72BC-4614-A917-72FA16EED0B0}">
 							<ChildrenList>
-								<Action Name="" ID="{C0A00D4B-6CFB-438C-9698-C0710A73F4E1}" ShortID="13502725">
+								<Action Name="" ID="{4A59724F-7BFE-42CA-8A40-19565FB91270}" ShortID="599552800">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="normalSpeed" ID="{12804105-20CD-48E5-87EC-2096FF506429}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+											<ObjectRef Name="Classic" ID="{80575385-A318-412D-834E-16283AA655BA}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{7229E886-42E7-4E43-B587-E5C9A45F6ABC}" ShortID="557968719">
+							</ChildrenList>
+						</Event>
+						<Event Name="modernVA" ID="{07BC4CD3-13DB-438F-9F4C-6B64F78BE13D}">
+							<ChildrenList>
+								<Action Name="" ID="{31600B5E-1C4A-4AAC-A634-DC2273040C90}" ShortID="225330685">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Modern" ID="{4C0E9949-646A-4E69-823B-B49244613497}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="starVA" ID="{1DE61A4A-51F2-4744-B5E7-79EB766C6E2D}">
+							<ChildrenList>
+								<Action Name="" ID="{7A489A53-0255-4240-97B3-C522CFB9FB52}" ShortID="300528260">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="starFighter" ID="{E0DC4F80-9695-4E58-868A-9FF81CD3072C}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopVA" ID="{1416746A-0CFD-4925-9EFE-A981906CFDAF}">
+							<ChildrenList>
+								<Action Name="" ID="{9BFB0CAA-377E-4BD1-A8BC-9F09ED2444D5}" ShortID="81880132">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="highSpeed" ID="{6FED894B-0ECC-4C28-AF54-E2598CCE0080}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+											<ObjectRef Name="VA" ID="{28C71E82-9313-4000-9F8D-60545C3FA8A0}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="pauseVA" ID="{65639EDD-0B68-45E0-8716-3C8C3B560999}">
+							<ChildrenList>
+								<Action Name="" ID="{F04634E9-B7D7-498C-BC92-526A058E0E8A}" ShortID="865678299">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VA" ID="{28C71E82-9313-4000-9F8D-60545C3FA8A0}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="resumeVA" ID="{111607F3-45DE-4638-9A14-021010FEAAC3}">
+							<ChildrenList>
+								<Action Name="" ID="{7E97F804-EFC1-4BF1-9A5C-1F2DFF450351}" ShortID="317742892">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="9"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VA" ID="{28C71E82-9313-4000-9F8D-60545C3FA8A0}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

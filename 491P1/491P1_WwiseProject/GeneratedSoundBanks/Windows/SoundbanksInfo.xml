@@ -50,6 +50,89 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
+		<SoundBank Id="580025197" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\radioChatter</ObjectPath>
+			<ShortName>radioChatter</ShortName>
+			<Path>radioChatter.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3864511342" Name="classicChatter" ObjectPath="\Events\Default Work Unit\radioChatter\classicChatter"/>
+				<Event Id="1350997147" Name="modernChatter" ObjectPath="\Events\Default Work Unit\radioChatter\modernChatter"/>
+				<Event Id="1611798188" Name="pauseChatter" ObjectPath="\Events\Default Work Unit\radioChatter\pauseChatter" MaxAttenuation="0.000000"/>
+				<Event Id="2614938359" Name="resumeChatter" ObjectPath="\Events\Default Work Unit\radioChatter\resumeChatter" MaxAttenuation="0.000000"/>
+				<Event Id="4239271640" Name="starChatter" ObjectPath="\Events\Default Work Unit\radioChatter\starChatter"/>
+				<Event Id="658101412" Name="stopChatter" ObjectPath="\Events\Default Work Unit\radioChatter\stopChatter" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="17413113" Language="SFX">
+					<ShortName>starRadioChatter4.wav</ShortName>
+					<Path>SFX/starRadioChatter4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="77182369" Language="SFX">
+					<ShortName>Chatter5.wav</ShortName>
+					<Path>SFX/Chatter5_1C9C67B2.wem</Path>
+				</File>
+				<File Id="170393890" Language="SFX">
+					<ShortName>modernChatter_01.wav</ShortName>
+					<Path>SFX/modernChatter_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="228260870" Language="SFX">
+					<ShortName>futureChatter_01.wav</ShortName>
+					<Path>SFX/futureChatter_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="333841133" Language="SFX">
+					<ShortName>Chatter3.wav</ShortName>
+					<Path>SFX/Chatter3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="364292968" Language="SFX">
+					<ShortName>mRadioChatter2.wav</ShortName>
+					<Path>SFX/mRadioChatter2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="381119258" Language="SFX">
+					<ShortName>futureChatter_03.wav</ShortName>
+					<Path>SFX/futureChatter_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="536181042" Language="SFX">
+					<ShortName>modernChatter_03.wav</ShortName>
+					<Path>SFX/modernChatter_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="585003597" Language="SFX">
+					<ShortName>Chatter1.wav</ShortName>
+					<Path>SFX/Chatter1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="637993574" Language="SFX">
+					<ShortName>futureChatter_02.wav</ShortName>
+					<Path>SFX/futureChatter_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="683962546" Language="SFX">
+					<ShortName>starRaduiChatter3.wav</ShortName>
+					<Path>SFX/starRaduiChatter3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="779328213" Language="SFX">
+					<ShortName>Chatter2.wav</ShortName>
+					<Path>SFX/Chatter2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="919049102" Language="SFX">
+					<ShortName>modernChatter_02.wav</ShortName>
+					<Path>SFX/modernChatter_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="951028208" Language="SFX">
+					<ShortName>starRadioChatter5.wav</ShortName>
+					<Path>SFX/starRadioChatter5_1C9C67B2.wem</Path>
+				</File>
+				<File Id="951504622" Language="SFX">
+					<ShortName>mRadioChatter3.wav</ShortName>
+					<Path>SFX/mRadioChatter3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="968479887" Language="SFX">
+					<ShortName>Chatter4.wav</ShortName>
+					<Path>SFX/Chatter4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="995784129" Language="SFX">
+					<ShortName>mRadioChatter1.wav</ShortName>
+					<Path>SFX/mRadioChatter1_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
 		<SoundBank Id="753483701" Language="SFX">
 			<ObjectPath>\SoundBanks\Default Work Unit\Explosions</ObjectPath>
 			<ShortName>Explosions</ShortName>
@@ -133,9 +216,9 @@
 			<ShortName>playerEngine</ShortName>
 			<Path>playerEngine.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3750477901" Name="startClassicPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startClassicPEngine" MaxAttenuation="150.000000"/>
-				<Event Id="1462390100" Name="startModernPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startModernPEngine" MaxAttenuation="150.000000"/>
-				<Event Id="1146369487" Name="startStarPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startStarPEngine" MaxAttenuation="150.000000"/>
+				<Event Id="3750477901" Name="startClassicPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startClassicPEngine" MaxAttenuation="75.000000"/>
+				<Event Id="1462390100" Name="startModernPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startModernPEngine" MaxAttenuation="75.000000"/>
+				<Event Id="1146369487" Name="startStarPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startStarPEngine" MaxAttenuation="75.000000"/>
 				<Event Id="2473397641" Name="stopPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\stopPEngine" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -398,6 +481,43 @@
 				<File Id="1072179058" Language="SFX">
 					<ShortName>M4Single_02.wav</ShortName>
 					<Path>SFX/M4Single_02_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1534528554" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\VA</ObjectPath>
+			<ShortName>VA</ShortName>
+			<Path>VA.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3939636660" Name="classicVA" ObjectPath="\Events\Default Work Unit\VA\classicVA"/>
+				<Event Id="1476987571" Name="modernVA" ObjectPath="\Events\Default Work Unit\VA\modernVA"/>
+				<Event Id="989181134" Name="starVA" ObjectPath="\Events\Default Work Unit\VA\starVA"/>
+				<Event Id="798440610" Name="stopVA" ObjectPath="\Events\Default Work Unit\VA\stopVA" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="18348055" Language="SFX">
+					<ShortName>starMission_01.wav</ShortName>
+					<Path>SFX/starMission_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="27620938" Language="SFX">
+					<ShortName>starMission_02.wav</ShortName>
+					<Path>SFX/starMission_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="70609957" Language="SFX">
+					<ShortName>ClassicVA_02.wav</ShortName>
+					<Path>SFX/ClassicVA_02_1C9C67B2.wem</Path>
+				</File>
+				<File Id="577298175" Language="SFX">
+					<ShortName>ClassicVA_01.wav</ShortName>
+					<Path>SFX/ClassicVA_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="641710785" Language="SFX">
+					<ShortName>ModernMis_01.wav</ShortName>
+					<Path>SFX/ModernMis_01_1C9C67B2.wem</Path>
+				</File>
+				<File Id="927439579" Language="SFX">
+					<ShortName>ModernMis_02.wav</ShortName>
+					<Path>SFX/ModernMis_02_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

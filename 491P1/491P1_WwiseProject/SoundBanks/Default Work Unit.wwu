@@ -81,6 +81,7 @@
 				</SoundBank>
 				<SoundBank Name="Alerts" ID="{D6D5599C-55F9-4F91-8C0E-A0B2E0EE2C5C}">
 					<ObjectInclusionList>
+						<ObjectRef Name="weaponChange" ID="{11A0017F-2D3F-4907-8A12-3F61AA7667D5}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopLockOn" ID="{63FE8CBF-CE3F-4B7F-9F4B-0C07D0184D74}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="lockOn" ID="{CCBC306A-EA0A-4E8A-8F32-9C8C68B385AC}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
@@ -89,13 +90,20 @@
 				</SoundBank>
 				<SoundBank Name="playerEngine" ID="{F67EA802-5E48-424B-BDFE-D5E9DEE24746}">
 					<ObjectInclusionList>
-						<ObjectRef Name="accelStarEngine" ID="{44FAE0DF-F3FA-41FB-8755-CB943954B1AA}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="accelClassicEngine" ID="{8CE39727-CB85-4213-9313-AA7FD442A878}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="deccelStarEngine" ID="{0C635CAD-4FE8-4872-8992-4431ED2EE2A9}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="deccelClassicEngine" ID="{2E481C31-0E5D-4973-8249-34AAEBCB415D}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="startStarPEngine" ID="{44FAE0DF-F3FA-41FB-8755-CB943954B1AA}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="startClassicPEngine" ID="{8CE39727-CB85-4213-9313-AA7FD442A878}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopPEngine" ID="{3E0B447A-06D2-4AD5-B04C-FA406EAB78FF}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="accelModernEngine" ID="{E993B828-6D3E-4B50-B309-351475CEA267}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="deccelModernEngine" ID="{91782F26-79AB-4D8D-9884-DC2348CC3779}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="startModernPEngine" ID="{E993B828-6D3E-4B50-B309-351475CEA267}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="VA" ID="{5804FCE7-DD55-4DFA-ADD5-69CB045DA220}">
+					<ObjectInclusionList>
+						<ObjectRef Name="modernVA" ID="{07BC4CD3-13DB-438F-9F4C-6B64F78BE13D}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="classicVA" ID="{922FE8C2-72BC-4614-A917-72FA16EED0B0}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="starVA" ID="{1DE61A4A-51F2-4744-B5E7-79EB766C6E2D}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stopVA" ID="{1416746A-0CFD-4925-9EFE-A981906CFDAF}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

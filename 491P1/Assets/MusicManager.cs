@@ -30,10 +30,13 @@ public class MusicManager : MonoBehaviour {
 		if (currentMode == 0) {
 			
 			AkSoundEngine.SetSwitch ("Music", "Menu", this.gameObject);
+            AkSoundEngine.PostEvent("stopVA", this.gameObject);
 		}
 		if (currentMode == 1) {
 			
 			AkSoundEngine.SetSwitch ("Music", "Classic", this.gameObject);
+            AkSoundEngine.PostEvent("stopVA", this.gameObject);
+            AkSoundEngine.PostEvent("stopVA", this.gameObject);
 			/*
 			print ("this gets called");
 			print ("current mode is " + currentMode);
@@ -45,10 +48,14 @@ public class MusicManager : MonoBehaviour {
 		if (currentMode == 2) {
 			
 			AkSoundEngine.SetSwitch ("Music", "Modern", this.gameObject);
+            AkSoundEngine.PostEvent("stopVA", this.gameObject);
+            AkSoundEngine.PostEvent("modernVA", this.gameObject);
 		}
 		if (currentMode == 3) {
 			
 			AkSoundEngine.SetSwitch ("Music", "Starfighter", this.gameObject);
+            AkSoundEngine.PostEvent("stopVA", this.gameObject);
+            AkSoundEngine.PostEvent("starVA", this.gameObject);
 		}
 
 	}
@@ -56,29 +63,39 @@ public class MusicManager : MonoBehaviour {
 	{
 		//AkSoundEngine.PostEvent ("StopEverything", this.gameObject);
 		AkSoundEngine.SetSwitch ("Music", "Menu", this.gameObject);
+        AkSoundEngine.PostEvent("stopVA", this.gameObject);
 	}
 	public void switchClassic()
 	{
 		//AkSoundEngine.PostEvent ("StopEverything", this.gameObject);
 		AkSoundEngine.SetSwitch ("Music", "Classic", this.gameObject);
+        AkSoundEngine.PostEvent("stopVA", this.gameObject);
+        AkSoundEngine.PostEvent("classicVA", this.gameObject);
+
 	}
 	public void switchModern()
 	{
 		//AkSoundEngine.PostEvent ("StopEverything", this.gameObject);
 		AkSoundEngine.SetSwitch ("Music", "Modern", this.gameObject);
+        AkSoundEngine.PostEvent("stopVA", this.gameObject);
+        AkSoundEngine.PostEvent("modernVA", this.gameObject);
 	}
 	public void switchstarFighter()
 	{
 		//AkSoundEngine.PostEvent ("StopEverything", this.gameObject);
 		AkSoundEngine.SetSwitch ("Music", "Starfighter", this.gameObject);
+        AkSoundEngine.PostEvent("stopVA", this.gameObject);
+        AkSoundEngine.PostEvent("starVA", this.gameObject);
 	}
 	public void pauseMusic()
 	{
 		AkSoundEngine.PostEvent ("PauseMusic", this.gameObject);
+        AkSoundEngine.PostEvent("pauseVA", this.gameObject);
 	}
 	public void resumeMusic()
 	{
 		AkSoundEngine.PostEvent ("ResumeMusic", this.gameObject);
+        AkSoundEngine.PostEvent("resumeVA", this.gameObject);
 	}
 
 }

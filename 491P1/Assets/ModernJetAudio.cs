@@ -25,7 +25,7 @@ public class ModernJetAudio : MonoBehaviour {
 	Vector3 listenerLastPosition = Vector3.zero;
 	void Awake(){
 		AkSoundEngine.PostEvent ("startModernEngine", this.gameObject);
-		print ("enemy engine started");
+		//print ("enemy engine started");
 		musicManager = GameObject.Find ("WwiseGlobal");
 		musicScript = musicManager.GetComponent<MusicManager> ();
 		if (musicScript.currentMode == 0) {

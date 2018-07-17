@@ -9,14 +9,16 @@
 				<File Name="Impacts" Hash="1737553256" Timestamp="1531845209"/>
 				<File Name="Init" Hash="1517020354" Timestamp="1531853276"/>
 				<File Name="Music" Hash="1768680013" Timestamp="1531718524"/>
+				<File Name="VA" Hash="813996153" Timestamp="1531862218"/>
 				<File Name="Weapons" Hash="2952702897" Timestamp="1531846469"/>
 				<File Name="aiEngines" Hash="589161630" Timestamp="1531797695"/>
-				<File Name="playerEngine" Hash="3334451780" Timestamp="1531853276"/>
+				<File Name="playerEngine" Hash="129559742" Timestamp="1531863510"/>
+				<File Name="radioChatter" Hash="2470479036" Timestamp="1531864028"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="89585561" Timestamp="1531855886"/>
+				<File Name="" Hash="815111955" Timestamp="1531864028"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -29,14 +31,16 @@
 				<File Name="Impacts" Hash="1737553256" Timestamp="1531845210"/>
 				<File Name="Init" Hash="4103566968" Timestamp="1531853276"/>
 				<File Name="Music" Hash="1768680013" Timestamp="1531718524"/>
+				<File Name="VA" Hash="813996153" Timestamp="1531862219"/>
 				<File Name="Weapons" Hash="2952702897" Timestamp="1531846470"/>
 				<File Name="aiEngines" Hash="589161630" Timestamp="1531797695"/>
-				<File Name="playerEngine" Hash="3334451780" Timestamp="1531853276"/>
+				<File Name="playerEngine" Hash="129559742" Timestamp="1531863510"/>
+				<File Name="radioChatter" Hash="2470479036" Timestamp="1531864029"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3964378207" Timestamp="1531855886"/>
+				<File Name="" Hash="2957049589" Timestamp="1531864029"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

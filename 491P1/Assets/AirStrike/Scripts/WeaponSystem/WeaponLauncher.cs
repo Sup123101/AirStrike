@@ -344,7 +344,7 @@ namespace HWRWeaponSystem
            
 					if (target) {
 						DrawTargetLockon (target.transform, true);
-                       print("locked on target");
+                      // print("locked on target");
                         lockStatus = true;
 					}
             
@@ -360,7 +360,7 @@ namespace HWRWeaponSystem
 										float dis = Vector3.Distance (objs [i].transform.position, transform.position);
 										if (DistanceLock > dis) {
 											DrawTargetLockon (objs [i].transform, false);
-                                            print("locked on target3");
+                                           // print("locked on target3");
 										}
 									}
 								}
@@ -378,7 +378,7 @@ namespace HWRWeaponSystem
 		{
 			timetolockcount = Time.time;
 			target = null;
-            print("no longer locked");
+            //print("no longer locked");
             lockStatus = false;
 		}
 

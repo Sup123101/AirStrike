@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID CANNON = 2393348022U;
+        static const AkUniqueID CLASSICCHATTER = 3864511342U;
+        static const AkUniqueID CLASSICVA = 3939636660U;
         static const AkUniqueID FLAKEXPLOSION = 1295429296U;
         static const AkUniqueID FXEXPLOSION = 63450460U;
         static const AkUniqueID HEAVYCANNON = 4255146761U;
@@ -24,14 +26,19 @@ namespace AK
         static const AkUniqueID METALEXPLOSION = 870974975U;
         static const AkUniqueID METALSEAR = 2387391939U;
         static const AkUniqueID MISSILE = 392504123U;
+        static const AkUniqueID MODERNCHATTER = 1350997147U;
+        static const AkUniqueID MODERNVA = 1476987571U;
         static const AkUniqueID NORMALEXPLOSION = 3349451189U;
+        static const AkUniqueID PAUSECHATTER = 1611798188U;
         static const AkUniqueID PAUSEMUSIC = 1127073398U;
         static const AkUniqueID PLAYMUSIC = 417627684U;
+        static const AkUniqueID RESUMECHATTER = 2614938359U;
         static const AkUniqueID RESUMEMUSIC = 2170724709U;
         static const AkUniqueID ROCKET = 2814405U;
         static const AkUniqueID SANDBULLET = 1915059747U;
         static const AkUniqueID SANDEXPLOSION = 1702134784U;
         static const AkUniqueID SANDSEAR = 3381906398U;
+        static const AkUniqueID STARCHATTER = 4239271640U;
         static const AkUniqueID STARTBULLETLOOP = 3986950909U;
         static const AkUniqueID STARTCLASSICPENGINE = 3750477901U;
         static const AkUniqueID STARTFLAMES = 480525699U;
@@ -43,7 +50,9 @@ namespace AK
         static const AkUniqueID STARTSTARLOWHPENGINE = 3909231409U;
         static const AkUniqueID STARTSTARPENGINE = 1146369487U;
         static const AkUniqueID STARTWW2ENGINE = 369208719U;
+        static const AkUniqueID STARVA = 989181134U;
         static const AkUniqueID STOPBULLETLOOP = 8152471U;
+        static const AkUniqueID STOPCHATTER = 658101412U;
         static const AkUniqueID STOPEVERYTHING = 1940514798U;
         static const AkUniqueID STOPFLAMES = 4117621049U;
         static const AkUniqueID STOPLASERLOOP = 1745708432U;
@@ -56,6 +65,7 @@ namespace AK
         static const AkUniqueID STOPSTARALLYENGINE = 4015933481U;
         static const AkUniqueID STOPSTARENEMYENGINE = 272552693U;
         static const AkUniqueID STOPSTARLOWHPENGINE = 920968951U;
+        static const AkUniqueID STOPVA = 798440610U;
         static const AkUniqueID STOPWW2ENGINE = 3970229609U;
         static const AkUniqueID WEAPONCHANGE = 3339837753U;
     } // namespace EVENTS
@@ -136,6 +146,8 @@ namespace AK
         static const AkUniqueID IMPACTS = 1316910230U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLAYERENGINE = 852736692U;
+        static const AkUniqueID RADIOCHATTER = 580025197U;
+        static const AkUniqueID VA = 1534528554U;
         static const AkUniqueID WEAPONS = 1467963052U;
     } // namespace BANKS
 
