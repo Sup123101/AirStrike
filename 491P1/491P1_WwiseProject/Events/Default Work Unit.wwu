@@ -707,6 +707,62 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="startStarAlarm" ID="{9E7C7FAF-DA48-45C4-8D61-8A52F288E5EE}">
+							<ChildrenList>
+								<Action Name="" ID="{CF6EFB25-6CC1-484D-8C6C-23A9A06BE92D}" ShortID="405891896">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="starFighterlowHP" ID="{DFEB08DA-195E-499C-8936-B6FFBD7588C0}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="startModernAlarm" ID="{05371CAA-A121-4516-8F78-5756C16EE6A5}">
+							<ChildrenList>
+								<Action Name="" ID="{AAE85A52-1BAE-4E8B-8282-282DB49DF640}" ShortID="631719408">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="modernEvacuate" ID="{F5146771-2F9D-4522-9BB7-77F3701B8858}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopStarAlarm" ID="{3676E01B-A3CA-43B7-BBE3-3551B762FC25}">
+							<ChildrenList>
+								<Action Name="" ID="{0677A725-F229-4501-B758-F06A0157BFFE}" ShortID="655428331">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="starFighterlowHP" ID="{DFEB08DA-195E-499C-8936-B6FFBD7588C0}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopModernAlarm" ID="{A1D46A97-F98C-42EE-9811-A79E464D07A6}">
+							<ChildrenList>
+								<Action Name="" ID="{F6438B4D-7DC8-4141-A3A2-BE0718E42D07}" ShortID="750592492">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="modernEvacuate" ID="{F5146771-2F9D-4522-9BB7-77F3701B8858}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="playerEngine" ID="{2ADD3B8E-CC0E-4B3D-B240-7E93192FBC88}" ShortID="942527110">

@@ -7,7 +7,7 @@
 				<File Name="Explosions" Hash="1773373418" Timestamp="1531878776"/>
 				<File Name="FX" Hash="3193520407" Timestamp="1531870266"/>
 				<File Name="Impacts" Hash="104666234" Timestamp="1531871638"/>
-				<File Name="Init" Hash="1538861271" Timestamp="1531878776"/>
+				<File Name="Init" Hash="1758917733" Timestamp="1531879331"/>
 				<File Name="Music" Hash="3569050699" Timestamp="1531867670"/>
 				<File Name="VA" Hash="2965839723" Timestamp="1531871166"/>
 				<File Name="Weapons" Hash="1278717820" Timestamp="1531878776"/>
@@ -18,7 +18,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3280780064" Timestamp="1531879152"/>
+				<File Name="" Hash="3280780064" Timestamp="1531879331"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -29,7 +29,7 @@
 				<File Name="Explosions" Hash="1773373418" Timestamp="1531878779"/>
 				<File Name="FX" Hash="3193520407" Timestamp="1531870267"/>
 				<File Name="Impacts" Hash="104666234" Timestamp="1531871639"/>
-				<File Name="Init" Hash="921781457" Timestamp="1531878779"/>
+				<File Name="Init" Hash="884583679" Timestamp="1531879331"/>
 				<File Name="Music" Hash="3569050699" Timestamp="1531867671"/>
 				<File Name="VA" Hash="2965839723" Timestamp="1531871166"/>
 				<File Name="Weapons" Hash="1278717820" Timestamp="1531878779"/>
@@ -40,7 +40,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2818667558" Timestamp="1531879152"/>
+				<File Name="" Hash="2818667558" Timestamp="1531879331"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
