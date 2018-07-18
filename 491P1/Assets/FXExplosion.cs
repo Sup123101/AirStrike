@@ -19,7 +19,7 @@ public class FXExplosion : MonoBehaviour {
             if (hitType == 2)
             {
                 AkSoundEngine.PostEvent("metalSear", gameObject);
-            print("playing metal Sear");
+            //print("playing metal Sear");
            
             }
 
@@ -43,7 +43,7 @@ public class FXExplosion : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             hitType = 2;
-            print("I hit the player!!!");
+           // print("I hit the player!!!");
         }
         if (collision.gameObject.tag == "Enemy")
         {

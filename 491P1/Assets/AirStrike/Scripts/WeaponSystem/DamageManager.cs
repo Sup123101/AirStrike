@@ -10,7 +10,8 @@ namespace HWRWeaponSystem
 		private ObjectPool objPool;
 		[HideInInspector]
 		public GameObject LatestHit;
-
+       
+        private bool alreadynotifiedplayer = false;
 		private void Awake ()
 		{
 			objPool = this.GetComponent<ObjectPool> ();	
@@ -18,30 +19,42 @@ namespace HWRWeaponSystem
 
 		private void Start ()
 		{
+           
 
 		}
+      
 
 		public void ApplyDamage (int damage)
 		{
-			if (HP < 0)
-				return;
+            if (HP < 0)
+            {
+             
+                return;
+            }
 
 			HP -= damage;
 			if (HP <= 0) {
 				Dead ();
+  
 			}
+
 		}
 
 		public void ApplyDamage (DamagePack damage)
 		{
-			if (HP < 0)
-				return;
+            if (HP < 0)
+            {
+                
+                return;
+            }
 
 			LatestHit = damage.Owner;
 			HP -= damage.Damage;
 			if (HP <= 0) {
+              
 				Dead ();
 			}
+
 		}
 
 		public void Dead ()
@@ -60,12 +73,12 @@ namespace HWRWeaponSystem
 			if (gameObject.name =="FighterAI(Clone)" )
 			{
 				AkSoundEngine.PostEvent ("metalExplosion", gameObject);
-				print ("enemy Died");
+				//print ("enemy Died");
 			}
 			if (gameObject.name =="FighterAIFriend(Clone)" )
 			{
 				AkSoundEngine.PostEvent ("metalExplosion", gameObject);
-				print ("friendly Died");
+				//print ("friendly Died");
 			}
 			if (gameObject.name =="X_Fighter(Clone)" )
 			{

@@ -138,11 +138,11 @@
 			<ShortName>Explosions</ShortName>
 			<Path>Explosions.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1295429296" Name="flakExplosion" ObjectPath="\Events\Default Work Unit\Explosions\flakExplosion" MaxAttenuation="4000.000000"/>
-				<Event Id="63450460" Name="FXExplosion" ObjectPath="\Events\Default Work Unit\Explosions\FXExplosion" MaxAttenuation="4000.000000"/>
-				<Event Id="870974975" Name="metalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\metalExplosion" MaxAttenuation="4000.000000"/>
-				<Event Id="3349451189" Name="normalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\normalExplosion" MaxAttenuation="4000.000000"/>
-				<Event Id="1702134784" Name="sandExplosion" ObjectPath="\Events\Default Work Unit\Explosions\sandExplosion" MaxAttenuation="4000.000000"/>
+				<Event Id="1295429296" Name="flakExplosion" ObjectPath="\Events\Default Work Unit\Explosions\flakExplosion" MaxAttenuation="1500.000000"/>
+				<Event Id="63450460" Name="FXExplosion" ObjectPath="\Events\Default Work Unit\Explosions\FXExplosion" MaxAttenuation="1500.000000"/>
+				<Event Id="870974975" Name="metalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\metalExplosion" MaxAttenuation="1500.000000"/>
+				<Event Id="3349451189" Name="normalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\normalExplosion" MaxAttenuation="1500.000000"/>
+				<Event Id="1702134784" Name="sandExplosion" ObjectPath="\Events\Default Work Unit\Explosions\sandExplosion" MaxAttenuation="1500.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="805435" Language="SFX">
@@ -279,11 +279,23 @@
 			<IncludedEvents>
 				<Event Id="36280251" Name="lockOn" ObjectPath="\Events\Default Work Unit\Alerts\lockOn"/>
 				<Event Id="2930916137" Name="playSirenAlarm" ObjectPath="\Events\Default Work Unit\Alerts\playSirenAlarm" MaxAttenuation="1500.000000"/>
+				<Event Id="2889330237" Name="startModernAlarm" ObjectPath="\Events\Default Work Unit\Alerts\startModernAlarm" MaxAttenuation="75.000000"/>
+				<Event Id="2717762458" Name="startStarAlarm" ObjectPath="\Events\Default Work Unit\Alerts\startStarAlarm" MaxAttenuation="75.000000"/>
 				<Event Id="3403829859" Name="stopLockOn" ObjectPath="\Events\Default Work Unit\Alerts\stopLockOn" MaxAttenuation="0.000000"/>
+				<Event Id="2291740791" Name="stopModernAlarm" ObjectPath="\Events\Default Work Unit\Alerts\stopModernAlarm" MaxAttenuation="0.000000"/>
 				<Event Id="3710927879" Name="stopSirenAlarm" ObjectPath="\Events\Default Work Unit\Alerts\stopSirenAlarm" MaxAttenuation="0.000000"/>
+				<Event Id="925126984" Name="stopStarAlarm" ObjectPath="\Events\Default Work Unit\Alerts\stopStarAlarm" MaxAttenuation="0.000000"/>
 				<Event Id="3339837753" Name="weaponChange" ObjectPath="\Events\Default Work Unit\Alerts\weaponChange"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="61965359" Language="SFX">
+					<ShortName>modernEvacuate.wav</ShortName>
+					<Path>SFX/modernEvacuate_F17FB28C.wem</Path>
+				</File>
+				<File Id="87459436" Language="SFX">
+					<ShortName>starFighterlowHP.wav</ShortName>
+					<Path>SFX/starFighterlowHP_F17FB28C.wem</Path>
+				</File>
 				<File Id="184239255" Language="SFX">
 					<ShortName>weaponSwitch.wav</ShortName>
 					<Path>SFX/weaponSwitch_EC35753D.wem</Path>
@@ -315,11 +327,11 @@
 			<IncludedMemoryFiles>
 				<File Id="10769277" Language="SFX">
 					<ShortName>metalSear_02.wav</ShortName>
-					<Path>SFX/metalSear_02_6534E732.wem</Path>
+					<Path>SFX/metalSear_02_6377B1FE.wem</Path>
 				</File>
 				<File Id="253379395" Language="SFX">
 					<ShortName>sandSear_02.wav</ShortName>
-					<Path>SFX/sandSear_02_B90E1073.wem</Path>
+					<Path>SFX/sandSear_02_0E77B3E6.wem</Path>
 				</File>
 				<File Id="325443002" Language="SFX">
 					<ShortName>MetalHit3.wav</ShortName>
@@ -327,7 +339,7 @@
 				</File>
 				<File Id="344277745" Language="SFX">
 					<ShortName>sandSear_01.wav</ShortName>
-					<Path>SFX/sandSear_01_6A0F7D6C.wem</Path>
+					<Path>SFX/sandSear_01_7353C1A3.wem</Path>
 				</File>
 				<File Id="522475909" Language="SFX">
 					<ShortName>sandBullet_04.wav</ShortName>
@@ -351,15 +363,15 @@
 				</File>
 				<File Id="866795515" Language="SFX">
 					<ShortName>metalSear_01.wav</ShortName>
-					<Path>SFX/metalSear_01_DDAD86F0.wem</Path>
+					<Path>SFX/metalSear_01_61954776.wem</Path>
 				</File>
 				<File Id="985668054" Language="SFX">
 					<ShortName>metalSear_03.wav</ShortName>
-					<Path>SFX/metalSear_03_E86CBB8E.wem</Path>
+					<Path>SFX/metalSear_03_B0C00FA2.wem</Path>
 				</File>
 				<File Id="988056856" Language="SFX">
 					<ShortName>sandSear_03.wav</ShortName>
-					<Path>SFX/sandSear_03_DB3F2314.wem</Path>
+					<Path>SFX/sandSear_03_625BB8D2.wem</Path>
 				</File>
 				<File Id="1050266739" Language="SFX">
 					<ShortName>sandBullet_01.wav</ShortName>
@@ -378,7 +390,7 @@
 			<Path>Weapons.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2393348022" Name="Cannon" ObjectPath="\Events\Default Work Unit\Weapons\Cannon" MaxAttenuation="250.000000"/>
-				<Event Id="63450460" Name="FXExplosion" ObjectPath="\Events\Default Work Unit\Explosions\FXExplosion" MaxAttenuation="4000.000000"/>
+				<Event Id="63450460" Name="FXExplosion" ObjectPath="\Events\Default Work Unit\Explosions\FXExplosion" MaxAttenuation="1500.000000"/>
 				<Event Id="4255146761" Name="heavyCannon" ObjectPath="\Events\Default Work Unit\Weapons\heavyCannon" MaxAttenuation="250.000000"/>
 				<Event Id="103780518" Name="laserSingle" ObjectPath="\Events\Default Work Unit\Weapons\laserSingle" MaxAttenuation="250.000000"/>
 				<Event Id="4161220218" Name="M4Single" ObjectPath="\Events\Default Work Unit\Weapons\M4Single" MaxAttenuation="250.000000"/>

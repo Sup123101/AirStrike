@@ -1877,6 +1877,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Modern" ID="{4C0E9949-646A-4E69-823B-B49244613497}" ShortID="57757823">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
@@ -1927,6 +1934,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="starFighter" ID="{E0DC4F80-9695-4E58-868A-9FF81CD3072C}" ShortID="467997198">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>
@@ -1986,6 +2000,13 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Classic" ID="{80575385-A318-412D-834E-16283AA655BA}" ShortID="644970382">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{BB22C2B6-F81B-430A-9561-7C3898ECD525}"/>

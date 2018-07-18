@@ -48,8 +48,10 @@ namespace AK
         static const AkUniqueID STARTCLASSICPENGINE = 3750477901U;
         static const AkUniqueID STARTFLAMES = 480525699U;
         static const AkUniqueID STARTLASERLOOP = 3343066998U;
+        static const AkUniqueID STARTMODERNALARM = 2889330237U;
         static const AkUniqueID STARTMODERNENGINE = 1909154112U;
         static const AkUniqueID STARTMODERNPENGINE = 1462390100U;
+        static const AkUniqueID STARTSTARALARM = 2717762458U;
         static const AkUniqueID STARTSTARALLYENGINE = 3769342143U;
         static const AkUniqueID STARTSTARENEMYENGINE = 4050874075U;
         static const AkUniqueID STARTSTARLOWHPENGINE = 3909231409U;
@@ -63,11 +65,13 @@ namespace AK
         static const AkUniqueID STOPLASERLOOP = 1745708432U;
         static const AkUniqueID STOPLOCKON = 3403829859U;
         static const AkUniqueID STOPMISSILE = 1060757411U;
+        static const AkUniqueID STOPMODERNALARM = 2291740791U;
         static const AkUniqueID STOPMODERNENGINE = 1071708526U;
         static const AkUniqueID STOPMUSIC = 1917263390U;
         static const AkUniqueID STOPPENGINE = 2473397641U;
         static const AkUniqueID STOPROCKET = 1722492221U;
         static const AkUniqueID STOPSIRENALARM = 3710927879U;
+        static const AkUniqueID STOPSTARALARM = 925126984U;
         static const AkUniqueID STOPSTARALLYENGINE = 4015933481U;
         static const AkUniqueID STOPSTARENEMYENGINE = 272552693U;
         static const AkUniqueID STOPSTARLOWHPENGINE = 920968951U;

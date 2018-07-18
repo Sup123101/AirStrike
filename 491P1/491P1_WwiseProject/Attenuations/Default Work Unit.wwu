@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="Explosion" ID="{40406832-8BB0-4AEB-828F-B10565F336D3}" ShortID="918784967">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="4000"/>
+						<Property Name="RadiusMax" Type="Real64" Value="1500"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -22,18 +22,7 @@
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>576.80253</XPos>
-											<YPos>-9.40157</YPos>
-											<Flags>0</Flags>
-											<SegmentShape>Log2</SegmentShape>
-										</Point>
-										<Point>
-											<XPos>2614.42015</XPos>
-											<YPos>-19.31478</YPos>
-											<Flags>0</Flags>
-										</Point>
-										<Point>
-											<XPos>4000</XPos>
+											<XPos>1500</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -64,13 +53,7 @@
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>3028.21321</XPos>
-											<YPos>42</YPos>
-											<Flags>0</Flags>
-											<SegmentShape>Exp3</SegmentShape>
-										</Point>
-										<Point>
-											<XPos>4000</XPos>
+											<XPos>1500</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
 										</Point>
