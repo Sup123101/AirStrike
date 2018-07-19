@@ -181,7 +181,7 @@ public class MusicManager : MonoBehaviour {
     IEnumerator waitTimeInitial()
     {
         
-        yield return new WaitForSeconds(12.5f);
+        yield return new WaitForSeconds(15.5f);
         initialsoundended = true;
         chatterEnabled = true;
 

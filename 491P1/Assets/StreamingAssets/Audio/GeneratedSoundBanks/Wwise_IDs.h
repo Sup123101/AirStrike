@@ -46,6 +46,7 @@ namespace AK
         static const AkUniqueID STARCHATTER = 4239271640U;
         static const AkUniqueID STARTBULLETLOOP = 3986950909U;
         static const AkUniqueID STARTCLASSICPENGINE = 3750477901U;
+        static const AkUniqueID STARTENGINESPUTTER = 2106207540U;
         static const AkUniqueID STARTFLAMES = 480525699U;
         static const AkUniqueID STARTLASERLOOP = 3343066998U;
         static const AkUniqueID STARTMODERNALARM = 2889330237U;
@@ -60,6 +61,7 @@ namespace AK
         static const AkUniqueID STARVA = 989181134U;
         static const AkUniqueID STOPBULLETLOOP = 8152471U;
         static const AkUniqueID STOPCHATTER = 658101412U;
+        static const AkUniqueID STOPENGINESPUTTER = 4092298202U;
         static const AkUniqueID STOPEVERYTHING = 1940514798U;
         static const AkUniqueID STOPFLAMES = 4117621049U;
         static const AkUniqueID STOPLASERLOOP = 1745708432U;

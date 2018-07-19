@@ -16,11 +16,11 @@
 			<ShortName>aiEngines</ShortName>
 			<Path>aiEngines.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1909154112" Name="startModernEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startModernEngine" MaxAttenuation="600.000000"/>
-				<Event Id="3769342143" Name="startStarAllyEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startStarAllyEngine" MaxAttenuation="600.000000"/>
-				<Event Id="4050874075" Name="startStarEnemyEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startStarEnemyEngine" MaxAttenuation="600.000000"/>
-				<Event Id="3909231409" Name="startStarLowHPEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startStarLowHPEngine" MaxAttenuation="500.000000"/>
-				<Event Id="369208719" Name="startWW2Engine" ObjectPath="\Events\Default Work Unit\AIEngines\startWW2Engine" MaxAttenuation="350.000000"/>
+				<Event Id="1909154112" Name="startModernEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startModernEngine" MaxAttenuation="900.000000"/>
+				<Event Id="3769342143" Name="startStarAllyEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startStarAllyEngine" MaxAttenuation="750.000000"/>
+				<Event Id="4050874075" Name="startStarEnemyEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startStarEnemyEngine" MaxAttenuation="700.000000"/>
+				<Event Id="3909231409" Name="startStarLowHPEngine" ObjectPath="\Events\Default Work Unit\AIEngines\startStarLowHPEngine" MaxAttenuation="400.000000"/>
+				<Event Id="369208719" Name="startWW2Engine" ObjectPath="\Events\Default Work Unit\AIEngines\startWW2Engine" MaxAttenuation="700.000000"/>
 				<Event Id="1071708526" Name="stopModernEngine" ObjectPath="\Events\Default Work Unit\AIEngines\stopModernEngine" MaxAttenuation="0.000000"/>
 				<Event Id="4015933481" Name="stopStarAllyEngine" ObjectPath="\Events\Default Work Unit\AIEngines\stopStarAllyEngine" MaxAttenuation="0.000000"/>
 				<Event Id="272552693" Name="stopStarEnemyEngine" ObjectPath="\Events\Default Work Unit\AIEngines\stopStarEnemyEngine" MaxAttenuation="0.000000"/>
@@ -138,11 +138,11 @@
 			<ShortName>Explosions</ShortName>
 			<Path>Explosions.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1295429296" Name="flakExplosion" ObjectPath="\Events\Default Work Unit\Explosions\flakExplosion" MaxAttenuation="1500.000000"/>
-				<Event Id="63450460" Name="FXExplosion" ObjectPath="\Events\Default Work Unit\Explosions\FXExplosion" MaxAttenuation="1500.000000"/>
-				<Event Id="870974975" Name="metalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\metalExplosion" MaxAttenuation="1500.000000"/>
-				<Event Id="3349451189" Name="normalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\normalExplosion" MaxAttenuation="1500.000000"/>
-				<Event Id="1702134784" Name="sandExplosion" ObjectPath="\Events\Default Work Unit\Explosions\sandExplosion" MaxAttenuation="1500.000000"/>
+				<Event Id="1295429296" Name="flakExplosion" ObjectPath="\Events\Default Work Unit\Explosions\flakExplosion" MaxAttenuation="3000.000000"/>
+				<Event Id="63450460" Name="FXExplosion" ObjectPath="\Events\Default Work Unit\Explosions\FXExplosion" MaxAttenuation="3000.000000"/>
+				<Event Id="870974975" Name="metalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\metalExplosion" MaxAttenuation="3000.000000"/>
+				<Event Id="3349451189" Name="normalExplosion" ObjectPath="\Events\Default Work Unit\Explosions\normalExplosion" MaxAttenuation="3000.000000"/>
+				<Event Id="1702134784" Name="sandExplosion" ObjectPath="\Events\Default Work Unit\Explosions\sandExplosion" MaxAttenuation="3000.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="805435" Language="SFX">
@@ -216,9 +216,9 @@
 			<ShortName>playerEngine</ShortName>
 			<Path>playerEngine.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3750477901" Name="startClassicPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startClassicPEngine" MaxAttenuation="75.000000"/>
-				<Event Id="1462390100" Name="startModernPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startModernPEngine" MaxAttenuation="75.000000"/>
-				<Event Id="1146369487" Name="startStarPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startStarPEngine" MaxAttenuation="75.000000"/>
+				<Event Id="3750477901" Name="startClassicPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startClassicPEngine" MaxAttenuation="350.000000"/>
+				<Event Id="1462390100" Name="startModernPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startModernPEngine" MaxAttenuation="350.000000"/>
+				<Event Id="1146369487" Name="startStarPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\startStarPEngine" MaxAttenuation="350.000000"/>
 				<Event Id="2473397641" Name="stopPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\stopPEngine" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -278,9 +278,11 @@
 			<Path>Alerts.bnk</Path>
 			<IncludedEvents>
 				<Event Id="36280251" Name="lockOn" ObjectPath="\Events\Default Work Unit\Alerts\lockOn"/>
-				<Event Id="2930916137" Name="playSirenAlarm" ObjectPath="\Events\Default Work Unit\Alerts\playSirenAlarm" MaxAttenuation="1500.000000"/>
-				<Event Id="2889330237" Name="startModernAlarm" ObjectPath="\Events\Default Work Unit\Alerts\startModernAlarm" MaxAttenuation="75.000000"/>
-				<Event Id="2717762458" Name="startStarAlarm" ObjectPath="\Events\Default Work Unit\Alerts\startStarAlarm" MaxAttenuation="75.000000"/>
+				<Event Id="2930916137" Name="playSirenAlarm" ObjectPath="\Events\Default Work Unit\Alerts\playSirenAlarm" MaxAttenuation="1300.000000"/>
+				<Event Id="2106207540" Name="startEngineSputter" ObjectPath="\Events\Default Work Unit\Alerts\startEngineSputter" MaxAttenuation="75.000000"/>
+				<Event Id="2889330237" Name="startModernAlarm" ObjectPath="\Events\Default Work Unit\Alerts\startModernAlarm" MaxAttenuation="200.000000"/>
+				<Event Id="2717762458" Name="startStarAlarm" ObjectPath="\Events\Default Work Unit\Alerts\startStarAlarm" MaxAttenuation="200.000000"/>
+				<Event Id="4092298202" Name="stopEngineSputter" ObjectPath="\Events\Default Work Unit\Alerts\stopEngineSputter" MaxAttenuation="0.000000"/>
 				<Event Id="3403829859" Name="stopLockOn" ObjectPath="\Events\Default Work Unit\Alerts\stopLockOn" MaxAttenuation="0.000000"/>
 				<Event Id="2291740791" Name="stopModernAlarm" ObjectPath="\Events\Default Work Unit\Alerts\stopModernAlarm" MaxAttenuation="0.000000"/>
 				<Event Id="3710927879" Name="stopSirenAlarm" ObjectPath="\Events\Default Work Unit\Alerts\stopSirenAlarm" MaxAttenuation="0.000000"/>
@@ -299,6 +301,10 @@
 				<File Id="184239255" Language="SFX">
 					<ShortName>weaponSwitch.wav</ShortName>
 					<Path>SFX/weaponSwitch_EC35753D.wem</Path>
+				</File>
+				<File Id="192512106" Language="SFX">
+					<ShortName>EngineSputter.wav</ShortName>
+					<Path>SFX/EngineSputter_F17FB28C.wem</Path>
 				</File>
 				<File Id="306576491" Language="SFX">
 					<ShortName>lockOnStart.wav</ShortName>
@@ -319,10 +325,10 @@
 			<ShortName>Impacts</ShortName>
 			<Path>Impacts.bnk</Path>
 			<IncludedEvents>
-				<Event Id="730234386" Name="metalBullet" ObjectPath="\Events\Default Work Unit\Impacts\metalBullet" MaxAttenuation="320.000000"/>
-				<Event Id="2387391939" Name="metalSear" ObjectPath="\Events\Default Work Unit\Impacts\metalSear" MaxAttenuation="320.000000"/>
+				<Event Id="730234386" Name="metalBullet" ObjectPath="\Events\Default Work Unit\Impacts\metalBullet" MaxAttenuation="400.000000"/>
+				<Event Id="2387391939" Name="metalSear" ObjectPath="\Events\Default Work Unit\Impacts\metalSear" MaxAttenuation="400.000000"/>
 				<Event Id="1915059747" Name="sandBullet" ObjectPath="\Events\Default Work Unit\Impacts\sandBullet" MaxAttenuation="180.000000"/>
-				<Event Id="3381906398" Name="sandSear" ObjectPath="\Events\Default Work Unit\Impacts\sandSear" MaxAttenuation="320.000000"/>
+				<Event Id="3381906398" Name="sandSear" ObjectPath="\Events\Default Work Unit\Impacts\sandSear" MaxAttenuation="400.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="10769277" Language="SFX">
@@ -389,13 +395,13 @@
 			<ShortName>Weapons</ShortName>
 			<Path>Weapons.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2393348022" Name="Cannon" ObjectPath="\Events\Default Work Unit\Weapons\Cannon" MaxAttenuation="250.000000"/>
-				<Event Id="63450460" Name="FXExplosion" ObjectPath="\Events\Default Work Unit\Explosions\FXExplosion" MaxAttenuation="1500.000000"/>
-				<Event Id="4255146761" Name="heavyCannon" ObjectPath="\Events\Default Work Unit\Weapons\heavyCannon" MaxAttenuation="250.000000"/>
-				<Event Id="103780518" Name="laserSingle" ObjectPath="\Events\Default Work Unit\Weapons\laserSingle" MaxAttenuation="250.000000"/>
-				<Event Id="4161220218" Name="M4Single" ObjectPath="\Events\Default Work Unit\Weapons\M4Single" MaxAttenuation="250.000000"/>
-				<Event Id="392504123" Name="Missile" ObjectPath="\Events\Default Work Unit\Weapons\Missile" MaxAttenuation="350.000000"/>
-				<Event Id="2814405" Name="Rocket" ObjectPath="\Events\Default Work Unit\Weapons\Rocket" MaxAttenuation="350.000000"/>
+				<Event Id="2393348022" Name="Cannon" ObjectPath="\Events\Default Work Unit\Weapons\Cannon" MaxAttenuation="500.000000"/>
+				<Event Id="63450460" Name="FXExplosion" ObjectPath="\Events\Default Work Unit\Explosions\FXExplosion" MaxAttenuation="3000.000000"/>
+				<Event Id="4255146761" Name="heavyCannon" ObjectPath="\Events\Default Work Unit\Weapons\heavyCannon" MaxAttenuation="500.000000"/>
+				<Event Id="103780518" Name="laserSingle" ObjectPath="\Events\Default Work Unit\Weapons\laserSingle" MaxAttenuation="400.000000"/>
+				<Event Id="4161220218" Name="M4Single" ObjectPath="\Events\Default Work Unit\Weapons\M4Single" MaxAttenuation="500.000000"/>
+				<Event Id="392504123" Name="Missile" ObjectPath="\Events\Default Work Unit\Weapons\Missile" MaxAttenuation="900.000000"/>
+				<Event Id="2814405" Name="Rocket" ObjectPath="\Events\Default Work Unit\Weapons\Rocket" MaxAttenuation="900.000000"/>
 				<Event Id="3986950909" Name="startBulletLoop" ObjectPath="\Events\Default Work Unit\Weapons\startBulletLoop" MaxAttenuation="300.000000"/>
 				<Event Id="3343066998" Name="startLaserLoop" ObjectPath="\Events\Default Work Unit\Weapons\startLaserLoop"/>
 				<Event Id="8152471" Name="stopBulletLoop" ObjectPath="\Events\Default Work Unit\Weapons\stopBulletLoop" MaxAttenuation="0.000000"/>
@@ -546,7 +552,7 @@
 			<ShortName>FX</ShortName>
 			<Path>FX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="480525699" Name="startFlames" ObjectPath="\Events\Default Work Unit\FX\startFlames"/>
+				<Event Id="480525699" Name="startFlames" ObjectPath="\Events\Default Work Unit\FX\startFlames" MaxAttenuation="400.000000"/>
 				<Event Id="4117621049" Name="stopFlames" ObjectPath="\Events\Default Work Unit\FX\stopFlames" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -571,33 +577,33 @@
 				<Event Id="1722492221" Name="stopRocket" ObjectPath="\Events\Default Work Unit\Weapons\stopRocket" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="318858778" Language="SFX">
-					<ShortName>ModernLoop.wav</ShortName>
-					<Path>SFX/ModernLoop_F17FB28C.wem</Path>
+				<File Id="70156934" Language="SFX">
+					<ShortName>WW2FeelV2MixLoop.wav</ShortName>
+					<Path>SFX/WW2FeelV2MixLoop_F17FB28C.wem</Path>
 				</File>
-				<File Id="415930949" Language="SFX">
-					<ShortName>ModernInitial.wav</ShortName>
-					<Path>SFX/ModernInitial_F17FB28C.wem</Path>
+				<File Id="255791929" Language="SFX">
+					<ShortName>ModernV5MixIntro.wav</ShortName>
+					<Path>SFX/ModernV5MixIntro_F17FB28C.wem</Path>
 				</File>
-				<File Id="544570425" Language="SFX">
-					<ShortName>WW2LoopSect.wav</ShortName>
-					<Path>SFX/WW2LoopSect_F17FB28C.wem</Path>
+				<File Id="394228222" Language="SFX">
+					<ShortName>WW2FeelV2MixIntro.wav</ShortName>
+					<Path>SFX/WW2FeelV2MixIntro_F17FB28C.wem</Path>
 				</File>
-				<File Id="568381713" Language="SFX">
-					<ShortName>Menu.wav</ShortName>
-					<Path>SFX/Menu_F17FB28C.wem</Path>
+				<File Id="529045453" Language="SFX">
+					<ShortName>ModernV5Loop.wav</ShortName>
+					<Path>SFX/ModernV5Loop_F17FB28C.wem</Path>
 				</File>
-				<File Id="641770186" Language="SFX">
-					<ShortName>FutureInitial.wav</ShortName>
-					<Path>SFX/FutureInitial_F17FB28C.wem</Path>
+				<File Id="620908358" Language="SFX">
+					<ShortName>MenuandTrailerMixVersionV2Game.wav</ShortName>
+					<Path>SFX/MenuandTrailerMixVersionV2Game_F17FB28C.wem</Path>
 				</File>
-				<File Id="865486589" Language="SFX">
-					<ShortName>WW2Initial.wav</ShortName>
-					<Path>SFX/WW2Initial_F17FB28C.wem</Path>
+				<File Id="658432045" Language="SFX">
+					<ShortName>FutureMixLoop.wav</ShortName>
+					<Path>SFX/FutureMixLoop_F17FB28C.wem</Path>
 				</File>
-				<File Id="968137097" Language="SFX">
-					<ShortName>FutureLoop.wav</ShortName>
-					<Path>SFX/FutureLoop_F17FB28C.wem</Path>
+				<File Id="777960268" Language="SFX">
+					<ShortName>FutureMixIntro.wav</ShortName>
+					<Path>SFX/FutureMixIntro_F17FB28C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
