@@ -70,6 +70,7 @@ namespace AirStrikeKit
         public bool alreadyAlertedplayer = false;
         private GameObject musicManager;
         private MusicManager musicScript;
+        public int previousHP = 100;
         void Start ()
         {
             // define all component
@@ -110,10 +111,16 @@ namespace AirStrikeKit
             AkSoundEngine.PostEvent("stopModernAlarm", gameObject);
 
         }
-        void FixedUpdate ()
+        void FixedUpdate()
         {
-            //if (isThisPlayer == true)
-           // {
+            if (isThisPlayer == true)
+             {
+                if (previousHP != HP)
+                {
+                    musicScript.playStinger();
+                    previousHP = HP;
+                }
+              }
 
                 if (alreadyAlertedplayer == false)
                 {

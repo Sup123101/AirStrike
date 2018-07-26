@@ -59,6 +59,10 @@ namespace HWRWeaponSystem
         public GameObject musicManager;
         private MusicManager musicScript;
         public bool thisisPlayer;
+        private int amountlocked = 0;
+        private int amountlockedPrevious = 0;
+        private bool lockstatusStar = false;
+        private bool lockstatusStarPrevious = false;
 
 		private void Start ()
 		{
@@ -131,9 +135,23 @@ namespace HWRWeaponSystem
 		{
             AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
 		}
+		private void OnApplicationPause(bool pause)
+		{
+            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+		}
 		private void Update ()
 		{
-            
+            if(amountlockedPrevious == 0)
+            {
+                lockStatus = false;
+            }
+            else if(amountlockedPrevious != 0)
+            {
+
+                lockStatus = true;
+            } 
+
+
 
 			if (CurrentCamera == null) {
 			
@@ -150,21 +168,21 @@ namespace HWRWeaponSystem
             if (musicScript.currentMode == 3)
             {
 
-                if (previousLockStatus == false)
+                if (lockstatusStarPrevious == false)
                 {
-                    if (lockStatus == true)
+                    if (lockstatusStar == true)
                     {
                         AkSoundEngine.PostEvent("lockOn", CurrentCamera.gameObject);
-                        previousLockStatus = true;
+                        lockstatusStarPrevious = true;
                     }
 
                 }
-                if (previousLockStatus == true)
+                if (lockstatusStarPrevious == true)
                 {
-                    if (lockStatus == false)
+                    if (lockstatusStar == false)
                     {
                         AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
-                        previousLockStatus = false;
+                        lockstatusStarPrevious = false;
                     }
 
                 }
@@ -212,43 +230,61 @@ namespace HWRWeaponSystem
 							if (AimObject != null && AimObject.tag == TargetTag [t]) {
 								float dis = Vector3.Distance (AimObject.transform.position, transform.position);
 								if (DistanceLock > dis) {
+                                    //lockStatus = true;
 									if (distance > dis) {
 										if (timetolockcount + TimeToLock < Time.time) {	
 											distance = dis;
 											target = AimObject;
+
 										}
 									}
 								}	
 							} else {
 								for (int i = 0; i < objs.Length; i++) {
 									if (objs [i]) {
+                                        
 										Vector3 dir = (objs [i].transform.position - transform.position).normalized;
 										float direction = Vector3.Dot (dir, transform.forward);
 										float dis = Vector3.Distance (objs [i].transform.position, transform.position);
 										if (direction >= AimDirection) {
 											if (DistanceLock > dis) {
+                                                //lockStatus = true;
 												if (distance > dis) {
 													if (timetolockcount + TimeToLock < Time.time) {	
 														distance = dis;
 														target = objs [i];
+                                                       
 													}
 												}
 											}
+
 										}
 									}
+
 								}
+
 							}
 						}
 					}
 				}
+
 				if (target) {
+                    
+
 					float targetdistance = Vector3.Distance (transform.position, target.transform.position);
 					Vector3 dir = (target.transform.position - transform.position).normalized;
 					float direction = Vector3.Dot (dir, transform.forward);
 
 					if (targetdistance > DistanceLock || direction <= AimDirection) {
 						Unlock ();
+
+
 					}
+                   
+                    else if (targetdistance < DistanceLock || direction <= AimDirection){
+                        //lockStatus = true;
+                    }
+
 				}
 		
 				if (Reloading) {
@@ -299,7 +335,9 @@ namespace HWRWeaponSystem
 				if (direction > 0.5f) {
 					Vector3 screenPos = CurrentCamera.WorldToScreenPoint (aimtarget.transform.position);
 					float distance = Vector3.Distance (transform.position, aimtarget.transform.position);
+                    //lockStatus = true;
 					if (locked) {
+                      
                         if (TargetLockedTexture)
                             
 							GUI.DrawTexture (new Rect (screenPos.x - TargetLockedTexture.width / 2, Screen.height - screenPos.y - TargetLockedTexture.height / 2, TargetLockedTexture.width, TargetLockedTexture.height), TargetLockedTexture);
@@ -345,8 +383,8 @@ namespace HWRWeaponSystem
            
 					if (target) {
 						DrawTargetLockon (target.transform, true);
-                      // print("locked on target");
-                        lockStatus = true;
+                        lockstatusStar = true;
+                       
 					}
             
 					for (int t = 0; t < TargetTag.Length; t++) {
@@ -361,13 +399,38 @@ namespace HWRWeaponSystem
 										float dis = Vector3.Distance (objs [i].transform.position, transform.position);
 										if (DistanceLock > dis) {
 											DrawTargetLockon (objs [i].transform, false);
-                                           // print("locked on target3");
+
+                                            if (thisisPlayer == true)
+                                            {
+                                               // print("hey we got something");
+                                                amountlocked += 1;
+                                            }
+
+
 										}
 									}
 								}
+                                if (i == (objs.Length -1)){
+                                    if(amountlocked == 0){
+                                        amountlockedPrevious = 0;
+                                        //print("this is called");
+                                    }
+                                    else if(amountlocked != 0){
+                                        amountlockedPrevious = amountlocked;
+                                        //print("this is called instead");
+                                    }
+                                    
+                                }
 							}
+                           // print("amountLockedPrevious " + amountlockedPrevious);
+                            //print("amountLocked " + amountlocked);
+                            amountlocked = 0;
+
 						}
 					}
+                    //amountlockedPrevious = amountlocked;
+
+                    //amountlocked = 0;
 				}
 				DrawCrosshair ();
 			
@@ -380,7 +443,10 @@ namespace HWRWeaponSystem
 			timetolockcount = Time.time;
 			target = null;
             //print("no longer locked");
-            lockStatus = false;
+            //lockStatus = false;
+
+                lockstatusStar = false;
+
 		}
 
 		private int currentOuter = 0;

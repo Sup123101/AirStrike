@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID CANNON = 2393348022U;
         static const AkUniqueID CLASSICCHATTER = 3864511342U;
+        static const AkUniqueID CLASSICSTINGER = 3565588335U;
         static const AkUniqueID CLASSICVA = 3939636660U;
         static const AkUniqueID FLAKEXPLOSION = 1295429296U;
         static const AkUniqueID FXEXPLOSION = 63450460U;
@@ -27,6 +28,7 @@ namespace AK
         static const AkUniqueID METALSEAR = 2387391939U;
         static const AkUniqueID MISSILE = 392504123U;
         static const AkUniqueID MODERNCHATTER = 1350997147U;
+        static const AkUniqueID MODERNSTINGER = 3992946878U;
         static const AkUniqueID MODERNVA = 1476987571U;
         static const AkUniqueID NORMALEXPLOSION = 3349451189U;
         static const AkUniqueID PAUSEALL = 4091047182U;
@@ -44,6 +46,7 @@ namespace AK
         static const AkUniqueID SANDEXPLOSION = 1702134784U;
         static const AkUniqueID SANDSEAR = 3381906398U;
         static const AkUniqueID STARCHATTER = 4239271640U;
+        static const AkUniqueID STARSTINGER = 1884024825U;
         static const AkUniqueID STARTBULLETLOOP = 3986950909U;
         static const AkUniqueID STARTCLASSICPENGINE = 3750477901U;
         static const AkUniqueID STARTENGINESPUTTER = 2106207540U;
@@ -158,6 +161,13 @@ namespace AK
         static const AkUniqueID ROCKETDOPPLER = 2590523415U;
         static const AkUniqueID STARFIGHTERDOPPLER = 4039399636U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID CLASSICSTINGER = 3565588335U;
+        static const AkUniqueID MODERNSTINGER = 3992946878U;
+        static const AkUniqueID STARSTINGER = 1884024825U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

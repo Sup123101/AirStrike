@@ -88,9 +88,11 @@
 						<ObjectRef Name="stopStarAlarm" ID="{3676E01B-A3CA-43B7-BBE3-3551B762FC25}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="startModernAlarm" ID="{05371CAA-A121-4516-8F78-5756C16EE6A5}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="startStarAlarm" ID="{9E7C7FAF-DA48-45C4-8D61-8A52F288E5EE}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="startEngineSputter" ID="{9D12A3DF-F8DC-47A0-9B88-D7E61476AAF2}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopSirenAlarm" ID="{40579724-462D-47F0-9385-72D4A2C9FFF5}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="weaponChange" ID="{11A0017F-2D3F-4907-8A12-3F61AA7667D5}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopLockOn" ID="{63FE8CBF-CE3F-4B7F-9F4B-0C07D0184D74}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="stopEngineSputter" ID="{3AE0D026-92BE-4BAE-A509-07E3A1F2F663}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="lockOn" ID="{CCBC306A-EA0A-4E8A-8F32-9C8C68B385AC}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

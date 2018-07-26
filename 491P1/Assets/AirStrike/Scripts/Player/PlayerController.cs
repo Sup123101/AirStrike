@@ -33,6 +33,7 @@ namespace AirStrikeKit
 		public bool ShowHowto;
         public bool currentAccel = false;
         public bool previousAccel = false;
+        public bool previousWeapon1 = false;
         public GameObject musicManager;
         private MusicManager musicScript;
         public GameObject playerEngineAudio;
@@ -162,6 +163,7 @@ namespace AirStrikeKit
 			MouseLock.MouseLocked = true;
 		
 			flight.AxisControl (new Vector2 (Input.GetAxis ("Mouse X"), Input.GetAxis ("Mouse Y")));
+            flight.AxisControl(new Vector2(Input.GetAxis("X-Axis"), Input.GetAxis("Y-Axis")));
 
 			if (SimpleControl) {
 				flight.TurnControl (Input.GetAxis ("Mouse X"));
@@ -184,7 +186,22 @@ namespace AirStrikeKit
 		     
 			if (Input.GetButton ("Fire1")) {
 				flight.WeaponControl.LaunchWeapon ();
+                if (previousWeapon1 == false)
+                {
+                    previousWeapon1 = true;
+                    musicScript.playStinger();
+                }
 			}
+            if ((Input.GetButton("Fire1")) == false)
+            {
+
+                if (previousWeapon1 == true)
+                {
+                    previousWeapon1 = false;
+                    //print("stopped fireing");
+                }
+
+            }
            
            
 
@@ -198,7 +215,11 @@ namespace AirStrikeKit
 				if (View)
 					View.SwitchCameras ();	
 			}	
-
+            if (Input.GetKeyDown("joystick button 0"))
+            {
+                if (View)
+                    View.SwitchCameras ();  
+            }
 		}
 
 		void MobileController ()

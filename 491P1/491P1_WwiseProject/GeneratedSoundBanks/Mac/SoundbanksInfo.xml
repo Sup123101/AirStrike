@@ -567,16 +567,31 @@
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3565588335" Name="classicStinger" ObjectPath="\Events\Default Work Unit\Stingers\classicStinger" MaxAttenuation="0.000000"/>
+				<Event Id="3992946878" Name="modernStinger" ObjectPath="\Events\Default Work Unit\Stingers\modernStinger" MaxAttenuation="0.000000"/>
 				<Event Id="4091047182" Name="pauseAll" ObjectPath="\Events\Default Work Unit\pauseAll" MaxAttenuation="0.000000"/>
 				<Event Id="1127073398" Name="PauseMusic" ObjectPath="\Events\Default Work Unit\Music\PauseMusic" MaxAttenuation="0.000000"/>
 				<Event Id="417627684" Name="PlayMusic" ObjectPath="\Events\Default Work Unit\Music\PlayMusic"/>
 				<Event Id="3240900869" Name="resumeAll" ObjectPath="\Events\Default Work Unit\resumeAll" MaxAttenuation="0.000000"/>
 				<Event Id="2170724709" Name="ResumeMusic" ObjectPath="\Events\Default Work Unit\Music\ResumeMusic" MaxAttenuation="0.000000"/>
+				<Event Id="1884024825" Name="starStinger" ObjectPath="\Events\Default Work Unit\Stingers\starStinger" MaxAttenuation="0.000000"/>
 				<Event Id="1940514798" Name="StopEverything" ObjectPath="\Events\Default Work Unit\StopEverything" MaxAttenuation="0.000000"/>
 				<Event Id="1917263390" Name="stopMusic" ObjectPath="\Events\Default Work Unit\Music\stopMusic" MaxAttenuation="0.000000"/>
 				<Event Id="1722492221" Name="stopRocket" ObjectPath="\Events\Default Work Unit\Weapons\stopRocket" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="16875651" Language="SFX">
+					<ShortName>FutureStinger1.wav</ShortName>
+					<Path>SFX/FutureStinger1_F17FB28C.wem</Path>
+				</File>
+				<File Id="41515126" Language="SFX">
+					<ShortName>ModernStinger4.wav</ShortName>
+					<Path>SFX/ModernStinger4_F17FB28C.wem</Path>
+				</File>
+				<File Id="60283949" Language="SFX">
+					<ShortName>FutureStinger2.wav</ShortName>
+					<Path>SFX/FutureStinger2_F17FB28C.wem</Path>
+				</File>
 				<File Id="70156934" Language="SFX">
 					<ShortName>WW2FeelV2MixLoop.wav</ShortName>
 					<Path>SFX/WW2FeelV2MixLoop_F17FB28C.wem</Path>
@@ -585,13 +600,33 @@
 					<ShortName>ModernV5MixIntro.wav</ShortName>
 					<Path>SFX/ModernV5MixIntro_F17FB28C.wem</Path>
 				</File>
+				<File Id="272583484" Language="SFX">
+					<ShortName>WW2Stinger2.wav</ShortName>
+					<Path>SFX/WW2Stinger2_F17FB28C.wem</Path>
+				</File>
 				<File Id="394228222" Language="SFX">
 					<ShortName>WW2FeelV2MixIntro.wav</ShortName>
 					<Path>SFX/WW2FeelV2MixIntro_F17FB28C.wem</Path>
 				</File>
+				<File Id="481725782" Language="SFX">
+					<ShortName>FutureStinger3.wav</ShortName>
+					<Path>SFX/FutureStinger3_F17FB28C.wem</Path>
+				</File>
+				<File Id="495273842" Language="SFX">
+					<ShortName>ModernStinger2.wav</ShortName>
+					<Path>SFX/ModernStinger2_F17FB28C.wem</Path>
+				</File>
 				<File Id="529045453" Language="SFX">
 					<ShortName>ModernV5Loop.wav</ShortName>
 					<Path>SFX/ModernV5Loop_F17FB28C.wem</Path>
+				</File>
+				<File Id="532667800" Language="SFX">
+					<ShortName>FutureStinger4.wav</ShortName>
+					<Path>SFX/FutureStinger4_F17FB28C.wem</Path>
+				</File>
+				<File Id="576225302" Language="SFX">
+					<ShortName>WW2Stinger4.wav</ShortName>
+					<Path>SFX/WW2Stinger4_F17FB28C.wem</Path>
 				</File>
 				<File Id="620908358" Language="SFX">
 					<ShortName>MenuandTrailerMixVersionV2Game.wav</ShortName>
@@ -604,6 +639,22 @@
 				<File Id="777960268" Language="SFX">
 					<ShortName>FutureMixIntro.wav</ShortName>
 					<Path>SFX/FutureMixIntro_F17FB28C.wem</Path>
+				</File>
+				<File Id="786941442" Language="SFX">
+					<ShortName>ModernStinger1.wav</ShortName>
+					<Path>SFX/ModernStinger1_F17FB28C.wem</Path>
+				</File>
+				<File Id="845299351" Language="SFX">
+					<ShortName>WW2Stinger1.wav</ShortName>
+					<Path>SFX/WW2Stinger1_F17FB28C.wem</Path>
+				</File>
+				<File Id="910991083" Language="SFX">
+					<ShortName>WW2Stinger3.wav</ShortName>
+					<Path>SFX/WW2Stinger3_F17FB28C.wem</Path>
+				</File>
+				<File Id="989141673" Language="SFX">
+					<ShortName>ModernStinger3.wav</ShortName>
+					<Path>SFX/ModernStinger3_F17FB28C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

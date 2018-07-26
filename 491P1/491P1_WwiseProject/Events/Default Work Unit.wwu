@@ -763,6 +763,34 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="startEngineSputter" ID="{9D12A3DF-F8DC-47A0-9B88-D7E61476AAF2}">
+							<ChildrenList>
+								<Action Name="" ID="{4D4DE15F-8219-49D0-BA8A-F5CE76A1DE37}" ShortID="1949836">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EngineSputter" ID="{7EA3AF61-8918-41FC-862B-D50B2ED805A7}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopEngineSputter" ID="{3AE0D026-92BE-4BAE-A509-07E3A1F2F663}">
+							<ChildrenList>
+								<Action Name="" ID="{AD6768D7-C474-455F-BD4E-0E9BB1BCD798}" ShortID="1030427027">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EngineSputter" ID="{7EA3AF61-8918-41FC-862B-D50B2ED805A7}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="playerEngine" ID="{2ADD3B8E-CC0E-4B3D-B240-7E93192FBC88}" ShortID="942527110">
@@ -1021,6 +1049,52 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Stingers" ID="{00077432-B81D-4A5F-9C73-CAA0E65D5B4A}" ShortID="973559746">
+					<ChildrenList>
+						<Event Name="classicStinger" ID="{0C62EE07-5A95-412E-B00F-6D5B73563789}">
+							<ChildrenList>
+								<Action Name="" ID="{28EC74D8-06A9-405E-B4CF-341604A05C21}" ShortID="1008393398">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="classicStinger" ID="{1D04CECC-7A60-43AD-A754-9A0B56867BE2}" WorkUnitID="{217100B1-47DB-4081-83B8-C119AAF0C8C0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="modernStinger" ID="{212A6828-BB8E-44EF-B229-57718408CB85}">
+							<ChildrenList>
+								<Action Name="" ID="{AA82A7A5-FA21-447E-8737-A50A8646BDF5}" ShortID="782785566">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="modernStinger" ID="{419C7125-5507-4B14-AB01-51300DCB8ED0}" WorkUnitID="{217100B1-47DB-4081-83B8-C119AAF0C8C0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="starStinger" ID="{70F53A37-ACCB-4302-8C7A-E1542CA1A4C4}">
+							<ChildrenList>
+								<Action Name="" ID="{0E868C0B-67A7-4EA9-9AB3-9E505EAA80EB}" ShortID="436220063">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="starStinger" ID="{4DB7B290-2B29-4B66-BF79-FF2DBD09D23B}" WorkUnitID="{217100B1-47DB-4081-83B8-C119AAF0C8C0}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

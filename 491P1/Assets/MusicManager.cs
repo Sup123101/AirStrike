@@ -9,6 +9,7 @@ public class MusicManager : MonoBehaviour {
     private bool chatterOngoing = false;
     private bool chatterEnabled = false;
     private bool initialsoundended = false;
+    private bool stingerPlaying = false; 
 	// Use this for initialization
 	void Start () {
 		currentMode = 0;
@@ -39,7 +40,7 @@ public class MusicManager : MonoBehaviour {
             chatterEnabled = false;
 		}
 		if (currentMode == 1) {
-			
+    			
 			AkSoundEngine.SetSwitch ("Music", "Classic", this.gameObject);
             AkSoundEngine.PostEvent("stopVA", this.gameObject);
             AkSoundEngine.PostEvent("classicVA", this.gameObject);
@@ -159,6 +160,31 @@ public class MusicManager : MonoBehaviour {
         }
 
     }
+
+    public void playStinger()
+    {
+        if (stingerPlaying == false)
+        {
+            stingerPlaying = true;
+            if (currentMode == 1)
+            {
+                AkSoundEngine.PostEvent("classicStinger", gameObject);
+            }
+            if (currentMode == 2)
+            {
+                AkSoundEngine.PostEvent("modernStinger", gameObject);
+            }
+            if (currentMode == 3)
+            {
+                AkSoundEngine.PostEvent("starStinger", gameObject);
+            }
+
+
+            StartCoroutine(waitStinger(Random.Range(10.0f, 15.0f)));
+        }
+
+    }
+
   
 
 	public void Update()
@@ -175,6 +201,14 @@ public class MusicManager : MonoBehaviour {
         
         yield return new WaitForSeconds(times);
         chatterOngoing = false;
+
+
+    }
+    IEnumerator waitStinger(float times)
+    {
+
+        yield return new WaitForSeconds(times);
+        stingerPlaying = false;
 
 
     }

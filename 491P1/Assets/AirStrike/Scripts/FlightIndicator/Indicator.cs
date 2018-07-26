@@ -39,6 +39,7 @@ namespace AirStrikeKit
 // camera mode
 		[HideInInspector]
 		public FlightSystem flight;
+        public bool isPlayer;
 // core plane system
 
 		void Awake ()
@@ -77,7 +78,9 @@ namespace AirStrikeKit
 									// Draw the indicator
 									DrawTargetLockon (objs [i].transform, t);
 
+
 								}
+                               
 							}
 						}
 					}
@@ -95,12 +98,13 @@ namespace AirStrikeKit
 						GUI.DrawTexture (new Rect ((Screen.width / 2 - Crosshair.width / 2) + CrosshairOffset.x, (Screen.height / 2 - Crosshair.height / 2) + CrosshairOffset.y, Crosshair.width, Crosshair.height), Crosshair);	
 					DrawNavEnemy ();
 
+
 					break;
 				case NavMode.Cockpit:
 					if (Crosshair_in)
 						GUI.DrawTexture (new Rect ((Screen.width / 2 - Crosshair_in.width / 2) + CrosshairOffset_in.x, (Screen.height / 2 - Crosshair_in.height / 2) + CrosshairOffset_in.y, Crosshair_in.width, Crosshair_in.height), Crosshair_in);	
 					DrawNavEnemy ();
-                       
+
 					break;
 				case NavMode.None:
                         
@@ -113,7 +117,7 @@ namespace AirStrikeKit
 
 		public void DrawTargetLockon (Transform aimtarget, int type)
 		{
-		
+            
            
 			if (CurrentCamera != null) {
 				Vector3 dir = (aimtarget.position - CurrentCamera.transform.position).normalized;
