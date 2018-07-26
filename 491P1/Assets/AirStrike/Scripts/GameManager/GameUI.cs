@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using HWRWeaponSystem;
-
+using UnityEngine.SceneManagement;
 namespace AirStrikeKit
 {
 	public class GameUI : MonoBehaviour
@@ -30,6 +30,13 @@ namespace AirStrikeKit
 			musicpaused = false;
 			musicScript.resumeMusic ();
 		}
+		private void Update()
+		{
+            if (Input.GetKeyDown("joystick button 12"))
+                    {
+                        Mode = 2;
+                    }   
+		}
 
 		public void OnGUI ()
 		{
@@ -40,9 +47,11 @@ namespace AirStrikeKit
 		
 			switch (Mode) {
 			case 0:
+                   
 				if (Input.GetKeyDown (KeyCode.Escape)) {
 					Mode = 2;	
 				}
+                
 			
 				if (AirStrikeGame.playerController) {
 				
@@ -99,7 +108,8 @@ namespace AirStrikeKit
 					
 					musicScript.playModeMusic ();
 
-					Application.LoadLevel (Application.loadedLevelName);
+                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                       
 			
 				}
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 40), "Main menu")) {
@@ -108,7 +118,7 @@ namespace AirStrikeKit
 
 					musicScript.switchMenu ();
 					musicScript.currentMode = 0;
-					Application.LoadLevel ("Mainmenu");
+                    SceneManager.LoadScene("Mainmenu");
 
 				}
 
@@ -144,7 +154,8 @@ namespace AirStrikeKit
 					musicpaused = false;
 					musicScript.switchMenu ();
 					musicScript.currentMode = 0;
-					Application.LoadLevel ("Mainmenu");
+					//Application.LoadLevel ("Mainmenu");
+                    SceneManager.LoadScene("Mainmenu");
 				}
 				break;
 			

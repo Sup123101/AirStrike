@@ -5,9 +5,12 @@
 			<ChildrenList>
 				<SoundBank Name="Music" ID="{49C0DF60-3A7C-4B94-98D4-839D21607AC3}">
 					<ObjectInclusionList>
+						<ObjectRef Name="classicStinger" ID="{0C62EE07-5A95-412E-B00F-6D5B73563789}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="pauseAll" ID="{BE25EC93-F032-417A-9FB4-192ABF718E7C}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="starStinger" ID="{70F53A37-ACCB-4302-8C7A-E1542CA1A4C4}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="PauseMusic" ID="{8C705337-0B8A-4450-8DC7-1A6BA153629B}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ResumeMusic" ID="{0E257BFF-7497-4485-8316-6845000892B4}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="modernStinger" ID="{212A6828-BB8E-44EF-B229-57718408CB85}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopMusic" ID="{FAD78784-1501-4981-BED9-EC48340B0BC7}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StopEverything" ID="{D9AECC45-9E32-4AD7-A129-1B77F7D76B7E}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="stopRocket" ID="{3467EEC2-0371-4AFF-A8B8-94F44A337C2D}" WorkUnitID="{45392C3C-9D6F-4CF9-B4DC-3DA9E05E9062}" Filter="7" Origin="Manual"/>

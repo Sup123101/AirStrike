@@ -163,7 +163,7 @@ namespace AirStrikeKit
 			MouseLock.MouseLocked = true;
 		
 			flight.AxisControl (new Vector2 (Input.GetAxis ("Mouse X"), Input.GetAxis ("Mouse Y")));
-            flight.AxisControl(new Vector2(Input.GetAxis("X-Axis"), Input.GetAxis("Y-Axis")));
+            //flight.AxisControl(new Vector2(Input.GetAxis("X-Axis"), Input.GetAxis("Y-Axis")));
 
 			if (SimpleControl) {
 				flight.TurnControl (Input.GetAxis ("Mouse X"));
