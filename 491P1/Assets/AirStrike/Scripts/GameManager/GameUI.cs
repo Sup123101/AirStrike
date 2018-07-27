@@ -67,9 +67,10 @@ namespace AirStrikeKit
 
             return selectedItem;
         }
-		private void Update()
+		 void Update()
 		{
             print("selected index is " + selectedIndex);
+            print("state of change is " + sceneChange);
             if (Input.GetKeyDown("joystick button 12"))
                     {
                         Mode = 2;
@@ -149,7 +150,7 @@ namespace AirStrikeKit
 				if (Input.GetKeyDown (KeyCode.Escape)) {
 					Mode = 2;	
 				}
-                    sceneChange = false;
+                   // sceneChange = false;
 			
 				if (AirStrikeGame.playerController) {
 				
@@ -273,7 +274,7 @@ namespace AirStrikeKit
         {
             
 
-            yield return new WaitForSeconds(time);  // I suggest decreasing the time here. One second for each button is quite a long time, which I'm sure you already know.
+            yield return new WaitForSecondsRealtime(time);  // I suggest decreasing the time here. One second for each button is quite a long time, which I'm sure you already know.
             canInteract = true;
         } 
 	}
