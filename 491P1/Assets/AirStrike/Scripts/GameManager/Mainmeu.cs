@@ -11,7 +11,7 @@ namespace AirStrikeKit
 		public Texture2D Logo;
 		public GameObject musicManager;
 		private MusicManager musicScript;
-        public string[] menuOptions = new string[4];
+        public string[] menuOptions = new string[3];
         public int selectedIndex = 0;
         private bool canInteract = true;
 		void Start ()

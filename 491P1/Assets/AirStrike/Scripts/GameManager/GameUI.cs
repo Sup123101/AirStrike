@@ -14,9 +14,14 @@ namespace AirStrikeKit
 		public GameObject musicManager;
 		private MusicManager musicScript;
 		public bool musicpaused = false;
+      
 
+        public string[] menuOptions = new string[3];
+        public int selectedIndex = 0;
+        private bool canInteract = true;
 		void Awake(){
 			AirStrikeGame.gameUI = this;
+            selectedIndex = 0;
 		}
 
 		void Start ()
@@ -24,19 +29,109 @@ namespace AirStrikeKit
 			weapon = AirStrikeGame.playerController.GetComponent<WeaponController> ();
 			musicManager = GameObject.Find ("WwiseGlobal");
 			musicScript = musicManager.GetComponent<MusicManager> ();
+           
+           
 		}
+       
 		void onDestroy()
 		{
 			musicpaused = false;
 			musicScript.resumeMusic ();
 		}
+        int menuSelection(string[] menuItems, int selectedItem, string direction)
+        {
+            if (direction == "up")
+            {
+                if (selectedItem == 0)
+                {
+                    selectedItem = menuItems.Length - 1;
+                }
+                else
+                {
+                    selectedItem -= 1;
+                }
+            }
+
+            if (direction == "down")
+            {
+                if (selectedItem == menuItems.Length - 1)
+                {
+                    selectedItem = 0;
+                }
+                else
+                {
+                    selectedItem += 1;
+                }
+            }
+
+            return selectedItem;
+        }
 		private void Update()
 		{
             if (Input.GetKeyDown("joystick button 12"))
                     {
                         Mode = 2;
-                    }   
+                    }  
+            if (Mode == 2 || Mode == 1)
+            {
+                if (Input.GetAxis("Mouse Y") == -0.7f && canInteract == true)
+            {
+                canInteract = false;
+                selectedIndex = menuSelection(menuOptions, selectedIndex, "down");
+
+                StartCoroutine(MenuChange(.33f));
+            }
+
+            if (Input.GetAxis("Mouse Y") == 0.7f && canInteract == true)
+            { 
+                canInteract = false;
+                selectedIndex = menuSelection(menuOptions, selectedIndex, "up");
+                StartCoroutine(MenuChange(.33f));
+            }
+
+            if (Input.GetKeyDown("joystick button 0"))
+            {
+                handleSelection();
+               
+            } 
+            }
 		}
+        void handleSelection()
+        {
+            GUI.FocusControl(menuOptions[selectedIndex]);
+
+
+
+            if(menuOptions[selectedIndex] == "Restart")
+            {
+                musicScript.playModeMusic();
+
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            if (menuOptions[selectedIndex] == "Main menu")
+            {
+                Time.timeScale = 1;
+                Mode = 0;
+
+                musicScript.resumeMusic();
+                musicpaused = false;
+                musicScript.switchMenu();
+                musicScript.currentMode = 0;
+                //Application.LoadLevel ("Mainmenu");
+                SceneManager.LoadScene("Mainmenu");
+            }
+            if (menuOptions[selectedIndex] == "Resume")
+            {
+                Mode = 0;
+                Time.timeScale = 1;
+                musicScript.resumeMusic();
+                musicpaused = false;
+            }
+
+           
+                    
+             
+        }
 
 		public void OnGUI ()
 		{
@@ -101,9 +196,10 @@ namespace AirStrikeKit
 					musicScript.pauseMusic ();
 					musicpaused = true;
 				}
-		
+                    menuOptions[0] = "Restart";
+                    menuOptions[1] = "Main menu";
 				GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
-		
+                    GUI.SetNextControlName("Restart");
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 40), "Restart")) {
 					
 					musicScript.playModeMusic ();
@@ -112,6 +208,7 @@ namespace AirStrikeKit
                        
 			
 				}
+                    GUI.SetNextControlName("Main menu");
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 40), "Main menu")) {
 					
 					musicScript.resumeMusic ();
@@ -121,7 +218,7 @@ namespace AirStrikeKit
                     SceneManager.LoadScene("Mainmenu");
 
 				}
-
+                    GUI.FocusControl(menuOptions[selectedIndex]);
 				break;
 		
 			case 2:
@@ -129,7 +226,10 @@ namespace AirStrikeKit
 					AirStrikeGame.playerController.Active = false;
 			
 				MouseLock.MouseLocked = false;
+                    menuOptions[0] = "Resume";
+                    menuOptions[1] = "Main menu";
 				Time.timeScale = 0;
+
 				GUI.skin.label.alignment = TextAnchor.MiddleCenter;
 				GUI.Label (new Rect (0, Screen.height / 2 + 10, Screen.width, 30), "Pause");
 				if (musicpaused == false) {
@@ -139,13 +239,14 @@ namespace AirStrikeKit
 
 		
 				GUI.DrawTexture (new Rect (Screen.width / 2 - Logo.width / 2, Screen.height / 2 - 150, Logo.width, Logo.height), Logo);
-		
+                    GUI.SetNextControlName("Resume");
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 50, 300, 40), "Resume")) {
 					Mode = 0;
 					Time.timeScale = 1;
 					musicScript.resumeMusic ();
 					musicpaused = false;
 				}
+                    GUI.SetNextControlName("Main menu");
 				if (GUI.Button (new Rect (Screen.width / 2 - 150, Screen.height / 2 + 100, 300, 40), "Main menu")) {
 					Time.timeScale = 1;
 					Mode = 0;
@@ -157,10 +258,18 @@ namespace AirStrikeKit
 					//Application.LoadLevel ("Mainmenu");
                     SceneManager.LoadScene("Mainmenu");
 				}
+                    GUI.FocusControl(menuOptions[selectedIndex]);
 				break;
 			
 			}
 		
 		}
+        IEnumerator MenuChange(float time)
+        {
+            
+
+            yield return new WaitForSeconds(time);  // I suggest decreasing the time here. One second for each button is quite a long time, which I'm sure you already know.
+            canInteract = true;
+        } 
 	}
 }
