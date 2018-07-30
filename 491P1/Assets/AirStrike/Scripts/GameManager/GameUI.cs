@@ -69,8 +69,8 @@ namespace AirStrikeKit
         }
 		 void Update()
 		{
-            print("selected index is " + selectedIndex);
-            print("state of change is " + sceneChange);
+            //print("selected index is " + selectedIndex);
+            //print("state of change is " + sceneChange);
             if (Input.GetKeyDown("joystick button 12"))
                     {
                         Mode = 2;

@@ -129,13 +129,19 @@ namespace HWRWeaponSystem
 		}
 		private void OnDestroy()
 		{
-            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+            if (CurrentCamera.gameObject != null)
+            {
+                AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+            }
 		}
 		private void OnDisable()
 		{
-            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+            if (CurrentCamera.gameObject != null)
+            {
+                AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
+            }
 		}
-		private void OnApplicationPause(bool pause)
+		private void OnApplicationPause()
 		{
             AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
 		}
