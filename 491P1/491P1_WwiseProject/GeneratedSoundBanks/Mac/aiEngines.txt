@@ -16,9 +16,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	4039399636	starFighterDoppler			\Default Work Unit\Engines\starFighterDoppler	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	68286664	enemyStarFighterLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\enemyStarFighterLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\enemyStarFighterLoop		617544
-	670451082	modernEngineLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\modernEngineLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\modernEngineLoop		573444
+	68286664	enemyStarFighterLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\enemyStarFighterLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\enemyStarFighterLoop		632244
+	118868095	modernHighSpeedLoopV2	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\modernHighSpeedLoopV2_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\modernHighSpeedLoopV2		705744
 	678784050	WW2EngineLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\WW2EngineLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\WW2EngineLoop		529344
 	901463121	friendlyStarFighterLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\friendlyStarFighterLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\friendlyStarFighterLoop		391056
-	1021607394	enemyStarFighterlowHP	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\enemyStarFighterlowHP_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\enemyStarFighterlowHP		595492
+	1021607394	enemyStarFighterlowHP	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\enemyStarFighterlowHP_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\botEngine\enemyStarFighterlowHP		632244
 

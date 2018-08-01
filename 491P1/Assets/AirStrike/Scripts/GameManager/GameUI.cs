@@ -164,10 +164,13 @@ namespace AirStrikeKit
 					GUI.skin.label.alignment = TextAnchor.UpperRight;
 					GUI.Label (new Rect (Screen.width - 220, 20, 200, 50), "ARMOR " + AirStrikeGame.playerController.GetComponent<DamageManager> ().HP);
 					GUI.skin.label.fontSize = 16;
-				
-		
-					if (weapon.WeaponLists [weapon.CurrentWeapon].Icon)
-						GUI.DrawTexture (new Rect (Screen.width - 100, Screen.height - 100, 80, 80), weapon.WeaponLists [weapon.CurrentWeapon].Icon);
+
+
+                        if (weapon.WeaponLists[weapon.CurrentWeapon].Icon)
+                        {
+                            GUI.DrawTexture(new Rect(Screen.width - 100, Screen.height - 100, 80, 80), weapon.WeaponLists[weapon.CurrentWeapon].Icon);
+                          //  print("current weapon is " + weapon.CurrentWeapon);
+                        }
 				
 					GUI.skin.label.alignment = TextAnchor.UpperRight;
 					if (weapon.WeaponLists [weapon.CurrentWeapon].Ammo <= 0 && weapon.WeaponLists [weapon.CurrentWeapon].ReloadingProcess > 0) {

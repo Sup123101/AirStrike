@@ -1,5 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	36280251	lockOn			\Default Work Unit\Alerts\lockOn	
+	500702397	startStarLockOn			\Default Work Unit\Alerts\startStarLockOn	
+	716428127	stopStarLockOn			\Default Work Unit\Alerts\stopStarLockOn	
 	925126984	stopStarAlarm			\Default Work Unit\Alerts\stopStarAlarm	
 	2106207540	startEngineSputter			\Default Work Unit\Alerts\startEngineSputter	
 	2291740791	stopModernAlarm			\Default Work Unit\Alerts\stopModernAlarm	
@@ -18,5 +20,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	192512106	EngineSputter	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\EngineSputter_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\EngineSputter		970344
 	306576491	lockOnStart	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\lockOnStart_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\Alert\lockOnStart		135944
 	616401202	raidSiren	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\raidSiren_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\raidSiren		1598768
+	634671312	FutureLockLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\FutureLockLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\AlertStar\FutureLockLoop		463192
+	748258247	FutureLockStart	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\FutureLockStart_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\AlertStar\FutureLockStart		44244
 	1057588654	lockOnLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Windows\SFX\lockOnLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Alerts\Alert\lockOnLoop		176544
 

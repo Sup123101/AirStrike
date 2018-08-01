@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-3</Value>
+								<Value>-9</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -303,6 +303,11 @@
 							<PropertyList>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="92"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -543,6 +548,11 @@
 							<PropertyList>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="110"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -798,7 +808,7 @@
 								<Property Name="Tempo" Type="Real64" Value="100"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-14</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -913,7 +923,7 @@
 								<Property Name="Tempo" Type="Real64" Value="92"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-13</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -936,10 +946,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="ModernStinger1" ID="{011E8EAC-9943-459B-BBEC-B7030C96F40A}" ShortID="786941442">
-											<Language>SFX</Language>
-											<AudioFile>ModernStinger1.wav</AudioFile>
-										</AudioFileSource>
 										<AudioFileSource Name="ModernStinger2" ID="{BB89BB50-5A85-4656-8DFE-B4F10004244C}" ShortID="495273842">
 											<Language>SFX</Language>
 											<AudioFile>ModernStinger2.wav</AudioFile>
@@ -962,18 +968,6 @@
 										</MusicTransition>
 									</TransitionList>
 									<SequenceList>
-										<MusicTrackSequence Name="" ID="{D5713683-8AFB-4721-90C3-ECB5D93D5AF0}">
-											<ClipList>
-												<MusicClip Name="ModernStinger1" ID="{A2347F90-92E6-468F-A586-180754396331}">
-													<PropertyList>
-														<Property Name="EndTrimOffset" Type="Real64" Value="2608.68480725624"/>
-														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
-													</PropertyList>
-													<AudioSourceRef Name="ModernStinger1" ID="{011E8EAC-9943-459B-BBEC-B7030C96F40A}"/>
-												</MusicClip>
-											</ClipList>
-										</MusicTrackSequence>
 										<MusicTrackSequence Name="" ID="{973C8811-3A1D-4093-BB1E-BEF67F612870}">
 											<ClipList>
 												<MusicClip Name="ModernStinger4" ID="{B354C6EF-B28F-454A-BAB0-AC507A31063E}">
@@ -1029,7 +1023,7 @@
 								<Property Name="Tempo" Type="Real64" Value="110"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-14</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

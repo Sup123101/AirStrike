@@ -307,6 +307,20 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="gattlingSingle" ID="{47B642E5-60BD-4A8A-B463-D97F9CFD2F58}">
+							<ChildrenList>
+								<Action Name="" ID="{44642C98-1860-4B24-89AA-525FE6B6AC8C}" ShortID="921207514">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="gattlingSingle" ID="{882CBEA6-EE65-4817-876E-C19C05CF2B85}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="AIEngines" ID="{7F0C1010-802C-47FA-A2DC-51020EED7689}" ShortID="640416497">
@@ -341,13 +355,13 @@
 						</Event>
 						<Event Name="startModernEngine" ID="{3D47D1D1-608C-4966-8A0E-12C9C59B3FB6}">
 							<ChildrenList>
-								<Action Name="" ID="{60CEE944-796D-4096-A575-37F760163294}" ShortID="188541984">
+								<Action Name="" ID="{0C863292-3ACC-429A-A77B-B40C3E796032}" ShortID="490834170">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="modernEngineLoop" ID="{93D5FCDC-A1E3-4952-A387-928C29D29066}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+											<ObjectRef Name="modernHighSpeedLoopV2" ID="{D12CB448-C8EC-4BCA-A194-386421AEDC16}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -355,13 +369,13 @@
 						</Event>
 						<Event Name="stopModernEngine" ID="{1C896CE1-194F-4DFC-973D-C67D9171BE25}">
 							<ChildrenList>
-								<Action Name="" ID="{9EE820E1-0DF7-4830-BBF0-A9A07DA62028}" ShortID="1019682604">
+								<Action Name="" ID="{40CCE144-A1AF-4056-8BA1-9510BFAC9D5F}" ShortID="188212780">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="modernEngineLoop" ID="{93D5FCDC-A1E3-4952-A387-928C29D29066}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+											<ObjectRef Name="modernHighSpeedLoopV2" ID="{D12CB448-C8EC-4BCA-A194-386421AEDC16}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -786,6 +800,34 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="EngineSputter" ID="{7EA3AF61-8918-41FC-862B-D50B2ED805A7}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="startStarLockOn" ID="{CB22FAC0-ABC4-4DFD-84B3-0E3193D81625}">
+							<ChildrenList>
+								<Action Name="" ID="{25E6E2F4-5DA1-4B72-B58C-06A961A8B0C9}" ShortID="630670690">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AlertStar" ID="{E6F44893-6834-4A63-86D1-E3A5ADEA0A51}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="stopStarLockOn" ID="{0EE3F940-7ED8-4346-BD6E-D4044F5ADED1}">
+							<ChildrenList>
+								<Action Name="" ID="{6F6FFACA-6085-40BF-AF29-C919632A54B3}" ShortID="652497277">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AlertStar" ID="{E6F44893-6834-4A63-86D1-E3A5ADEA0A51}" WorkUnitID="{8D7DCDE7-727A-47B5-BC52-2842E4F9C13E}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

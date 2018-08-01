@@ -63,6 +63,7 @@ namespace AirStrikeKit
 		{
 			// add this camera to primery
 			AddCamera (this.gameObject);
+            AkSoundEngine.SetState("View", "Outside");
 		}
 
 		public void AddCamera (GameObject cam)

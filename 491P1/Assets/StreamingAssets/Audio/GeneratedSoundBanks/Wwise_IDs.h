@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID CLASSICVA = 3939636660U;
         static const AkUniqueID FLAKEXPLOSION = 1295429296U;
         static const AkUniqueID FXEXPLOSION = 63450460U;
+        static const AkUniqueID GATTLINGSINGLE = 1079921921U;
         static const AkUniqueID HEAVYCANNON = 4255146761U;
         static const AkUniqueID LASERSINGLE = 103780518U;
         static const AkUniqueID LOCKON = 36280251U;
@@ -58,6 +59,7 @@ namespace AK
         static const AkUniqueID STARTSTARALARM = 2717762458U;
         static const AkUniqueID STARTSTARALLYENGINE = 3769342143U;
         static const AkUniqueID STARTSTARENEMYENGINE = 4050874075U;
+        static const AkUniqueID STARTSTARLOCKON = 500702397U;
         static const AkUniqueID STARTSTARLOWHPENGINE = 3909231409U;
         static const AkUniqueID STARTSTARPENGINE = 1146369487U;
         static const AkUniqueID STARTWW2ENGINE = 369208719U;
@@ -79,6 +81,7 @@ namespace AK
         static const AkUniqueID STOPSTARALARM = 925126984U;
         static const AkUniqueID STOPSTARALLYENGINE = 4015933481U;
         static const AkUniqueID STOPSTARENEMYENGINE = 272552693U;
+        static const AkUniqueID STOPSTARLOCKON = 716428127U;
         static const AkUniqueID STOPSTARLOWHPENGINE = 920968951U;
         static const AkUniqueID STOPVA = 798440610U;
         static const AkUniqueID STOPWW2ENGINE = 3970229609U;
