@@ -1,7 +1,7 @@
 # AirStrike
 PersonalAudioGameProject
 AirStrke Game in Unity with Wwise\
-Featuring newly added Music and SFX\ 
+Featuring newly added Music and SFX
 
 Changes:\
 PS4 Controller Support\
