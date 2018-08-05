@@ -262,7 +262,7 @@ namespace AirStrikeKit
 	
 	
 		// you can remove this part..
-		void OnGUI ()
+		/*void OnGUI ()
 		{
 			if (!ShowHowto)
 				return;
@@ -289,7 +289,7 @@ namespace AirStrikeKit
 					SimpleControl = !SimpleControl;
 			}
 
-			GUI.Label (new Rect (20, 350, 500, 40), "you can remove this in OnGUI in PlayerController.cs");
-		}
+			/GUI.Label (new Rect (20, 350, 500, 40), "you can remove this in OnGUI in PlayerController.cs");
+		}*/
 	}
 }

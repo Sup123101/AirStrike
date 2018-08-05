@@ -65,6 +65,12 @@
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
+											<XPos>2473.35423</XPos>
+											<YPos>24</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp1</SegmentShape>
+										</Point>
+										<Point>
 											<XPos>3000</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
@@ -436,6 +442,12 @@
 											<SegmentShape>Exp3</SegmentShape>
 										</Point>
 										<Point>
+											<XPos>764.5768</XPos>
+											<YPos>24</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp1</SegmentShape>
+										</Point>
+										<Point>
 											<XPos>900</XPos>
 											<YPos>100</YPos>
 											<Flags>37</Flags>
@@ -590,6 +602,12 @@
 											<YPos>0</YPos>
 											<Flags>5</Flags>
 											<SegmentShape>Exp3</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>571.63009</XPos>
+											<YPos>26</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>700</XPos>
@@ -1310,6 +1328,12 @@
 											<YPos>0</YPos>
 											<Flags>5</Flags>
 											<SegmentShape>Exp3</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>571.63009</XPos>
+											<YPos>22</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>700</XPos>

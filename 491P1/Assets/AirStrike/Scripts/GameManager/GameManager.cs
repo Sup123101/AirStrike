@@ -8,10 +8,14 @@ namespace AirStrikeKit
 		// basic game score
 		public int Score = 0;
 		public int Killed = 0;
-
+        public GameObject musicManager;
+        private MusicManager musicScript;
+        public int previouskilled = 0;
 		void Awake ()
 		{
 			AirStrikeGame.gameManager = this;
+            musicManager = GameObject.Find("WwiseGlobal");
+            musicScript = musicManager.GetComponent<MusicManager>();
 		}
 
 		void Start ()
@@ -23,7 +27,12 @@ namespace AirStrikeKit
 		// Update is called once per frame
 		void Update ()
 		{
-		
+            
+            if (previouskilled != Killed)
+            {
+                musicScript.playStinger();
+                previouskilled = Killed;
+            }
 		}
 		// add score function
 		public void AddScore (int score)

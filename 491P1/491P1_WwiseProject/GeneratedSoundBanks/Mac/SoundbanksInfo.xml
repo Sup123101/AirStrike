@@ -131,7 +131,7 @@
 				</File>
 				<File Id="101869958" Language="SFX">
 					<ShortName>sandExplosion_03.wav</ShortName>
-					<Path>SFX/sandExplosion_03_8F3DEB6A.wem</Path>
+					<Path>SFX/sandExplosion_03_4B4B442E.wem</Path>
 				</File>
 				<File Id="106490643" Language="SFX">
 					<ShortName>Explosion_03.wav</ShortName>
@@ -155,11 +155,11 @@
 				</File>
 				<File Id="409699218" Language="SFX">
 					<ShortName>flakExplosion_01.wav</ShortName>
-					<Path>SFX/flakExplosion_01_C0EACE63.wem</Path>
+					<Path>SFX/flakExplosion_01_8868DE72.wem</Path>
 				</File>
 				<File Id="510195601" Language="SFX">
 					<ShortName>sandExplosion_02.wav</ShortName>
-					<Path>SFX/sandExplosion_02_BEFFBD48.wem</Path>
+					<Path>SFX/sandExplosion_02_8649B612.wem</Path>
 				</File>
 				<File Id="531275606" Language="SFX">
 					<ShortName>Explosion_02.wav</ShortName>
@@ -171,7 +171,7 @@
 				</File>
 				<File Id="599634381" Language="SFX">
 					<ShortName>sandExplosion_01.wav</ShortName>
-					<Path>SFX/sandExplosion_01_6B5D3320.wem</Path>
+					<Path>SFX/sandExplosion_01_864754F5.wem</Path>
 				</File>
 				<File Id="766503413" Language="SFX">
 					<ShortName>metalExplosion_03.wav</ShortName>
@@ -179,11 +179,11 @@
 				</File>
 				<File Id="891137738" Language="SFX">
 					<ShortName>flakExplosion_02.wav</ShortName>
-					<Path>SFX/flakExplosion_02_4982EF8B.wem</Path>
+					<Path>SFX/flakExplosion_02_DF04F66D.wem</Path>
 				</File>
 				<File Id="1054171988" Language="SFX">
 					<ShortName>flakExplosion_03.wav</ShortName>
-					<Path>SFX/flakExplosion_03_135466E5.wem</Path>
+					<Path>SFX/flakExplosion_03_255D8471.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -198,17 +198,13 @@
 				<Event Id="2473397641" Name="stopPEngine" ObjectPath="\Events\Default Work Unit\playerEngine\stopPEngine" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="16283810" Language="SFX">
-					<ShortName>starhighSpeedLoop.wav</ShortName>
-					<Path>SFX/starhighSpeedLoop_64877D7E.wem</Path>
-				</File>
 				<File Id="118868095" Language="SFX">
 					<ShortName>modernHighSpeedLoopV2.wav</ShortName>
 					<Path>SFX/modernHighSpeedLoopV2_F17FB28C.wem</Path>
 				</File>
 				<File Id="246546007" Language="SFX">
 					<ShortName>starnormalLoop.wav</ShortName>
-					<Path>SFX/starnormalLoop_D155BA5F.wem</Path>
+					<Path>SFX/starnormalLoop_F6DE7A39.wem</Path>
 				</File>
 				<File Id="349238628" Language="SFX">
 					<ShortName>starSlowDown.wav</ShortName>
@@ -237,6 +233,10 @@
 				<File Id="659391842" Language="SFX">
 					<ShortName>classicspeedUp.wav</ShortName>
 					<Path>SFX/classicspeedUp_1C9C67B2.wem</Path>
+				</File>
+				<File Id="719019565" Language="SFX">
+					<ShortName>starhighSpeedLoop.wav</ShortName>
+					<Path>SFX/starhighSpeedLoop_2F747B1F.wem</Path>
 				</File>
 				<File Id="759571530" Language="SFX">
 					<ShortName>modernSlowDownV2.wav</ShortName>

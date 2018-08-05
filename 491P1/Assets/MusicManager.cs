@@ -180,7 +180,7 @@ public class MusicManager : MonoBehaviour {
             }
 
 
-            StartCoroutine(waitStinger(Random.Range(10.0f, 15.0f)));
+            StartCoroutine(waitStinger(Random.Range(8.0f, 12.0f)));
         }
 
     }
