@@ -26,7 +26,7 @@
 										<State Name="" ID="{7AB7E76D-6C08-4C9B-8E96-56A734012E30}" ShortID="898733376">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-5"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="30"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -55,7 +55,7 @@
 										<State Name="" ID="{B2FF375B-6A48-4CDF-9EDC-1AF16610E48A}" ShortID="358267488">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-5"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="25"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -81,7 +81,7 @@
 										<State Name="" ID="{FFA53741-1E24-4F80-8436-C9C30D410619}" ShortID="260395234">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-5"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="32"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -105,7 +105,7 @@
 										<State Name="" ID="{BBFAB50F-CE21-4459-ADB7-9A100BC55E75}" ShortID="112750970">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-5"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="32"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -206,7 +206,7 @@
 										<State Name="" ID="{FDF3B61A-E2F8-4467-8CD9-997EF81E3FDE}" ShortID="307941806">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-5"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="32"/>
 											</PropertyList>
 										</State>
 									</CustomState>
@@ -230,7 +230,7 @@
 										<State Name="" ID="{1BFB1D6C-8763-48A1-9DA1-4561FFC51EB3}" ShortID="398242155">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-5"/>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
+												<Property Name="Lowpass" Type="int16" Value="32"/>
 											</PropertyList>
 										</State>
 									</CustomState>
