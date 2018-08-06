@@ -71,6 +71,7 @@ namespace AirStrikeKit
         private GameObject musicManager;
         private MusicManager musicScript;
         public int previousHP = 100;
+
         void Start ()
         {
             // define all component
