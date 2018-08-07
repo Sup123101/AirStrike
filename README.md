@@ -15,3 +15,4 @@ Type 2 (PS4): Right Joystick to Select Menu items and Square to select Menu Item
 Right Joystick to move up or down or roll left or right\
 Left Joystick to accelerate or move left or right\
 R1 to Fire, R2 to Switch Weapon\
+PS Button to go to Menu/Settings\
