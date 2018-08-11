@@ -10,7 +10,11 @@ public class bulletDoppler : MonoBehaviour {
 * Make sure to center your RTPC around 1.0 - dopplerPitch is a multiplier!
 * Make sure to find Listener 
 */
+    /* 
+    This Script is not being used, Originally the plan was to have bullets whiz by but the audible audio interval is too short for any 
+    pitch changes thus didn't work out.
 
+    */
 
 	public float SpeedOfSound = 343.3f;
 	public float DopplerFactor = 1.0f;

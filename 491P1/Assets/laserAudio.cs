@@ -4,14 +4,7 @@ using UnityEngine;
 
 public class laserAudio : MonoBehaviour {
     /* 
- * DOPPLER EFFECT C# SCRIPT FOR UNITY & WWISE
- * 
- * Add this to a game object and then pass through dopplerPitch to an RTPC in Wwise, then season to taste :)
- * Make sure to center your RTPC around 1.0 - dopplerPitch is a multiplier!
- * I'd recommend starting out with a range of 0.0 to 2.0, with 0.0 = -300 cents and 2.0 = +300 cents
- * Also, note that you may need to search for a different listener object - this is set up to find a First Person Controller...
- * 
- * Script created with TLC by Kenneth C M Young - www.AudBod.com - @kcmyoung
+ * This Script was not used as audio interval for laser to be audio was too short as laser is too fast 
  */
 
 

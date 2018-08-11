@@ -8,7 +8,7 @@
 				<File Name="FX" Hash="4140100386" Timestamp="1531967917"/>
 				<File Name="Impacts" Hash="2083801630" Timestamp="1533095397"/>
 				<File Name="Init" Hash="1428787430" Timestamp="1533498007"/>
-				<File Name="Music" Hash="978312942" Timestamp="1533222324"/>
+				<File Name="Music" Hash="3478643024" Timestamp="1533948216"/>
 				<File Name="VA" Hash="2561243419" Timestamp="1533096677"/>
 				<File Name="Weapons" Hash="3638490410" Timestamp="1533091507"/>
 				<File Name="aiEngines" Hash="881531368" Timestamp="1533222557"/>
@@ -18,7 +18,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1042971303" Timestamp="1533498007"/>
+				<File Name="" Hash="1042971303" Timestamp="1533948216"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -30,7 +30,7 @@
 				<File Name="FX" Hash="4140100386" Timestamp="1531967918"/>
 				<File Name="Impacts" Hash="2083801630" Timestamp="1533095397"/>
 				<File Name="Init" Hash="2201294452" Timestamp="1533498008"/>
-				<File Name="Music" Hash="978312942" Timestamp="1533222325"/>
+				<File Name="Music" Hash="3478643024" Timestamp="1533948217"/>
 				<File Name="VA" Hash="2561243419" Timestamp="1533096678"/>
 				<File Name="Weapons" Hash="3638490410" Timestamp="1533091508"/>
 				<File Name="aiEngines" Hash="881531368" Timestamp="1533222557"/>
@@ -40,7 +40,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="290620909" Timestamp="1533498008"/>
+				<File Name="" Hash="290620909" Timestamp="1533948217"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

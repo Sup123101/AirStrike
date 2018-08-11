@@ -89,7 +89,7 @@ namespace AirStrikeKit
 			// On Mobile device
 			MobileController ();
 			#endif
-            if (musicScript.currentMode == 1) //classic engine
+            if (musicScript.currentMode == 1) //classic engine accel and decel states
             {
                 if (previousAccel == false)
                 {
@@ -183,7 +183,10 @@ namespace AirStrikeKit
                 currentAccel = false;
             }
            
-		     
+		     /*
+		      * Next portion will determine if musical stinger should be played when player fires weapon, We detect when player is holding down
+                the fire button and letting go. Only once he lets go will the ability for another stinger be able to come in again
+            */
 			if (Input.GetButton ("Fire1")) {
 				flight.WeaponControl.LaunchWeapon ();
                 if (previousWeapon1 == false)
@@ -198,7 +201,7 @@ namespace AirStrikeKit
                 if (previousWeapon1 == true)
                 {
                     previousWeapon1 = false;
-                    //print("stopped fireing");
+                 
                 }
 
             }
@@ -210,11 +213,11 @@ namespace AirStrikeKit
 				flight.WeaponControl.SwitchWeapon ();
 
 			}
-		
 			if (Input.GetKeyDown (KeyCode.C)) {
 				if (View)
 					View.SwitchCameras ();	
-			}	
+			}
+            //PS4 Controller Square Button
             if (Input.GetKeyDown("joystick button 0"))
             {
                 if (View)

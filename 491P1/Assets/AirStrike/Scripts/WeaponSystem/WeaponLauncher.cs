@@ -133,25 +133,28 @@ namespace HWRWeaponSystem
 		}
 		private void OnDestroy()
 		{
-            if (CurrentCamera.gameObject != null)
+            if (CurrentCamera)
             {
-                AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
-                AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject); //stop the sound
+                AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); 
+                AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject); 
             }
 		}
 		private void OnDisable()
 		{
-            if (CurrentCamera.gameObject != null)
+            if (CurrentCamera)
             {
-                AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
-                AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject); //stop the sound
+                AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); 
+                AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject); 
 
             }
 		}
 		private void OnApplicationPause()
 		{
-            AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); //stop the sound
-            AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject); //stop the sound
+            if (CurrentCamera)
+            {
+                AkSoundEngine.PostEvent("stopLockOn", CurrentCamera.gameObject); 
+                AkSoundEngine.PostEvent("stopStarLockOn", CurrentCamera.gameObject); 
+            }
 		}
 		private void Update ()
 		{
@@ -248,7 +251,7 @@ namespace HWRWeaponSystem
 							if (AimObject != null && AimObject.tag == TargetTag [t]) {
 								float dis = Vector3.Distance (AimObject.transform.position, transform.position);
 								if (DistanceLock > dis) {
-                                    //lockStatus = true;
+                                    
 									if (distance > dis) {
 										if (timetolockcount + TimeToLock < Time.time) {	
 											distance = dis;
@@ -300,7 +303,7 @@ namespace HWRWeaponSystem
 					}
                    
                     else if (targetdistance < DistanceLock || direction <= AimDirection){
-                        //lockStatus = true;
+                       
                     }
 
 				}
@@ -353,7 +356,7 @@ namespace HWRWeaponSystem
 				if (direction > 0.5f) {
 					Vector3 screenPos = CurrentCamera.WorldToScreenPoint (aimtarget.transform.position);
 					float distance = Vector3.Distance (transform.position, aimtarget.transform.position);
-                    //lockStatus = true;
+
 					if (locked) {
                       
                         if (TargetLockedTexture)
@@ -420,7 +423,7 @@ namespace HWRWeaponSystem
 
                                             if (thisisPlayer == true)
                                             {
-                                               // print("hey we got something");
+                                               
                                                 amountlocked += 1;
                                             }
 
@@ -431,11 +434,11 @@ namespace HWRWeaponSystem
                                 if (i == (objs.Length -1)){
                                     if(amountlocked == 0){
                                         amountlockedPrevious = 0;
-                                        //print("this is called");
+
                                     }
                                     else if(amountlocked != 0){
                                         amountlockedPrevious = amountlocked;
-                                        //print("this is called instead");
+
                                     }
                                     
                                 }
@@ -569,8 +572,7 @@ namespace HWRWeaponSystem
 						if (audioSource != null && audioSource.isActiveAndEnabled) {
 							audioSource.PlayOneShot (SoundGun [Random.Range (0, SoundGun.Length)]);
 
-							//print ("firing the M4 GUn");
-							//print ("firing " + gameObject.name);
+							
 							if (gameObject.name == "weapon_minigun") {
                                 if (musicScript.currentMode == 1)
                                 {
@@ -607,6 +609,10 @@ namespace HWRWeaponSystem
 			Gizmos.DrawLine (this.transform.position + (-this.transform.right * 0.1f), this.transform.position + this.transform.forward * 2);
 			Gizmos.DrawLine (this.transform.position, this.transform.position + this.transform.forward * 2);
 		}
+
+        /*Due to the way the Lock On Sounds may get stuck due to a glitch, a compromise is to make it so Lock on sounds stop after a certain amount of time
+         * 
+         */
         IEnumerator timedLockOnStop(float time)
         {
 

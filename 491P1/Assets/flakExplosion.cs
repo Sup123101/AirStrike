@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class flakExplosion : MonoBehaviour {
 
-	// Use this for initialization
+
 	
 	private void OnEnable()
 	{
@@ -12,8 +12,4 @@ public class flakExplosion : MonoBehaviour {
 
 	}
 
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

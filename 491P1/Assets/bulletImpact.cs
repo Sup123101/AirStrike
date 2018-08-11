@@ -5,10 +5,7 @@ using UnityEngine;
 public class bulletImpact : MonoBehaviour {
     private bool hitsand = false;
     private int hitType = 0;
-	// Use this for initialization
-	void Start () {
-		
-	}
+	//plays bullet sound if it hits terrain
     private void OnEnable()
     {
         if (hitType == 1)
@@ -18,11 +15,8 @@ public class bulletImpact : MonoBehaviour {
        
 
 	}
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
+	
+    //If it hits scene
     private void OnCollisionEnter(Collision collision)
 	{
        

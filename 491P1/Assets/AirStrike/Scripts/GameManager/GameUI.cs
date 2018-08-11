@@ -67,6 +67,7 @@ namespace AirStrikeKit
 
             return selectedItem;
         }
+        //Used to supplement GUI for joystick control
 		 void Update()
 		{
             //print("selected index is " + selectedIndex);

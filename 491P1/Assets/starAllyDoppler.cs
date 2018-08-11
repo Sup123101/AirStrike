@@ -20,6 +20,11 @@ public class starAllyDoppler : MonoBehaviour {
 
 	Vector3 emitterLastPosition = Vector3.zero;
 	Vector3 listenerLastPosition = Vector3.zero;
+    /* 
+     * Play Engine Sound on this Object
+     * Depending on Mode find the Listener
+
+    */
 	void Awake(){
 		AkSoundEngine.PostEvent ("startStarAllyEngine", this.gameObject);
 
@@ -39,14 +44,16 @@ public class starAllyDoppler : MonoBehaviour {
 		}
 
 	}
+    //If game Object is destroyed Stop the Engine Sound
 	void OnDestroy(){
 		AkSoundEngine.PostEvent ("stopStarAllyEngine", gameObject);
 	}
+    //If game Object is Disabled Stop the Engine Sound
 	private void OnDisable()
 	{
         AkSoundEngine.PostEvent("stopStarAllyEngine", gameObject);
 	}
-	// Update is called once per frame
+    //If player exists or still alive, use that as calculations for doppler, Otherwise use default camera listeners
 	void FixedUpdate () {
 
 		// get the player object handy for the rest of the script!

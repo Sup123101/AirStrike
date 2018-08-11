@@ -20,6 +20,11 @@ public class missileDoppler : MonoBehaviour {
     
 	Vector3 emitterLastPosition = Vector3.zero;
 	Vector3 listenerLastPosition = Vector3.zero;
+    /* 
+     * Affects Missile Pitch - Missile Audio or RocketAudio will be affected with this script attached
+     * Depending on Mode find the Listener
+
+    */
 	void Awake(){
 		musicManager = GameObject.Find ("WwiseGlobal");
 		musicScript = musicManager.GetComponent<MusicManager> ();
@@ -37,7 +42,7 @@ public class missileDoppler : MonoBehaviour {
 		}
 
 	}
-	// Update is called once per frame
+    //If player exists or still alive, use that as calculations for doppler, Otherwise use default camera listeners
 	void FixedUpdate () {
 
 		// get the player object handy for the rest of the script!

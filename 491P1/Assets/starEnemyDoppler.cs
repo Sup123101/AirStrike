@@ -6,7 +6,7 @@ public class starEnemyDoppler : MonoBehaviour {
     /*
   * DOPPLER EFFECT (Modified from Kenneth CM Young) - Richard L 
   * 
-  * Add this to a game object and then pass through dopplerPitch to an RTPC in Wwise
+  * Add this to game object and then pass  dopplerPitch Wwise RTPC
   * Make sure to center your RTPC around 1.0 - dopplerPitch is a multiplier!
   * Make sure to find Listener 
   */
@@ -20,6 +20,11 @@ public class starEnemyDoppler : MonoBehaviour {
 
 	Vector3 emitterLastPosition = Vector3.zero;
 	Vector3 listenerLastPosition = Vector3.zero;
+    /* 
+     * Play Engine Sound on this Object
+     * Depending on Mode find the Listener
+
+    */
 	void Awake(){
 		AkSoundEngine.PostEvent ("startStarEnemyEngine", this.gameObject);
 
@@ -39,16 +44,20 @@ public class starEnemyDoppler : MonoBehaviour {
 		}
 
 	}
-	void OnDestroy(){
+    //If game Object is destroyed Stop the Engine Sound
+	void OnDestroy()
+    {
+        
 		AkSoundEngine.PostEvent ("stopStarEnemyEngine", gameObject);
 	}
+    //If game Object is Disabled Stop the Engine Sound
 	private void OnDisable()
 	{
        
             AkSoundEngine.PostEvent("stopStarEnemyEngine", gameObject);
         
 	}
-	// Update is called once per frame
+    //If player exists or still alive, use that as calculations for doppler, Otherwise use default camera listeners
 	void FixedUpdate () {
 
 		// get the player object handy for the rest of the script!

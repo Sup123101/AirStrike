@@ -24,7 +24,7 @@ namespace AirStrikeKit
 			Killed = 0;
 		}
 	
-		// Update is called once per frame
+        //if player kills enemy, can play a stinger (if allowed)
 		void Update ()
 		{
             

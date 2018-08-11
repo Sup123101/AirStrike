@@ -12,7 +12,7 @@ namespace AirStrikeKit
     [RequireComponent (typeof(Collider))]
     [RequireComponent (typeof(WeaponController))]
 
-
+    //Need to be careful, this inherits variables from Damage manager so HP and some other variables are hidden.
     public class FlightSystem : DamageManager
     {
     

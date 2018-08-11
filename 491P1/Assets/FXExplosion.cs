@@ -32,9 +32,6 @@ public class FXExplosion : MonoBehaviour {
 
 	private void OnCollisionEnter(Collision collision)
 	{
-        //print("we hit eplotio something");
-        //print("EXP tag is " + collision.gameObject.tag);
-        //print("EXPname is " + collision.gameObject.name);
         if (collision.gameObject.tag == "Scene")
         {
             hitType = 1;
@@ -43,7 +40,6 @@ public class FXExplosion : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             hitType = 2;
-           // print("I hit the player!!!");
         }
         if (collision.gameObject.tag == "Enemy")
         {
@@ -52,10 +48,5 @@ public class FXExplosion : MonoBehaviour {
         }
 
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }

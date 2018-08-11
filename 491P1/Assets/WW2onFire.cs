@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WW2onFire : MonoBehaviour {
 
-	
+	//When any WW2 plane is on fire, engine sputters and flames audio will start
     private void OnDisable()
     {
         AkSoundEngine.PostEvent("stopEngineSputter", gameObject);
