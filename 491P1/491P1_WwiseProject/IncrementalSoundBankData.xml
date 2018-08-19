@@ -13,12 +13,12 @@
 				<File Name="Weapons" Hash="3638490410" Timestamp="1533091507"/>
 				<File Name="aiEngines" Hash="881531368" Timestamp="1533222557"/>
 				<File Name="playerEngine" Hash="3555614388" Timestamp="1533222324"/>
-				<File Name="radioChatter" Hash="899024696" Timestamp="1533222666"/>
+				<File Name="radioChatter" Hash="65583377" Timestamp="1534722412"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3981594029" Timestamp="1534023930"/>
+				<File Name="" Hash="1886581845" Timestamp="1534722412"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -35,12 +35,12 @@
 				<File Name="Weapons" Hash="3638490410" Timestamp="1533091508"/>
 				<File Name="aiEngines" Hash="881531368" Timestamp="1533222557"/>
 				<File Name="playerEngine" Hash="3555614388" Timestamp="1533222325"/>
-				<File Name="radioChatter" Hash="899024696" Timestamp="1533222666"/>
+				<File Name="radioChatter" Hash="65583377" Timestamp="1534722413"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="334366219" Timestamp="1534023931"/>
+				<File Name="" Hash="2138283567" Timestamp="1534722413"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

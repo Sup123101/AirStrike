@@ -71,6 +71,10 @@
 					<ShortName>Chatter5.wav</ShortName>
 					<Path>SFX/Chatter5_1C9C67B2.wem</Path>
 				</File>
+				<File Id="170393890" Language="SFX">
+					<ShortName>modernChatter_01.wav</ShortName>
+					<Path>SFX/modernChatter_01_1C9C67B2.wem</Path>
+				</File>
 				<File Id="228260870" Language="SFX">
 					<ShortName>futureChatter_01.wav</ShortName>
 					<Path>SFX/futureChatter_01_1C9C67B2.wem</Path>
@@ -79,9 +83,17 @@
 					<ShortName>Chatter3.wav</ShortName>
 					<Path>SFX/Chatter3_1C9C67B2.wem</Path>
 				</File>
+				<File Id="364292968" Language="SFX">
+					<ShortName>mRadioChatter2.wav</ShortName>
+					<Path>SFX/mRadioChatter2_1C9C67B2.wem</Path>
+				</File>
 				<File Id="381119258" Language="SFX">
 					<ShortName>futureChatter_03.wav</ShortName>
 					<Path>SFX/futureChatter_03_1C9C67B2.wem</Path>
+				</File>
+				<File Id="536181042" Language="SFX">
+					<ShortName>modernChatter_03.wav</ShortName>
+					<Path>SFX/modernChatter_03_1C9C67B2.wem</Path>
 				</File>
 				<File Id="585003597" Language="SFX">
 					<ShortName>Chatter1.wav</ShortName>
@@ -99,13 +111,25 @@
 					<ShortName>Chatter2.wav</ShortName>
 					<Path>SFX/Chatter2_1C9C67B2.wem</Path>
 				</File>
+				<File Id="919049102" Language="SFX">
+					<ShortName>modernChatter_02.wav</ShortName>
+					<Path>SFX/modernChatter_02_1C9C67B2.wem</Path>
+				</File>
 				<File Id="951028208" Language="SFX">
 					<ShortName>starRadioChatter5.wav</ShortName>
 					<Path>SFX/starRadioChatter5_1C9C67B2.wem</Path>
 				</File>
+				<File Id="951504622" Language="SFX">
+					<ShortName>mRadioChatter3.wav</ShortName>
+					<Path>SFX/mRadioChatter3_1C9C67B2.wem</Path>
+				</File>
 				<File Id="968479887" Language="SFX">
 					<ShortName>Chatter4.wav</ShortName>
 					<Path>SFX/Chatter4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="995784129" Language="SFX">
+					<ShortName>mRadioChatter1.wav</ShortName>
+					<Path>SFX/mRadioChatter1_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
