@@ -16,3 +16,7 @@ Right Joystick to move up or down or roll left or right\
 Left Joystick to accelerate or move left or right\
 R1 to Fire, R2 to Switch Weapon\
 PS Button to go to Menu/Settings\
+
+Build:\
+Pre-built Mac app of the game is inside the macOS build folder (root of this repository)\
+Best to use good or above quality (as mouse rate gets too slow below)\
