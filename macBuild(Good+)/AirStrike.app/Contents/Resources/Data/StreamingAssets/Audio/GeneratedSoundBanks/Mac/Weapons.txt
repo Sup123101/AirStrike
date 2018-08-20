@@ -1,0 +1,48 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2814405	Rocket			\Default Work Unit\Weapons\Rocket	
+	8152471	stopBulletLoop			\Default Work Unit\Weapons\stopBulletLoop	
+	103780518	laserSingle			\Default Work Unit\Weapons\laserSingle	
+	392504123	Missile			\Default Work Unit\Weapons\Missile	
+	1060757411	stopMissile			\Default Work Unit\Weapons\stopMissile	
+	1079921921	gattlingSingle			\Default Work Unit\Weapons\gattlingSingle	
+	1722492221	stopRocket			\Default Work Unit\Weapons\stopRocket	
+	1745708432	stopLaserLoop			\Default Work Unit\Weapons\stopLaserLoop	
+	2393348022	Cannon			\Default Work Unit\Weapons\Cannon	
+	3343066998	startLaserLoop			\Default Work Unit\Weapons\startLaserLoop	
+	3986950909	startBulletLoop			\Default Work Unit\Weapons\startBulletLoop	
+	4161220218	M4Single			\Default Work Unit\Weapons\M4Single	
+	4255146761	heavyCannon			\Default Work Unit\Weapons\heavyCannon	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	219426705	missileDoppler			\Default Work Unit\Missiles\missileDoppler	
+	517710169	Lasers			\Default Work Unit\Weapons\Lasers	
+	2590523415	rocketDoppler			\Default Work Unit\Rockets\rocketDoppler	
+	3008122820	Bullets			\Default Work Unit\Weapons\Bullets	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	106316613	M4Single_06	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\M4Single_06_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\M4Single\M4Single_06		76080
+	146312498	flakCannonHeavyV2_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonHeavyV2_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\heavyCannon\flakCannonHeavyV2_02		264744
+	174423989	BulletLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\BulletLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\BulletLoop		486088
+	253328044	GattlingSingle4	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\GattlingSingle4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\gattlingSingle\GattlingSingle4		67020
+	269941041	missileStart	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\missileStart_E956B8F5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Missiles\missileStart		189956
+	275199293	LaserSingle_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\LaserSingle_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\laserSingle\LaserSingle_03		84964
+	316133539	flakCannonHeavyV2_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonHeavyV2_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\heavyCannon\flakCannonHeavyV2_03		263828
+	358278039	M4Single_04	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\M4Single_04_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\M4Single\M4Single_04		65376
+	494470110	LaserLoopHeld	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\LaserLoopHeld_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\LaserLoopHeld		402004
+	495233639	rocketStart	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\rocketStart_93A83C96.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Rockets\rocketStart		192672
+	514066140	flakCannonv2_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonv2_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Cannon\flakCannonv2_03		204796
+	529990271	flakCannonHeavyV2_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonHeavyV2_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\heavyCannon\flakCannonHeavyV2_01		263812
+	641865153	M4Single_05	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\M4Single_05_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\M4Single\M4Single_05		55184
+	667303912	GattlingSingle3	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\GattlingSingle3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\gattlingSingle\GattlingSingle3		66760
+	679313303	LaserSingle_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\LaserSingle_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\laserSingle\LaserSingle_01		84964
+	683822974	rocketLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\rocketLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Rockets\rocketLoop		481292
+	701002309	GattlingSingle2	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\GattlingSingle2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\gattlingSingle\GattlingSingle2		70888
+	737686677	missileLoop	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\missileLoop_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Missiles\missileLoop		334016
+	833945238	M4Single_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\M4Single_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\M4Single\M4Single_01		67836
+	847533646	LaserSingle_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\LaserSingle_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\laserSingle\LaserSingle_02		61816
+	944721444	flakCannonv2_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonv2_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Cannon\flakCannonv2_02		171892
+	983665728	flakCannonv2_01	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\flakCannonv2_01_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Cannon\flakCannonv2_01		174340
+	1011904780	GattlingSingle1	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\GattlingSingle1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\gattlingSingle\GattlingSingle1		81280
+	1013281830	M4Single_03	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\M4Single_03_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\M4Single\M4Single_03		74012
+	1072179058	M4Single_02	Y:\Documents\Github\AirStrike\491P1\491P1_WwiseProject\.cache\Mac\SFX\M4Single_02_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\M4Single\M4Single_02		65160
+
